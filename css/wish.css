@@ -1,0 +1,156 @@
+/* wish */
+input{ display: inline-block;}
+.title{ text-align: center;}
+.wish{ margin: 10vh auto;}
+#wish_area{ width: 80% ; margin:  0 auto; font-size: .85em;}
+.wish_cart_list h1{ padding: 50px 0;}
+#all_ck{ margin-bottom: 15px;}
+
+.wish_list_wrap{width:100%;padding :20px 0px;border-top: 1px solid #ddd;}
+.wish_list_wrap:last-child{ border-bottom: 1px solid #ddd;}
+
+.ckeck_box{ float: left; width: 2%; display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.wish_list{ display: flex; flex-wrap: wrap;}
+.wish_item_img{ position: relative; width: 9%; background-color: #FFF; overflow: hidden;  overflow: hidden; margin-left: 3%;}
+.wish_item_img::after{ display: block; content: ""; padding-bottom: 100%;}
+.wish_item_img img{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all .8s;}
+.wish_item_img img:hover{ transform: scale(1.2 ,1.2);}
+
+.wish_item_text{  width: 50%; position: relative;}
+.wish_text_box{ position: absolute; top: 50%; left: 3%; transform: translateY(-50%); width: 100%;}
+.wish_item_text p{ display: inline;}
+.wish_item_name{ width: 75%; font-size: 1.2em; line-height: 1.8em;}
+.wish_item_name span{ font-size: .8em; overflow: hidden;text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap:break-word; 
+  line-height: 1.2em;
+  height: 2.4em; }
+.wish_tiem_price{ float: right;}
+
+.wish_btn_box{  width: 35%; display: flex; flex-direction: column; justify-content: center;}
+
+.wish_btn_box a{  display:inline-block;width: 100px;padding: 3px 26px;  margin:3px 0 3px 50%;  text-align:center;font-weight: 500; }
+
+.wish_bottom_box{ padding-top: 10px; display: flex; justify-content: start;  width: 80% ; margin:  0 auto; font-size: .85em;}
+.wish_bottom_box a{ padding: 5px 10px; border: 1px solid #d3d3d3;  }
+
+.wish_left_text{  display: inline-block;padding-top: .5em;}
+.wish_right a{ font-weight: 500; ; margin-right: 50%;display: block; width: 100%; text-align: center; } 
+
+
+@media (min-width:788px) and (max-width:1200px){
+
+
+.wish_list_wrap{width:100%;padding :20px 0px;border-top: 1px solid #ddd;}
+.wish_list_wrap:last-child{ border-bottom: 1px solid #ddd;}
+
+.ckeck_box{ float: left; width: 5%; display: flex;align-items: center;justify-content: center;}
+
+.wish_list{ display: flex; flex-wrap: wrap;}
+.wish_item_img{width: 20%;}
+
+.wish_item_text{  width: 70%; position: relative;}
+.wish_text_box{ position: absolute; top: 50%; left: 3%; transform: translateY(-50%); width: 100%;}
+.wish_item_text p{ display: inline;}
+.wish_item_name{ width: 75%; font-size: 1.2em; line-height: 1.8em;}
+.wish_item_name span{ font-size: .8em; }
+.wish_tiem_price{ float: right;}
+
+.wish_btn_box{  width: 100%; display: flex; flex-direction: row-reverse; justify-content: flex-end; padding-top: 15px;}
+.wish_btn_box a{  width: 50px;  margin:0 0 5px 0%;  }
+.wish_btn_box a:nth-child(2){ margin: 0 60% 5px 10px}
+
+.wish_bottom_box{ padding-top: 10px; display: flex; justify-content: space-between;}
+.wish_bottom_box a{ padding: 5px 10px; border: 1px solid #d3d3d3;  }
+
+.wish_left_text{  display: inline-block;padding-top: .5em;}
+.wish_right{ width: 100%; }
+.wish_right a{margin-top: 20px; width: 100%; font-weight: 500; font-size: 1.2em; margin-left: 0%;display: block; text-align: center; box-sizing: border-box;} 
+  }
+
+
+  @media (max-width:787px){
+  #wish_area{ width: 95% ;}    
+.wish_list_wrap{width:100%;padding :20px 0px;border-top: 1px solid #ddd;}
+.cart_area .wish_list_wrap{padding :30px 0px 20px; }
+.wish_list_wrap:last-child{ border-bottom: 1px solid #ddd;}
+
+.ckeck_box{ float: left; width: 5%; display: flex;align-items: center;justify-content: center;}
+
+.wish_list{ display: flex; flex-wrap: wrap;}
+.wish_item_img{width: 20%;}
+
+.wish_item_text{  width: 70%; position: relative;}
+.wish_text_box{ position: absolute; top: 50%; left: 3%; transform: translateY(-50%); width: 100%;}
+.wish_item_text p{ display: inline-block;}
+.wish_item_name{ width: 100%; font-size: 1em; line-height: 1.3em; }
+.wish_item_name span{ font-size: .8em; line-height: 1.2em;}
+.wish_tiem_price{ margin-top: 3%;}
+.oo{width: 60px; font-size: 1.1em;padding-right: .3em;}
+.wish_tiem_price span{ padding-top: .2em;}
+.wish_btn_box{  width: 100%; display: flex; flex-direction: row-reverse; justify-content: center; padding-top: 35px;}
+.wish_btn_box a{  width: 50px;  margin:0 7px 5px 7px;  }
+
+
+.wish_bottom_box{ padding-top: 10px; flex-wrap: wrap; }
+.wish_bottom_box a{ padding: 5px 10px; border: 1px solid #d3d3d3;  }
+
+.wish_left_text{  display: inline-block;padding-top: .5em;}
+.wish_right{ width: 100%; }
+.wish_right a{margin-top: 20px; width: 100%; font-weight: 500; font-size: 1.2em; margin-left: 0%;display: block; text-align: center; box-sizing: border-box;} 
+  }
+
+.top-bb{ height: 30vh;}
+
+  /* wish-modal */
+#wish_modal{font-size:  .8em;}
+#wish_modal .o_list_box{width: 100%;}
+#wish_modal .o_list_box2{width: 50%;}
+#wish_modal .o_list_name{width: 80%;}
+.w_modal_price_box{ width: 20%;}
+#wish_modal .o_item_price{ width: 50%;}
+.o_list_sum_box{ width: 50%; margin-left: 20%;}
+#wish_modal .o_list_sum{width: 80%;}
+#wish_modal .w_modal_img { width: 30%; margin: 0 0;}
+#wish_modal h3{ padding-bottom: 20px;}
+.W_modal_item{display: flex; margin-bottom: 20px;}
+#wish_modal .scroll_box{ height: 120px; overflow-y: scroll;}
+
+
+
+
+.w_modal_bg{ width: 100%; height: 100vh; background: rgba(100,100,100,.5); position: fixed; top:0; display: none; }
+.wish_modal_wrap{ width: 30%; height: 100vh; background: #fff; position: fixed; top:0; right: -30%; z-index: 999; padding: 50px 20px; display: none;}
+.w_modal_close_btn{ position: absolute; top: 10px; right: 10px;}
+.w_modal_name{ font-weight: 600;}
+.w_modal_close_btn{ position: absolute; top: 10px; right: 15px; width: 25px; cursor: pointer;}
+.w_modal_close_btn img{ width: 100%;}
+
+@media (min-width:788px) and (max-width:1200px){
+
+  .w_modal_price_box{ width: 18%; margin-left: 2%;}
+  #wish_modal .o_item_price{ width: 70%;}
+  .o_list_sum_box{ width: 50%; margin-left: 20%;}
+
+
+  .wish_modal_wrap{ width: 50%;}
+  .w_modal_close_btn{ position: absolute; top: 10px; right: 10px;}
+}
+
+
+
+@media (max-width:787px){
+  .w_modal_price_box{ width: 18%; margin-left: 2%;}
+  #wish_modal .o_item_price{ width: 70%;}
+  .o_list_sum_box{ width: 50%; margin-left: 20%;}
+  .wish_modal_wrap{ width: 100%; padding: 30px 20px; box-sizing: border-box;}
+  #wish_modal .o_size{padding: 3px 10px;}
+  #wish_modal .o_size_box p{ width: 40%;}
+  #wish_modal .scroll_box{ height: 70px; overflow-y: scroll;}
+}
+

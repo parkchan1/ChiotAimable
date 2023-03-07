@@ -1,0 +1,49 @@
+.log-title{ text-align: center; margin-bottom: 3%; font-size: 2em;}
+
+/* log-in */
+#log-wrap{margin: 20% auto;}
+.login-box{display: flex; }
+.login-box ul{ width: 50%; text-align: center;}
+
+.log-left-box{ margin-top: .5em;}
+.log-left-box input{ display:block; width: 60%; margin: 0 auto 2%; padding: 15px 10px; border: 1px solid #252525; font-size:1em;}
+.log-left-box input::placeholder{font-size: .8em;}
+
+.log-btn{ background-color: #6b5b95; font-weight: 600; color: #f6eff7;}
+.log-btn:hover{ background-color: #DC0239;}
+
+.sns-log h3{ padding: 3% 0;}
+.sns-log embed{width: 10%; margin: 0 2%;}
+
+.log-right-box::before{ display: block; content: ""; width: 1px; height: 70%; border-left: 1px solid #ddd; float: left; transform: translateY(15%);}
+.log-right-box li{ text-align: left; width: 60%; margin: 0 auto;}
+.log-right-box li a{ display: block;  border:1px solid #252525; padding: 15px 10px; text-align: center; font-weight: 600; color: #6b5b95;}
+.log-right-box li a:hover{ background-color: #6b5b95; color: #f6eff7;}
+.log-right-box h3{ font-weight: 400; margin: 12px  0; }
+.join-us-box h3{ margin-top: 0px;}
+
+@media (max-width:787px){
+    #log-wrap{margin: 20% auto;}
+    .login-box{flex-wrap: wrap; }
+    .login-box ul{ width: 98%; margin: 0 1%;}
+
+    .log-left-box{ margin-top: .5em;}
+    .log-left-box input{width: 90%; margin: 0 auto 2%; padding: 15px 10px; border: 1px solid #252525; font-size:1em;}
+    .log-left-box input::placeholder{font-size: .8em;}
+
+    .log-btn{ background-color: #6b5b95; font-weight: 600; color: #f6eff7;}
+    .log-btn:hover{ background-color: #DC0239;}
+
+    .sns-log embed{width: 18%;}
+
+    .log-right-box::before{ display: none; }
+    .log-right-box li{ text-align: left; width: 90%; }
+    .log-right-box li a{ display: block;  border:1px solid #252525; padding: 15px 10px; text-align: center; font-weight: 600;}
+    .log-right-box li a:hover{ background-color: #6b5b95; color: #f6eff7;}
+    .log-right-box h3{ font-weight: 400; margin: 12px  0; }
+    .join-us-box h3{ margin-top: 0px;}
+}
+
+
+
+/* log-in end*/

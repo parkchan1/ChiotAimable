@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW</title>
+    <link rel="stylesheet" href="../../css/mypage.css">
+    <link rel="stylesheet" href="../../css/order_list.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel='stylesheet' href="../../css/swipers.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+
+    <link rel="stylesheet" href="../../css/mypage.css">
+</head>
+<body>
+     
+<header>
+    <div class="header-bg"></div>
+    <h1 class="logo">
+        <a href="../../index.html">
+            <img src="../../icon/n_logo2.svg" alt="logo" class="pc-logo">
+        </a>
+    </h1>
+
+    <div class="header_inner">
+        <nav class="pc-nav-wrap">
+            <ul class="pc_nav">
+                <li><a href="#">DRESS</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="#">Top</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a>
+                </li>
+                <li><a href="#">COMMUNITY</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="../community/notice.html">Notice</a></li>
+                        <li><a href="../community/faq.html">FAQ</a></li>
+                        <li><a href="../community/review.html">Review</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <div class="log-box">
+        <a href="../../mypage/login.html">
+            <img src="../../icon/my.svg" alt="로그인" href="/mypage/login.html">
+        </a>      
+        <a href="../../mypage/join.html">
+            <img src="../../icon/join.svg" alt="회원가입" href="/mypage/join.html">
+        </a>  
+    </div>
+    <div class="log-box">
+        <!-- <p class='user-hello'> <b><?=$user_name?></b>  님 안녕하세요. </p> -->
+        <!-- <a  class="logout-btn" href="/bbs/logout.html"> 로</a> -->
+        <a href="../mypage/mypage.html">
+                <img src="../../icon/my.svg" alt="마이페이지" href="/mypage/mypage.html">
+
+        </a>
+        <a href="wishlist.html">
+                <img src="../../icon/wish_before.svg" alt="찜목록">
+        </a>
+        <a href="../../mypage/cart.html">
+                <img src="../../icon/cart.svg" alt="장바구니">
+        </a>
+    </div>
+<div class="m-nav-wrap">
+    <div class="m-menu_btn">
+        <img src="../../icon/m_menu.png" alt="메뉴">
+    </div>
+    
+    <div class="m-menu_bg"></div>
+    
+    <div class="sidebar_menu">
+        <h2 class="m-title">
+            <a href="../../index.html">
+                <img src="../../images/m-logo.png" alt="모바일로고">
+            </a>    
+        </h2>
+        <div class="close_btn">
+            <img src="../../icon/m_close.png" alt="닫기">
+        </div>
+        <p class='user-hello'> <b>회원이름</b> 님 안녕하세요. </p>
+        <div class="m-log-box">
+        <a href="../../mypage/login.html" class="login-btn"> 로그인</a>    
+        <a href="../../mypage/join.html" class="join-btn"> 회원가입</a>
+        <a href="../../mypage/my_infochange.html">정보수정</a>
+        </div>
+        <ul class="menu_wrap">
+            <li class="m-sub-btn"><a href="#">DRESS <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="#">TOP</a></li>
+                </ul>
+            </li>
+            <li class="m-sub-btn">
+                <a href="#">ABOUT 
+                    <span class="mobile-btn-1"></span>
+                </a>
+            </li>
+            <li class="m-sub-btn"><a href="#">COMMUNITY <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="../community/notice.html">Notice</a></li>
+                    <li><a href="../community/faq.html">FAQ</a></li>
+                    <li><a href="../community/review.html">Review</a></li>
+                </ul> 
+            </li>
+        </ul>
+
+        <ul class="m-info-wrap">
+            <li><a href="../../mypage/cart.html">
+                <img src="../../icon/m_cart.png" alt="장바구니">
+                <p>장바구니</p>
+            </a></li>
+            <li><a href="../../mypage/order_list.html">
+                <img src="../../icon/order.png" alt="주문조회">
+                <p>주문조회</p>
+            </a></li>
+            <li><a href="wishlist.html">
+                <img src="../../icon/m_wish.png" alt="위시리스트">
+                <p>위시리시트</p>
+            </a></li>
+            <li><a href="../../mypage/mypage.html">
+                <img src="../../icon/m_my.png" alt="마이페이지">
+                <p>마이페이지</p>
+            </a></li>
+        </ul>
+
+    </div>
+
+    </div>
+</header>
+<!-- contents -->
+
+<div class="top"></div>
+
+<main>
+    <section class="inner">
+        <div class="my_left_nav  my_left">
+            <div class="my_id inc_left_top" >
+
+                <div class="my_img">
+                    <a href="mypage.html">
+                        <img src="../../icon/m_my.png" alt="user">
+                    </a>
+                </div>
+                <div class="my_name_wrap">
+                    <p class="my_name">안녕하세요. 고객이름님</p>
+                    <p>총 적립금 </p> 
+                    <p><span> 2,700</span> 점</p>
+                </div>
+            </div>
+            
+            <ul class="my_nav">
+            
+                <li><a href="order_list.html">주문내역 조회</a></li>
+                <li><a href="accumulated_info.html">적립금내역 조회</a></li>
+                <li><a href="wishlist.html">나의 관심상품</a></li>
+                <li><a href="my_board.html">나의 게시글</a></li>
+                <li><a href="inquire.html">취소/환불/교환 문의</a></li>
+                <li><a href="my_infochange.html">회원정보수정</a></li>
+                <li><a href="logout.html">로그아웃</a></li>
+                
+            </ul>
+        </div>
+    
+        <div class="mainCon">
+            <h2 class="my_change_title"><span  onclick = "history.back(-1)" class="title_back"></span> 회원정보 수정</h2>
+            <div class="registerBox">
+            <form action="member_modify.php" method="post" id="modify">
+                <input type="hidden" name="user_name" value="register">
+                <ul id="my_user_info">
+                    <li class="user_name">
+                        <h4 class="user_left">이름</h4>
+                        <p><span id=user_name  tabindex="0">회원이름</span></p>
+                    </li>
+                    <li class="user_email">
+                        <h4 class="user_left">이메일</h4>
+                        <p class="user_right"><span id=id  tabindex="0">
+                            aaaa1233@naver.com
+                        </span></p>
+                    </li>
+                    <li class="user_password_change">
+                        <h4 class="user_left">비밀번호</h4>
+                        <p class="user_right">
+                            <button type="button" name="pass1" value = "비밀번호 변경" onclick ="pass_change();" class="password_change_btn">비밀번호 변경</button>
+                        </p>
+                    </li>
+                    <script>
+                        function pass_change(){
+                            location.href  = "pass_change.php";
+                            
+                        }    
+                    </script>
+                    <li class="user_tell">
+                        <h4 class="user_left">전화번호</h4>
+                        <p class="user_right">
+                            <input type="text" id = "hp" name="hp" placeholder="010-1234-5678" value="010-1234-5678">
+                            
+                        </p>
+                    </li>
+
+                    <li class="user_address">
+                        <h4 class="user_left">주소</h4>
+                        <div class="address_box user_right">
+                            <p >
+                                <input type="text" id="sample2_postcode" name = "zipcode" placeholder="우편번호" value="<?=$zipcode?>" onclick="sample2_execDaumPostcode()" readonly>
+                                <button type="button" onclick="sample2_execDaumPostcode()" value="우편번호 찾기" class="address_search_btn">우편번호 찾기</button>
+                                <input type="text" id="sample2_address" name ="address_road" placeholder="주소" value="<?=$address_road?>" onclick="sample2_execDaumPostcode()"readonly>
+                                <input type="text" id="sample2_detailAddress" name = "address_detail" placeholder="상세주소" value="<?=$address_detail?>">
+                            </p>
+
+                            
+                        
+
+                            <div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
+                                <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="user_withdraw">
+                        <h4 class="user_left">회원탈퇴</h4>
+                        <a id="profile-withdraw-btn" style="cursor:pointer;" class="user_right" >회원탈퇴</a>
+                            <!-- <input type = "button" value = "회원탈퇴" onclick = "profile-withdraw-btn()"> -->
+                    </li>
+                    <li class="user_change_btn">
+                        
+                            <button type="button" id = "modify_btn" value="변경" onclick = "modify_btn()" class="button">변경</button>
+
+
+                            <button type="button" value="취소" onclick = "history.back(-1)" class="button">취소</button>
+                    </li>
+                    
+                </ul>
+            </form>
+            </div>
+        </div>
+       
+    </section>
+
+</main>
+
+
+
+
+<!-- footer -->
+<footer>
+    <div class="footer-inner">
+      <dl class="f-company">
+        <dt>Chiot Aimable</dt>
+        <dd>대표명 : 오유림</dd>
+        <dd>사업자 등록번호 : 778-88-08040</dd>
+      </dl>
+  
+      <dl class="f-notice">
+        <dt>Notice</dt>
+        <dd><a href="../community/notice.html">공지사항</a></dd>
+        <dd><a href="../community/faq.html">FAQ</a></dd>
+        <dd><a href="#">교환 / 반품 안내</a></dd>
+        <dd><a href="#">이용약관</a></dd>
+        <dd><a href="#">개인정보처리방침</a></dd>
+      </dl>
+  
+      <dl class="f-csinfo">
+        <dt>CS Info</dt>
+        <dd><a href="tel:1668-4516">1668-4516</a></dd>
+        <dd>업무시간 : 9:00AM - 6:00PM</dd>
+        <dd>점심시간 : 12:00PM - 1:00PM</dd>
+        <dd>기업은행 : 886-1250-5411-51</dd>
+        <dd>예금주 : (주)쑈 떼마블</dd>
+      </dl>
+      <ul class="f-sns">
+        <li>intagram</li>
+        <li>kakao</li>
+      </ul>
+    </div>
+    <div class="f-bottom">
+      <p>(주)티카타카 부산광역시 해운대구 센텀북대로60 914호(재송동, 센텀아이에스타워) E-mail : tcartacar@gamil.com</p>
+      <p>(C) 2022 ChiotAimable. ALL RIGHTS RESERVED. DESIGN BY CHaChan</p>
+    </div>
+  
+  
+  
+  </footer>
+<!-- 탈퇴 Modla -->
+
+<div class="withdraw-modal-wrap">
+    
+    <div class="withdraw-modal-bg"></div>
+    <div class="withdraw-modal ">
+        <div class="modal-header">
+            <h1>회원탈퇴</h1>
+            <a class="modal-close">X</a>
+        </div>
+
+        <div class="withdraw-text-wrap">
+            <p class="withdraw-text">정말로 탈퇴하시겠습니까?</p>
+            <p class="withdraw-text">탈퇴후 3개월간 사용하신 아이디는 사용하지 못합니다.</p>
+        </div>
+        <div class="modal_input_box">
+
+            <p class="withdraw-password ">
+                <label for="withdrawPassword">비밀번호*</label>
+                <input type="password" minlength="8" placeholder="비밀번호를 입력해주세요." id="pass1" style="border:1px solid #EAEAEA;"> <!--  <span>비밀번호를 입력해주세요.</span>-->
+            </p>
+
+        </div>
+
+        <button class="change-ok" id="un_reg_mem" >회원탈퇴</button>
+    </div>
+</div>
+  
+</body>
+</html>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/style.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    // 우편번호 찾기 화면을 넣을 element
+    var element_layer = document.getElementById('layer');
+
+    function closeDaumPostcode() {
+        // iframe을 넣은 element를 안보이게 한다.
+        element_layer.style.display = 'none';
+    }
+
+    function sample2_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    }
+                    // 조합된 참고항목을 해당 필드에 넣는다.
+                    //document.getElementById("sample2_extraAddress").value = extraAddr;
+                
+                } /*else {
+                    document.getElementById("sample2_extraAddress").value = '';
+                }*/
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('sample2_postcode').value = data.zonecode;
+                document.getElementById("sample2_address").value = addr;
+                // 커서를 상세주소 필드로 이동한다.
+                document.getElementById("sample2_detailAddress").focus();
+
+                // iframe을 넣은 element를 안보이게 한다.
+                // (autoClose:false 기능을 이용한다면, 아래 코드를 제거해야 화면에서 사라지지 않는다.)
+                element_layer.style.display = 'none';
+            },
+            width : '100%',
+            height : '100%',
+            maxSuggestItems : 5
+        }).embed(element_layer);
+
+        // iframe을 넣은 element를 보이게 한다.
+        element_layer.style.display = 'block';
+
+        // iframe을 넣은 element의 위치를 화면의 가운데로 이동시킨다.
+        initLayerPosition();
+    }
+
+    // 브라우저의 크기 변경에 따라 레이어를 가운데로 이동시키고자 하실때에는
+    // resize이벤트나, orientationchange이벤트를 이용하여 값이 변경될때마다 아래 함수를 실행 시켜 주시거나,
+    // 직접 element_layer의 top,left값을 수정해 주시면 됩니다.
+    function initLayerPosition(){
+        var width = 350; //우편번호서비스가 들어갈 element의 width
+        var height = 400; //우편번호서비스가 들어갈 element의 height
+        var borderWidth = 5; //샘플에서 사용하는 border의 두께
+
+        // 위에서 선언한 값들을 실제 element에 넣는다.
+        element_layer.style.width = width + 'px';
+        element_layer.style.height = height + 'px';
+        element_layer.style.border = borderWidth + 'px solid';
+        // 실행되는 순간의 화면 너비와 높이 값을 가져와서 중앙에 뜰 수 있도록 위치를 계산한다.
+        element_layer.style.left = (((window.innerWidth || document.documentElement.clientWidth) - width)/2 - borderWidth) + 'px';
+        element_layer.style.top = (((window.innerHeight || document.documentElement.clientHeight) - height)/2 - borderWidth) + 'px';
+    }
+
+
+
+    $(document).ready(function(){
+        $('#profile-withdraw-btn').on('click', function(){
+        $('.withdraw-modal').show(); 
+        $('.withdraw-modal-bg').show(); 
+        $('html, body').addClass('modal-hide');
+        $('.withdraw-modal-wrap').css({
+            "top":(($(window).height()-$('.withdraw-modal-wrap').outerHeight())/2+
+            $(window).scrollTop())+"px"
+        });
+    });
+
+        $('.modal-close').on('click', function(){
+        $('.business-modal-wrap, .password-modal-wrap, .withdraw-modal-wrap').hide(); 
+        $('html, body').removeClass('modal-hide')  
+    });
+});
+
+
+// 비밀번호 변경
+
+function pass_change(){
+    location.href  = "pass_change.html";
+    }    
+</script>

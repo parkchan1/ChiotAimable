@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW</title>
+    <link rel="stylesheet" href="../../css/mypage.css">
+    <link rel="stylesheet" href="../../css/order_list.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel='stylesheet' href="../../css/swipers.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+
+    <link rel="stylesheet" href="../../css/wish.css">
+</head>
+<body>
+     
+<header>
+    <div class="header-bg"></div>
+    <h1 class="logo">
+        <a href="../../index.html">
+            <img src="../../icon/n_logo2.svg" alt="logo" class="pc-logo">
+        </a>
+    </h1>
+
+    <div class="header_inner">
+        <nav class="pc-nav-wrap">
+            <ul class="pc_nav">
+                <li><a href="#">DRESS</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="#">Top</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a>
+                </li>
+                <li><a href="#">COMMUNITY</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="../community/notice.html">Notice</a></li>
+                        <li><a href="../community/faq.html">FAQ</a></li>
+                        <li><a href="../community/review.html">Review</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <div class="log-box">
+        <a href="../../mypage/login.html">
+            <img src="../../icon/my.svg" alt="로그인" href="/mypage/login.html">
+        </a>      
+        <a href="../../mypage/join.html">
+            <img src="../../icon/join.svg" alt="회원가입" href="/mypage/join.html">
+        </a>  
+    </div>
+    <div class="log-box">
+        <!-- <p class='user-hello'> <b><?=$user_name?></b>  님 안녕하세요. </p> -->
+        <!-- <a  class="logout-btn" href="/bbs/logout.html"> 로</a> -->
+        <a href="../mypage/mypage.html">
+                <img src="../../icon/my.svg" alt="마이페이지" href="../mypage/mypage.html">
+
+        </a>
+        <a href="wishlist.html">
+                <img src="../../icon/wish_before.svg" alt="찜목록">
+        </a>
+        <a href="../../mypage/cart.html">
+                <img src="../../icon/cart.svg" alt="장바구니">
+        </a>
+    </div>
+<div class="m-nav-wrap">
+    <div class="m-menu_btn">
+        <img src="../../icon/m_menu.png" alt="메뉴">
+    </div>
+    
+    <div class="m-menu_bg"></div>
+    
+    <div class="sidebar_menu">
+        <h2 class="m-title">
+            <a href="../../index.html">
+                <img src="../../images/m-logo.png" alt="모바일로고">
+            </a>    
+        </h2>
+        <div class="close_btn">
+            <img src="../../icon/m_close.png" alt="닫기">
+        </div>
+        <p class='user-hello'> <b>회원이름</b> 님 안녕하세요. </p>
+        <div class="m-log-box">
+        <a href="../../mypage/login.html" class="login-btn"> 로그인</a>    
+        <a href="../../mypage/join.html" class="join-btn"> 회원가입</a>
+        <a href="../../mypage/my_infochange.html">정보수정</a>
+        </div>
+        <ul class="menu_wrap">
+            <li class="m-sub-btn"><a href="#">DRESS <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="#">TOP</a></li>
+                </ul>
+            </li>
+            <li class="m-sub-btn">
+                <a href="#">ABOUT 
+                    <span class="mobile-btn-1"></span>
+                </a>
+            </li>
+            <li class="m-sub-btn"><a href="#">COMMUNITY <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="../community/notice.html">Notice</a></li>
+                    <li><a href="../community/faq.html">FAQ</a></li>
+                    <li><a href="../community/review.html">Review</a></li>
+                </ul> 
+            </li>
+        </ul>
+
+        <ul class="m-info-wrap">
+            <li><a href="../../mypage/cart.html">
+                <img src="../../icon/m_cart.png" alt="장바구니">
+                <p>장바구니</p>
+            </a></li>
+            <li><a href="../../mypage/order_list.html">
+                <img src="../../icon/order.png" alt="주문조회">
+                <p>주문조회</p>
+            </a></li>
+            <li><a href="wishlist.html">
+                <img src="../../icon/m_wish.png" alt="위시리스트">
+                <p>위시리시트</p>
+            </a></li>
+            <li><a href="../../mypage/mypage.html">
+                <img src="../../icon/m_my.png" alt="마이페이지">
+                <p>마이페이지</p>
+            </a></li>
+        </ul>
+
+    </div>
+
+    </div>
+</header>
+<!-- contents -->
+
+<div class="top"></div>
+
+
+<section class="inner wish">
+   <h1 class="title"> <span  onclick = "history.back(-1)" class="title_back"></span>My Wish List</h1>
+   
+   <ul id="wish_area">
+
+    <!-- <input type="checkbox" id="all_ck"> -->
+
+
+    <li class="wish_list_wrap">
+
+    <a href="/product/detail.php"></a>
+
+
+
+    <div class="wish_list">
+        
+        <div class="wish_item_img">
+            <img src="../../images/dog3-1.jpg" style = "width:100%;">
+        </div>
+
+        <div class="wish_item_text">
+            <div class="wish_text_box">
+                <p class="wish_item_name">상품이름<br>
+                    <span>간단내용설명</span>
+                </p>
+
+                <p class="wish_tiem_price">
+                    25,000원
+                </p>
+            </div>
+
+        </div>
+
+        <div  class="wish_btn_box">
+
+                <a class="w_modal_btn button" style="cursor:pointer;" onclick="add_wish_to_cart()">장바구니</a>
+
+                <a class="abutton button" style="cursor:pointer;" onclick="wishlist_remove_item_each();">삭제</a>
+
+        </div>
+
+    </div>
+
+    </li>
+
+    </ul>
+
+<ul class="wish_bottom_box inner">
+<li class=" wish_right">
+    <a style="cursor:pointer;" onclick="wishlist_remove_item_all();">전체삭제</a>
+</li>
+</ul>
+
+
+</section>
+<!-- footer -->
+<footer>
+    <div class="footer-inner">
+      <dl class="f-company">
+        <dt>Chiot Aimable</dt>
+        <dd>대표명 : 오유림</dd>
+        <dd>사업자 등록번호 : 778-88-08040</dd>
+      </dl>
+  
+      <dl class="f-notice">
+        <dt>Notice</dt>
+        <dd><a href="../community/notice.html">공지사항</a></dd>
+        <dd><a href="../community/faq.html">FAQ</a></dd>
+        <dd><a href="#">교환 / 반품 안내</a></dd>
+        <dd><a href="#">이용약관</a></dd>
+        <dd><a href="#">개인정보처리방침</a></dd>
+      </dl>
+  
+      <dl class="f-csinfo">
+        <dt>CS Info</dt>
+        <dd><a href="tel:1668-4516">1668-4516</a></dd>
+        <dd>업무시간 : 9:00AM - 6:00PM</dd>
+        <dd>점심시간 : 12:00PM - 1:00PM</dd>
+        <dd>기업은행 : 886-1250-5411-51</dd>
+        <dd>예금주 : (주)쑈 떼마블</dd>
+      </dl>
+      <ul class="f-sns">
+        <li>intagram</li>
+        <li>kakao</li>
+      </ul>
+    </div>
+    <div class="f-bottom">
+      <p>(주)티카타카 부산광역시 해운대구 센텀북대로60 914호(재송동, 센텀아이에스타워) E-mail : tcartacar@gamil.com</p>
+      <p>(C) 2022 ChiotAimable. ALL RIGHTS RESERVED. DESIGN BY CHaChan</p>
+    </div>
+  
+  
+  
+  </footer>
+
+  <!-- wish modal -->
+
+  <div id="wish_modal">
+    <div class="w_modal_bg"></div>
+    <div class="wish_modal_wrap">
+        <div class="w_modal_close_btn">
+            <img src="../../icon/m_close.png" alt="닫힘">
+        </div>
+        <h3>옵션선택</h3>
+        <div class="W_modal_item">
+            <div class="w_modal_img wish_item_img">
+                <img id="pop_img" src="../../images/dog1.jpg" alt="이미지">
+            </div>
+            <p class="w_modal_name" id="c_modal_name">
+                상품이름
+            </p>
+        </div>
+        <div class="w_modal_option" >
+
+        <form id="medal_info" method="post">
+
+            <input type="hidden" id="pass_p_num" name="pass_p_num" value="" style="border: 1px solid red; " >
+            <input type="hidden" id="pass_p_name" name="pass_p_name" value="" style="border: 1px solid red; " >
+            <input type="hidden" id="pass_p_price" name="pass_p_price" value="" style="border: 1px solid red; " >
+            <input type="hidden" id="opts" name="pass_medal_opts[]" style="border: 1px solid red; " >
+
+        </form>
+        
+            <li class="o_size_box">
+                <p> 반려견이름 - </p>
+                <input type="text" id="dog_name" value="까루" placeholder="반려견의 이름을 입력해주세요." class="o_size">
+            </li>
+
+            <li class="o_size_box">
+                <p> 목둘레 - </p>
+                <input type="text" id="dog_nack_length" value="22" placeholder="착용할 반려견 목둘레(여유분'미포함')을 입력해주세요." class="o_size">
+            </li>
+
+            <li class="o_size_box">
+                <p> 제작사이즈 - </p>
+                <input type="text" id="nack_size_text" value="24" placeholder="원하시는 사이즈(여유분'포함')을 입력해주세요." class="o_size">
+            </li>
+            
+            <li class="o_size_box">
+                <p>반려견 정보 -</p>
+                <input type="text" id="dog_info" value="요키,5키로,9살" placeholder="견종,체중,나이를 입력해주세요." class="o_size">
+            </li>
+
+            <li class="o_size_box1 o_size_box">
+                <p>SIZE - </p>
+                <select id="o_size" name="o_size" class="o_size" >
+                    <option value="">필수선택</option>
+                </select>
+                <input type="hidden" id="cnt_size" style="border: 1px solid blue; width:40px; " value="1">
+
+                <input type="hidden" id="tmp_size" style="border: 1px solid red; " >
+                <input type="hidden" id="tmp_price" style="border: 1px solid red; " >
+
+            </li>
+
+            <li class="o_size_box2" id=""carve_div >
+                <div class="o_size_box">
+                    <p>각인 - </p>
+                    <select id="o_carve" name="o_carve" class="o_size" >
+                        <option value="">필수선택</option>
+                    </select>
+
+                    <input type="hidden" id="cnt_carve" style="border: 1px solid blue; width:40px; " value="">
+
+                    <input type="hidden" id="tmp_carve_name" style="border: 1px solid red; " >
+                    <input type="hidden" id="tmp_carve_price" value="0" style="border: 1px solid red; " >
+
+                </div>
+            </li>
+            
+            <li class="o_size_box3 " id="back_text_div" >
+                <div class="o_size_box">
+                    <p>뒷면 각인 - </p>
+                    <select id="o_add_back_text" name="o_add_back_text" class="o_size" >
+                    </select>
+
+                    <input type="hidden" id="cnt_back_text" style="border: 1px solid blue; width:40px; " value="">
+
+                    <input type="hidden" id="tmp_back_albe" style="border: 1px solid red; " >
+                    <input type="hidden" id="tmp_back_price" value="0" style="border: 1px solid red; " >
+
+                </div>
+            </li>
+            <li id="o_size_box4 back_text" class="o_size_box4 " >
+                <div class="o_size_box" style="color:red;">
+                <p></p>
+                    <input type="text" id="back_text" name="back_text" placeholder="뒷면 추가 글" disabled class="o_size">
+                </div>
+            </li>
+
+            <li class="o_size_box2" id="font_div" >
+                <div class="o_size_box">
+                    <p>글꼴 - </p>
+                    <select id="o_font" name="o_font" class="o_size" >
+                        <option value="">필수선택</option>
+                        <option value="<?=$array_font_info['font_name']?>" >
+                    </select>
+
+                    <input type="hidden" id="cnt_font" style="border: 1px solid blue; " >
+
+                    <input type="hidden" id="tmp_font" style="border: 1px solid red; " >
+
+                </div>
+            </li>
+
+            <li id="o_size_box5 " class="o_size_box4 ">
+            <div class="o_size_box">
+                    <p>갯수 - </p>
+                <select id="o_ea" name="o_ea" class="o_size" >
+                    <option value="">필수선택</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+            </div>
+            </li>
+
+
+
+        </div>
+
+
+        <ul id="option_area" class="scroll_box">
+            <!-- 옵션 정보 스크립트로 생성 -->
+            <li id="o_list_'+val+'" name="o_lists" class="o_list">
+                <input type="hidden" name="size" value="'+val+'">
+                <div class="o_list_box">
+                    <p class="o_list_name">
+                상품이름 - M     
+                    <span class="o_list_option"></span>    
+                    </p>    
+                </div>    
+
+                <div class="o_list_box2">    
+                    <div class="o_item_num_box">    
+                    <input type="number" id="o_item_qty_'+val+'" name="o_item_qty" style="text-align:right; " min="1" max="5" value="1" onchange="re_call_ech_sum(\''+val+'\',\''+prod_price+'\',\''+size_add_price+'\',\''+carve_price+'\',\''+back_price+'\');" >     
+                    </div>    
+                    <input type="text" id="o_list_sum_'+val+'" name="o_list_sum" class="o_list_sum" >    
+                    <p class="o_list_sum_text">원</p>    
+                    </p>    
+                    <div class="o_list_del_btn" onclick="remove_opt(\''+val+'\')" ><img src="../../icon/m_close.png" alt="닫기"></div>    
+                </div>    
+            </li>   
+        </ul>
+
+        <div id="o_total_price_box" class="o_total_price_box">
+            <p class="o_total_price">
+                    TOTAL : 
+                    <input type="text" id='total_price' style="text-align:right; padding-right:3px;" value="36,000">원
+                    <span>(<span id="total_qty">3</span>items)</span>                 
+            </p>
+        </div>
+
+        <div class="o_btn_box">
+            <a id="add_cart" style="cursor:pointer;" >ADD CART</a>
+            <a id="buy_now" style="cursor:pointer;" href="payment.html">BUY NOW</a>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/style.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+<script>
+
+
+
+
+    // wish-modal
+$(document).ready(function(){
+    $('.w_modal_btn').on('click', function(){
+        $('.w_modal_bg').show();
+        $('.wish_modal_wrap').show().animate({ 
+            right:0 
+        });
+        $('html, body').addClass('hidden');
+}); 
+
+$('.w_modal_btn1111').on('click', function(){
+});
+
+$('.w_modal_close_btn').on('click', function(){
+$('.w_modal_bg').hide(); 
+$('.wish_modal_wrap').animate({
+right: '-' + 30 + '%'
+},function(){
+$('.wish_modal_wrap').hide();          
+});
+$('html, body').removeClass('hidden')  
+});
+
+document.querySelector('.w_modal_bg').addEventListener('click', function(e){
+document.querySelector(".w_modal_close_btn").click();
+});
+
+});
+</script>

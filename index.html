@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쑈떼마블</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel='stylesheet' href="css/swipers.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    
+<header>
+    <div class="header-bg"></div>
+    <h1 class="logo">
+        <a href="index.html">
+            <img src="icon/logo.svg" alt="logo" class="pc-logo">
+        </a>
+    </h1>
+
+    <div class="header_inner">
+        <nav class="pc-nav-wrap">
+            <ul class="pc_nav">
+                <li><a href="#">DRESS</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="#">Top</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a>
+                </li>
+                <li><a href="#">COMMUNITY</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="sub/notice.html">Notice</a></li>
+                        <li><a href="sub/community/faq.html">FAQ</a></li>
+                        <li><a href="sub/review.html">Review</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <div class="log-box">
+        <a href="sub/mypage/login.html">
+            <img src="icon/my.svg" alt="로그인" href="/mypage/login.html">
+        </a>      
+        <a href="sub/mypage/join.html">
+            <img src="icon/join.svg" alt="회원가입" href="/mypage/join.html">
+        </a>  
+    </div>
+    <div class="log-box">
+        <!-- <p class='user-hello'> <b><?=$user_name?></b>  님 안녕하세요. </p> -->
+        <!-- <a  class="logout-btn" href="/bbs/logout.html"> 로</a> -->
+        <a href="sub/mypage/mypage.html">
+                <img src="icon/my.svg" alt="마이페이지" href="sub/mypage/mypage.html">
+
+        </a>
+        <a href="sub/mypage/wishlist.html">
+                <img src="icon/wish_before.svg" alt="찜목록">
+        </a>
+        <a href="sub/mypage/cart.html">
+                <img src="icon/cart.svg" alt="장바구니">
+        </a>
+    </div>
+<div class="m-nav-wrap">
+    <div class="m-menu_btn">
+        <img src="icon/m_menu.png" alt="메뉴">
+    </div>
+    
+    <div class="m-menu_bg"></div>
+    
+    <div class="sidebar_menu">
+        <h2 class="m-title">
+            <a href="index.html">
+                <img src="images/m-logo.png" alt="모바일로고">
+            </a>    
+        </h2>
+        <div class="close_btn">
+            <img src="icon/m_close.png" alt="닫기">
+        </div>
+        <p class='user-hello'> <b>회원이름</b> 님 안녕하세요. </p>
+        <div class="m-log-box">
+        <a href="sub/mypage/login.html" class="login-btn"> 로그인</a>    
+        <a href="sub/mypage/join.html" class="join-btn"> 회원가입</a>
+        <a href="sub/mypage/my_infochange.html">정보수정</a>
+        </div>
+        <ul class="menu_wrap">
+            <li class="m-sub-btn"><a href="#">DRESS <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="#">TOP</a></li>
+                </ul>
+            </li>
+            <li class="m-sub-btn">
+                <a href="#">ABOUT 
+                    <span class="mobile-btn-1"></span>
+                </a>
+            </li>
+            <li class="m-sub-btn"><a href="#">COMMUNITY <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="/sub/notice.html">Notice</a></li>
+                    <li><a href="/sub//community/faq.html">FAQ</a></li>
+                    <li><a href="/sub/review.html">Review</a></li>
+                </ul> 
+            </li>
+        </ul>
+
+        <ul class="m-info-wrap">
+            <li><a href="sub/mypage/cart.html">
+                <img src="icon/m_cart.png" alt="장바구니">
+                <p>장바구니</p>
+            </a></li>
+            <li><a href="sub/mypage/order_list.html">
+                <img src="icon/order.png" alt="주문조회">
+                <p>주문조회</p>
+            </a></li>
+            <li><a href="sub/mypage/wishlist.html">
+                <img src="icon/m_wish.png" alt="위시리스트">
+                <p>위시리시트</p>
+            </a></li>
+            <li><a href="sub/mypage/mypage.html">
+                <img src="icon/m_my.png" alt="마이페이지">
+                <p>마이페이지</p>
+            </a></li>
+        </ul>
+
+    </div>
+
+    </div>
+</header>
+
+<!-- slide -->
+<section class="main-slide slide-style">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+  
+        <div class="swiper-slide">
+          <div class="slide-inner slide-bg-image slide1_1" >
+            <div class="container">
+              <div data-swiper-parallax="300" class="slide-title">
+                <h2>신규 홈페이지 오픈</h2>
+              </div>
+              <div data-swiper-parallax="400" class="slide-text">
+                <p>Want to see your kid become more expressive?</p>
+              </div>
+              <div class="clearfix"></div>
+              <div data-swiper-parallax="500" class="slide-btns">
+                <a href="#" class="theme-btn-s2"> 지금 보러가기!</a>
+                <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i> Get Info</a>
+              </div>
+            </div>
+          </div>
+          <!-- end slide-inner -->
+        </div>
+        <!-- end swiper-slide -->
+  
+        <div class="swiper-slide">
+          <div class="slide-inner slide-bg-image slide2_1">
+            <div class="container">
+              <div data-swiper-parallax="300" class="slide-title">
+                <h2>올해의 베스트 아이템</h2>
+              </div>
+              <div data-swiper-parallax="400" class="slide-text">
+                <p>Want to see your kid become more expressive?</p>
+              </div>
+              <div class="clearfix"></div>
+              <div data-swiper-parallax="500" class="slide-btns">
+                <a href="#" class="theme-btn-s2">지금 보러가기!</a>
+                <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i>Get Info</a>
+              </div>
+            </div>
+          </div>
+          <!-- end slide-inner -->
+        </div>
+        <!-- end swiper-slide -->
+        <div class="swiper-slide">
+          <div class="slide-inner slide-bg-image slide3_1" >
+            <div class="container">
+              <div data-swiper-parallax="300" class="slide-title">
+                <h2>새로운 아이템들이 생겼습니다.</h2>
+              </div>
+              <div data-swiper-parallax="400" class="slide-text">
+                <p>Want to see your kid become more expressive?</p>
+              </div>
+              <div class="clearfix"></div>
+              <div data-swiper-parallax="500" class="slide-btns">
+                <a href="#" class="theme-btn-s2">지금 보러가기!</a>
+                <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i> Get Info</a>
+              </div>
+            </div>
+          </div>
+          <!-- end slide-inner -->
+        </div>
+  
+        <div class="swiper-slide">
+          <div class="slide-inner slide-bg-image slide4_1" >
+            <div class="container">
+              <div data-swiper-parallax="300" class="slide-title">
+                <h2>배가 고픈데 저녁을 뭘먹지요</h2>
+              </div>
+              <div data-swiper-parallax="400" class="slide-text">
+                <p>Want to see your kid become more expressive?</p>
+              </div>
+              <div class="clearfix"></div>
+              <div data-swiper-parallax="500" class="slide-btns">
+                <a href="#" class="theme-btn-s2">지금 보러가기!</a>
+                <a href="#" class="theme-btn-s3"><i class="fas fa-chevron-circle-right"></i> Get Info</a>
+              </div>
+            </div>
+          </div>
+          <!-- end slide-inner -->
+        </div>
+  
+  
+      </div>
+      <!-- end swiper-wrapper -->
+  
+      <!-- swipper controls -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+ <!-- main-contents -->
+
+
+
+ <section id="hotitem" class="inner">
+    <h1 class="main-title">
+      Weeken Item
+    </h1>
+    <ul class="grid-btn">
+      <li id="grid-1-btn">
+        <img src="icon/grid1.png" alt="1줄보기">
+      </li>
+      <li id="grid-2-btn">
+        <img src="icon/grid2.png" alt="2줄보기">
+      </li>
+      <li id="grid-3-btn">
+        <img src="icon/grid3.png" alt="3줄보기">
+      </li>
+    </ul>
+
+
+    <ul class="item-list-wrap">
+
+        <li class="item-list">
+        <div class="item-wrap">
+            <div class="item-inner-wrap">
+            <ul class="item-box">
+                <a href="sub/product/detail.html">
+                <li class="item-img-box">
+                    <div class="item-img-inner">
+                    <a href="sub/product/detail.html">
+                        <img src="images/dog1.jpg" alt="메인이미지" class="detail-img">
+                        <img src="images/dog2.jpg" alt="메인이미지" class="main-img">
+                    </a>
+                    </div>   
+                </li>
+                </a>
+                <li class="item-text-box">
+                <div class="item-text">
+                    <a href="#">
+                    <div class="item-name">
+                        <p><strong>상품이름</strong></p>
+                        <ul class="item-color">
+                        <li></li>
+                        <li></li>
+                        </ul>
+                    </div>
+                    <p class="item-simple">상품간단설명</p>
+                    </a>
+                    <div class="item-price">   
+                        <strong>36,000원</strong>
+                        <div class="item-text-info">
+                            <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                        <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                        </div>
+                    </div>
+                </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </li>
+        <li class="item-list">
+            <div class="item-wrap">
+                <div class="item-inner-wrap">
+                <ul class="item-box">
+                    <a href="sub/product/detail.html">
+                    <li class="item-img-box">
+                        <div class="item-img-inner">
+                        <a href="sub/product/detail.html">
+                            <img src="images/dog1.jpg" alt="메인이미지" class="detail-img">
+                            <img src="images/dog2.jpg" alt="메인이미지" class="main-img">
+                        </a>
+                        </div>   
+                    </li>
+                    </a>
+                    <li class="item-text-box">
+                    <div class="item-text">
+                        <a href="sub/product/detail.html">
+                        <div class="item-name">
+                            <p><strong>상품이름</strong></p>
+                            <ul class="item-color">
+                            <li></li>
+                            <li></li>
+                            </ul>
+                        </div>
+                        <p class="item-simple">상품간단설명</p>
+                        </a>
+                        <div class="item-price">   
+                            <strong>36,000원</strong>
+                            <div class="item-text-info">
+                                <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                            <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </li>
+
+
+            <li class="item-list">
+                <div class="item-wrap">
+                    <div class="item-inner-wrap">
+                    <ul class="item-box">
+                        <a href="">
+                        <li class="item-img-box">
+                            <div class="item-img-inner">
+                            <a href="/product/detail.html">
+                                <img src="images/dog1.jpg" alt="메인이미지" class="detail-img">
+                                <img src="images/dog2.jpg" alt="메인이미지" class="main-img">
+                            </a>
+                            </div>   
+                        </li>
+                        </a>
+                        <li class="item-text-box">
+                        <div class="item-text">
+                            <a href="#">
+                            <div class="item-name">
+                                <p><strong>상품이름</strong></p>
+                                <ul class="item-color">
+                                <li></li>
+                                <li></li>
+                                </ul>
+                            </div>
+                            <p class="item-simple">상품간단설명</p>
+                            </a>
+                            <div class="item-price">   
+                                <strong>36,000원</strong>
+                                <div class="item-text-info">
+                                    <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                                <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </li>
+                <li class="item-list">
+                    <div class="item-wrap">
+                        <div class="item-inner-wrap">
+                        <ul class="item-box">
+                            <a href="sub/product/detail.html">
+                            <li class="item-img-box">
+                                <div class="item-img-inner">
+                                <a href="sub/product/detail.html">
+                                    <img src="images/dog1.jpg" alt="메인이미지" class="detail-img">
+                                    <img src="images/dog2.jpg" alt="메인이미지" class="main-img">
+                                </a>
+                                </div>   
+                            </li>
+                            </a>
+                            <li class="item-text-box">
+                            <div class="item-text">
+                                <a href="sub/product/detail.html">
+                                <div class="item-name">
+                                    <p><strong>상품이름</strong></p>
+                                    <ul class="item-color">
+                                    <li></li>
+                                    <li></li>
+                                    </ul>
+                                </div>
+                                <p class="item-simple">상품간단설명</p>
+                                </a>
+                                <div class="item-price">   
+                                    <strong>36,000원</strong>
+                                    <div class="item-text-info">
+                                        <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                                    <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    </li>
+    
+                    <li class="item-list">
+                        <div class="item-wrap">
+                            <div class="item-inner-wrap">
+                            <ul class="item-box">
+                                <a href="">
+                                <li class="item-img-box">
+                                    <div class="item-img-inner">
+                                    <a href="/product/detail.html">
+                                        <img src="images/dog1.jpg" alt="메인이미지" class="detail-img">
+                                        <img src="images/dog2.jpg" alt="메인이미지" class="main-img">
+                                    </a>
+                                    </div>   
+                                </li>
+                                </a>
+                                <li class="item-text-box">
+                                <div class="item-text">
+                                    <a href="#">
+                                    <div class="item-name">
+                                        <p><strong>상품이름</strong></p>
+                                        <ul class="item-color">
+                                        <li></li>
+                                        <li></li>
+                                        </ul>
+                                    </div>
+                                    <p class="item-simple">상품간단설명</p>
+                                    </a>
+                                    <div class="item-price">   
+                                        <strong>36,000원</strong>
+                                        <div class="item-text-info">
+                                            <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                                        <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                        </li>
+                        <li class="item-list">
+                            <div class="item-wrap">
+                                <div class="item-inner-wrap">
+                                <ul class="item-box">
+                                    <a href="sub/product/detail.html">
+                                    <li class="item-img-box">
+                                        <div class="item-img-inner">
+                                        <a href="sub/product/detail.html">
+                                            <img src="images/dog1.jpg" alt="메인이미지" class="detail-img">
+                                            <img src="images/dog2.jpg" alt="메인이미지" class="main-img">
+                                        </a>
+                                        </div>   
+                                    </li>
+                                    </a>
+                                    <li class="item-text-box">
+                                    <div class="item-text">
+                                        <a href="sub/product/detail.html">
+                                        <div class="item-name">
+                                            <p><strong>상품이름</strong></p>
+                                            <ul class="item-color">
+                                            <li></li>
+                                            <li></li>
+                                            </ul>
+                                        </div>
+                                        <p class="item-simple">상품간단설명</p>
+                                        </a>
+                                        <div class="item-price">   
+                                            <strong>36,000원</strong>
+                                            <div class="item-text-info">
+                                                <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                                            <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                            </li>
+                                
+                            
+    </ul>
+  </section>
+
+
+
+<!-- footer -->
+<footer>
+    <div class="footer-inner">
+      <dl class="f-company">
+        <dt>Chiot Aimable</dt>
+        <dd>대표명 : 오유림</dd>
+        <dd>사업자 등록번호 : 778-88-08040</dd>
+      </dl>
+  
+      <dl class="f-notice">
+        <dt>Notice</dt>
+        <dd><a href="/sub/notice.html">공지사항</a></dd>
+        <dd><a href="/sub/community/faq.html">FAQ</a></dd>
+        <dd><a href="#">교환 / 반품 안내</a></dd>
+        <dd><a href="#">이용약관</a></dd>
+        <dd><a href="#">개인정보처리방침</a></dd>
+      </dl>
+  
+      <dl class="f-csinfo">
+        <dt>CS Info</dt>
+        <dd><a href="tel:1668-4516">1668-4516</a></dd>
+        <dd>업무시간 : 9:00AM - 6:00PM</dd>
+        <dd>점심시간 : 12:00PM - 1:00PM</dd>
+        <dd>기업은행 : 886-1250-5411-51</dd>
+        <dd>예금주 : (주)쑈 떼마블</dd>
+      </dl>
+      <ul class="f-sns">
+        <li>intagram</li>
+        <li>kakao</li>
+      </ul>
+    </div>
+    <div class="f-bottom">
+      <p>(주)티카타카 부산광역시 해운대구 센텀북대로60 914호(재송동, 센텀아이에스타워) E-mail : tcartacar@gamil.com</p>
+      <p>(C) 2022 ChiotAimable. ALL RIGHTS RESERVED. DESIGN BY CHaChan</p>
+    </div>
+  
+  
+  
+  </footer>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/style.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+
+<!-- Initialize Swiper -->
+<script>
+    var menu = [];
+    jQuery('.swiper-slide').each( function(index){
+        menu.push( jQuery(this).find('.slide-inner').attr("data-text") );
+    });
+    var interleaveOffset = 0.5;
+    var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        parallax: true,
+        autoplay: {
+            delay: 6500,
+            disableOnInteraction: false,
+        },
+        watchSlidesProgress: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        on: {
+            progress: function() {
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    var slideProgress = swiper.slides[i].progress;
+                    var innerOffset = swiper.width * interleaveOffset;
+                    var innerTranslate = slideProgress * innerOffset;
+                    swiper.slides[i].querySelector(".slide-inner").style.transform =
+                    "translate3d(" + innerTranslate + "px, 0, 0)";
+                }      
+            },
+
+            touchStart: function() {
+              var swiper = this;
+              for (var i = 0; i < swiper.slides.length; i++) {
+                swiper.slides[i].style.transition = "";
+              }
+            },
+
+            setTransition: function(speed) {
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    swiper.slides[i].style.transition = speed + "ms";
+                    swiper.slides[i].querySelector(".slide-inner").style.transition =
+                    speed + "ms";
+                }
+            }
+        }
+    };
+
+    var swiper = new Swiper(".swiper-container", swiperOptions);
+
+    // DATA BACKGROUND IMAGE
+    var sliderBgSetting = $(".slide-bg-image");
+    sliderBgSetting.each(function(indx){
+        if ($(this).attr("data-background")){
+            $(this).css("background-image", "url(" + $(this).data("background") + ")");
+        }
+    });
+///////////
+
+
+ $( document ).ready(function() {
+   before_process();
+ });
+
+
+
+</script>

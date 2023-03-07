@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW</title>
+    <link rel="stylesheet" href="../../css/community.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel='stylesheet' href="../../css/swipers.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+</head>
+<body>
+     
+<header>
+    <div class="header-bg"></div>
+    <h1 class="logo">
+        <a href="../../index.html">
+            <img src="../../icon/n_logo2.svg" alt="logo" class="pc-logo">
+        </a>
+    </h1>
+
+    <div class="header_inner">
+        <nav class="pc-nav-wrap">
+            <ul class="pc_nav">
+                <li><a href="#">DRESS</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="#">Top</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a>
+                </li>
+                <li><a href="#">COMMUNITY</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="notice.html">Notice</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="review.html">Review</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <div class="log-box">
+        <a href="../../mypage/login.html">
+            <img src="../../icon/my.svg" alt="로그인" href="/mypage/login.html">
+        </a>      
+        <a href="../../mypage/join.html">
+            <img src="../../icon/join.svg" alt="회원가입" href="/mypage/join.html">
+        </a>  
+    </div>
+    <div class="log-box">
+        <!-- <p class='user-hello'> <b><?=$user_name?></b>  님 안녕하세요. </p> -->
+        <!-- <a  class="logout-btn" href="/bbs/logout.html"> 로</a> -->
+        <a href="../../mypage/mypage.html">
+                <img src="../../icon/my.svg" alt="마이페이지" href="/mypage/mypage.html">
+
+        </a>
+        <a href="../mypage/wishlist.html">
+                <img src="../../icon/wish_before.svg" alt="찜목록">
+        </a>
+        <a href="../../mypage/cart.html">
+                <img src="../../icon/cart.svg" alt="장바구니">
+        </a>
+    </div>
+<div class="m-nav-wrap">
+    <div class="m-menu_btn">
+        <img src="../../icon/m_menu.png" alt="메뉴">
+    </div>
+    
+    <div class="m-menu_bg"></div>
+    
+    <div class="sidebar_menu">
+        <h2 class="m-title">
+            <a href="../../index.html">
+                <img src="../../images/m-logo.png" alt="모바일로고">
+            </a>    
+        </h2>
+        <div class="close_btn">
+            <img src="../../icon/m_close.png" alt="닫기">
+        </div>
+        <p class='user-hello'> <b>회원이름</b> 님 안녕하세요. </p>
+        <div class="m-log-box">
+        <a href="../../mypage/login.html" class="login-btn"> 로그인</a>    
+        <a href="../../mypage/join.html" class="join-btn"> 회원가입</a>
+        <a href="../../mypage/my_infochange.html">정보수정</a>
+        </div>
+        <ul class="menu_wrap">
+            <li class="m-sub-btn"><a href="#">DRESS <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="#">TOP</a></li>
+                </ul>
+            </li>
+            <li class="m-sub-btn">
+                <a href="#">ABOUT 
+                    <span class="mobile-btn-1"></span>
+                </a>
+            </li>
+            <li class="m-sub-btn"><a href="#">COMMUNITY <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="notice.html">Notice</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="review.html">Review</a></li>
+                </ul> 
+            </li>
+        </ul>
+
+        <ul class="m-info-wrap">
+            <li><a href="../../mypage/cart.html">
+                <img src="../../icon/m_cart.png" alt="장바구니">
+                <p>장바구니</p>
+            </a></li>
+            <li><a href="../../mypage/order_list.html">
+                <img src="../../icon/order.png" alt="주문조회">
+                <p>주문조회</p>
+            </a></li>
+            <li><a href="../mypage/wishlist.html">
+                <img src="../../icon/m_wish.png" alt="위시리스트">
+                <p>위시리시트</p>
+            </a></li>
+            <li><a href="../../mypage/mypage.html">
+                <img src="../../icon/m_my.png" alt="마이페이지">
+                <p>마이페이지</p>
+            </a></li>
+        </ul>
+
+    </div>
+
+    </div>
+</header>
+    
+<!-- contents -->
+<div class="top"></div>
+<main id="review_area" class="inner">
+    <div class="top_banner">
+        <h1>전체후기 <br> <span>Review</span></h1>
+    </div>
+
+    <section class="mem_info_list" >
+        <ul id="adm_table_info">
+            <form name="search" method="get" action="<?=$_SERVER['PHP_SELF']?>">
+            <li>
+                    <div class="review_search">
+                    상품이름 <input type="text" class="search_select" id="sch_user_id" name="sch_user_id" placeholder="상품이름으로 검색" >
+                    </div>
+
+                    <div>
+                        등록일자
+                    <input type="date" class="search_select" id="sch_reg_date1" name="sch_reg_date1" value="<?=$sch_reg_date1?>" required aria-required="true" data-placeholder="기간(시작)"> ~ 
+                    <input type="date" class="search_select" id="sch_reg_date2" name="sch_reg_date2" value="<?=$sch_reg_date2?>" required aria-required="true" data-placeholder="기간(종료)">
+                    </div>
+        
+                    <div>
+                        <button class="btn_search">검색</button>
+                    </div>
+            </li>
+            </form>
+        </ul>
+        <!-- <a href="<?=$_SERVER['PHP_SELF']?>?g=w"><button class="btn_search" >리뷰 등록</button></a> -->
+        
+        <table id="adm_table_info" >
+          <thead>
+            <tr class="t_header notice_table" >
+                    <th class="com_1"  >순번</th>
+                    <!-- <th class="th_padding txt_center" style="width:100px;" >상태</th> -->
+                    <th class="com_2 " >상품이름</th>
+                    <th class="com_3" >리뷰</th>
+                    <th class="com_4 " >작성자</th>
+                    <!-- <th class="th_padding txt_center" style="width:*" >상품정보</th> -->
+                    <th class="com_5 " >작성일자</th>
+                </tr> 
+          </thead>
+          <tbody>
+        
+            <tr class="t_body revie_list_inner" >
+                <td class="mem_info_list_type th_padding text_center" >
+                   1
+                </td>
+                
+                <td class="mem_info_list_type th_padding  notice_link text_center">
+                        <p class="review_item_name">
+                        상품명
+                        </p>
+                        <a href="#" target = "_blank"; class="button">상품보기</a>
+                </td>
+
+        
+                <td class="mem_info_list_type th_padding com_3_flex"  >
+                    <div class="item-img-inner">
+                        <img src="../../images/dog2.jpg" >
+
+                    </div>
+                    <a  style="cursor:pointer" onclick="review_modal('<?=$board_idx?>');" title="리뷰보기" href="javascript:void(0);" >
+                        리뷰제목
+                    </a>
+                </td>
+                
+        
+                <td class="mem_info_list_type th_padding text_center user_review_name" >
+                   주문자
+                </td>
+
+                
+                <td class="mem_info_list_reg_date th_padding text_center" >
+                    2023. 03. 03
+                </td>
+
+            </tr>
+           <tr class="t_pagging" >
+               <td  >
+                   <div style="float:left; width:100%; padding:15px 0px; text-align:center;">
+
+                    </div>
+               </td>
+           </tr>
+        </tbody>
+        </table>
+        
+        </section>
+
+
+        <!-- modal -->
+<section id="review_modal_area">
+    <div class="order_detail_bg" style="display:none;"></div>
+        <article class="order_detail_wrap " style="display:none;">
+            <a href="javascript:void(0);" class="modal_closed_btn" onclick="close_btn()"><img src="/icon/m_close.png" alt="닫기"></a>
+        <div class="review_modal_box">
+            <section class="review_modal_img">
+                <div class="item-img-inner">
+                    <img id='review_img' src="../../images/dog1.jpg" >
+                </div>
+            </section>
+
+            <section class="review_modal_text">
+                <div class="review_modal_top">
+                    <h2 id = "title_show">리뷰제목</h2>
+                    <p id = "p_name_show">상품명</p>
+                    <span>-</span><p id = "size_show">옵션값</p>
+                </div>
+
+                <ul class="review_modal_text_box scroll_box">
+                    <li>
+                        <p id = "content_show">
+                            리뷰내용입니다리뷰내용입니다리뷰내용입니다리뷰내용입니다
+                            리뷰내용입니다
+                            리뷰내용입니다리뷰내용입니다리뷰내용입니다리뷰내용입니다
+                            리뷰내용입니다리뷰내용입니다리뷰내용입니다리뷰내용입니다리뷰내용입니다
+                            리뷰내용입니다리뷰내용입니다리뷰내용입니다
+                        </p>
+                        <p id="writer_show">작성자명</p>
+                        <p id="writeday_show">2023. 03. 03</p>
+                    </li>
+                    <li class="reply_show_box">
+                        <p id ="reply_show">
+                            답변입니다
+                        </p>
+                        <span>관리자</span>
+                    </li>
+                </ul>
+                <button type="button" id="modal_closed_btn" class="button" onclick="close_btn()">확인</button>
+                <a href="" target = "_blank"; id ="p_num_show">상품보러가기</a>
+                <!-- <a href="/product/detail.php?p_num=<?=$array_board_info['p_num']?>" target = "_blank"; class="button">상품보기</a> -->
+            </section>
+        </div>
+
+    </article>
+</section>
+</main>
+
+
+<!-- footer -->
+<footer>
+    <div class="footer-inner">
+      <dl class="f-company">
+        <dt>Chiot Aimable</dt>
+        <dd>대표명 : 오유림</dd>
+        <dd>사업자 등록번호 : 778-88-08040</dd>
+      </dl>
+  
+      <dl class="f-notice">
+        <dt>Notice</dt>
+        <dd><a href="/sub/notice.html">공지사항</a></dd>
+        <dd><a href="/sub/faq.html">FAQ</a></dd>
+        <dd><a href="#">교환 / 반품 안내</a></dd>
+        <dd><a href="#">이용약관</a></dd>
+        <dd><a href="#">개인정보처리방침</a></dd>
+      </dl>
+  
+      <dl class="f-csinfo">
+        <dt>CS Info</dt>
+        <dd><a href="tel:1668-4516">1668-4516</a></dd>
+        <dd>업무시간 : 9:00AM - 6:00PM</dd>
+        <dd>점심시간 : 12:00PM - 1:00PM</dd>
+        <dd>기업은행 : 886-1250-5411-51</dd>
+        <dd>예금주 : (주)쑈 떼마블</dd>
+      </dl>
+      <ul class="f-sns">
+        <li>intagram</li>
+        <li>kakao</li>
+      </ul>
+    </div>
+    <div class="f-bottom">
+      <p>(주)티카타카 부산광역시 해운대구 센텀북대로60 914호(재송동, 센텀아이에스타워) E-mail : tcartacar@gamil.com</p>
+      <p>(C) 2022 ChiotAimable. ALL RIGHTS RESERVED. DESIGN BY CHaChan</p>
+    </div>
+  
+  
+  
+  </footer>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/style.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+
+<script>
+    function review_modal(board_idx)
+    {
+        
+        $('.order_detail_bg').show();
+        $('.order_detail_wrap').show();
+        $('html, body').removeClass('hidden');
+
+    }
+
+    function close_btn()
+    {
+        $('.order_detail_bg').hide();
+        $('.order_detail_wrap').hide();
+        $('html, body').removeClass('hidden')  
+    }
+</script>

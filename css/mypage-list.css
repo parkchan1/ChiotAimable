@@ -1,0 +1,130 @@
+.mylist-tilte{ text-align: center; font-size: 2.3em; margin-bottom: 45px;}
+
+
+.top-banner-wrap{ width: 100%; height: 400px; background: url(../images/project-top.jpg) no-repeat; position: relative;}
+.top-title{ position: absolute; top: 330px; margin-left: 60px; font-size: 2.7em;}
+
+
+.tab-menu{ position: relative; z-index: 1; display:flex ;  border: 1px solid #ddd;}
+.tab-menu li{ width: 25%; text-align: center; border-right: 1px solid #ddd; box-sizing: border-box; cursor: pointer;}
+
+.tab-menu li:last-child{ border-right: none;}
+.tab-menu li a{ display: block; padding: 5px 0;}
+
+.tab-menu-wrap{ position: relative; margin: 30px auto;  width: 50%;}
+.highlight{
+  position: absolute;
+  width: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(183, 139, 98, 0.4);
+  transition: .4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+
+.search-box {
+    width: 30%;
+    background-color: #fff;
+    height: 30px;
+    padding: 5px 10px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    margin: 30px auto;
+  }
+
+  .search-btn {
+    float: right;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    cursor: pointer;
+    opacity: .8;
+  }
+  .search-btn img{ width: 100%;}
+
+  .search-txt {
+    float: left;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    color: #151515;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 30px;
+    width: 70%;
+}
+
+.project-plus-btn{ display: inline-block;}
+.project-plus-btn button{ background-color: #fff; border: 1px solid #ffe9e0; padding: 5px 10px; border-radius: 0 0 6px 0; color: #ec7546;}
+.project-plus-btn button:focus, .project-plus-btn button:hover{ box-shadow:  0 0 5px #ec75467c; background-color: #ec7546; color: #fff;}
+
+#tabs-all{ display: flex; flex-wrap: wrap;}
+
+
+
+@media (max-width:787px){
+
+  .top-banner-wrap{ width: 100%; height: 250px; background: url(../images/m-project-top.jpg) no-repeat center center; position: relative;}
+
+  .tab-menu-wrap{   width: 95%;}
+  .top-title{ top: 150px; margin-left: 0; font-size: 2.7em;}
+
+  .search-box {
+    width: 88%;
+    background-color: #fff;
+    height: 30px;
+    padding: 5px 10px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    margin: 30px auto;
+  }
+
+  .search-txt{ width: 65%;}
+  .search-btn img{ width: 65%; padding-top: .5em;}
+}
+
+/* 시공리스트 모달 */
+.sigong_list-modal-wrap{ width: 100%; height: 100%; position: absolute; top: 0px; left: 0;  background-color: rgba(0, 0, 0, 0.4); mix-blend-mode: normal;  display: none;} 
+.sigong_list-modal{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 850px; height: 50%; background-color: #fff; box-sizing: border-box;}
+
+
+.modal-header{ padding: 50px 0; text-align: center; position: relative;}
+.modal-header h1{ display: inline-block;}
+.modal-close{ display: inline-block; margin-right: 10px; cursor: pointer; position: absolute; top: 10%;right: 10px; font-size: 1.5em;   }
+
+.modal_input_box{ width: 70%; margin: 0 auto;}
+.modal_input_box span{ font-size: .7em; color: #ff1a1a;}
+.modal_input_box label{ display: inline-block; width: 20%;}
+.modal_input_box input{ width: 40%;  padding: 5px; border: 1px solid #ddd;}
+.modal_input_box input:focus{ outline:1px solid rgba(238, 118, 70, .8); box-sizing: border-box;}
+.modal-password-now{ padding-bottom: 20px; border-bottom: 1px solid #ddd;}
+.modal-password{ padding: 30px 0;}
+.change-ok{ width:135px;margin:10% auto; display:block; padding: 10px; background-color: #fff; border:  1px solid #ec7546; color: #ec7546; border-radius: 10px; transition:  all .5s; font-weight: 600;}
+.change-ok:hover{ background-color: #ec7546; color: #fff;}
+
+@media (max-width:787px){
+
+  .sigong_list-modal{ width: 100%; height: 590px;}
+
+
+  .modal-header{ padding: 50px 0 50px;}
+
+  .modal_input_box{ width: 90%; }
+  
+  .modal_input_box label{ width: 50%;}
+  .modal_input_box input{ width: 100%;  }
+
+  .change-ok{ width: 50%;margin:10% auto; display:block; padding: 10px; background-color: #fff; border:  1px solid #ec7546; color: #ec7546; border-radius: 10px; transition:  all .5s; font-weight: 600;}
+  .change-ok:hover{ background-color: #ec7546; color: #fff;}
+
+  input{ font-size: 1em;}
+  h4{ font-size: 1.3em;}
+}
+

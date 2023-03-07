@@ -1,0 +1,18 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 49 49" style="enable-background:new 0 0 49 49;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#E6E6EA;}
+	.st2{fill:#03C75A;}
+</style>
+<g>
+	<g>
+		<circle class="st0" cx="24.5" cy="24.5" r="20.5"/>
+		<path class="st1" d="M24.5,4.5c11.028,0,20,8.972,20,20c0,11.028-8.972,20-20,20c-11.028,0-20-8.972-20-20
+			C4.5,13.472,13.472,4.5,24.5,4.5 M24.5,3.5L24.5,3.5c-11.55,0-21,9.45-21,21v0c0,11.55,9.45,21,21,21h0c11.55,0,21-9.45,21-21v0
+			C45.5,12.95,36.05,3.5,24.5,3.5L24.5,3.5z"/>
+	</g>
+	<polygon class="st2" points="27.229,25.035 21.546,16.9 16.835,16.9 16.835,32.1 21.771,32.1 21.771,23.965 27.454,32.1 
+		32.165,32.1 32.165,16.9 27.229,16.9 	"/>
+</g>
+</svg>

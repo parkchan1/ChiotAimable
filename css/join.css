@@ -1,0 +1,98 @@
+.join_top_box input, .find_id input, .find_pass input{border: 1px solid #ddd;
+    word-break: break-all;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.join_top_box label{ width: 15%; display: inline-block; font-weight: 500;}
+.find_id input{ width: 450px;}
+#exp_user_id{ display: inline-block;}
+#exp_user_text{ margin:.5em 0 0 15%; font-weight: 500; color: #7D287E; font-size: .8em;}
+.join_top_box li{ margin: 15px 0; padding: 0 50px; box-sizing: border-box;}
+
+
+#join_area h2{ font-weight: 400;  margin-bottom: 40px;}
+#join_area  h2 span:nth-child(1){ color: #7D287E;}
+/* agreement */
+
+.agreement-box{ margin-top: 5%;}
+
+.agreement-box h2 span:nth-child(2){ font-size: .7em;}
+.agreement-box div{ padding: 20px 50px; border-top: 1px solid #ddd;}
+.agreement-box div:last-child{ border-bottom: 1px solid #ddd;}
+
+
+.agreement-inpor{ vertical-align: middle;}
+.agreement-inpor span{ font-size: .7em; }
+.agreement-inpor label{ margin-left: 15px;}
+.agreement-inpor a{ margin-left: 5px; cursor: pointer;}
+.agreement-inpor input[type="checkbox"]{ margin-right: 5px;}
+
+#join-btn{ background-color: #fff; color: #dfcbb9; border: 1px solid ; padding: 10px 0; margin: 5% auto 0; width: 150px; display: block; font-size: 1em;}
+ 
+
+.agreement-text{  font-size: .8em; width: 100%; height: 100px; overflow-Y:scroll; padding: 20px; display: none; margin-top: 20px;}
+
+/* agreement-end */
+
+
+.join_btn_box{ display: flex; justify-content: center;}
+.join_btn_box input, .join_btn_box button{ margin: 5% 7px; border-radius: 30px;}
+
+
+
+
+@media (max-width:787px){
+    .join_top_box label{margin-bottom: .5em;width:100%}
+
+    .join_top_box input{width: 100%;}
+    #exp_user_id{ display: inline-block;}
+    #exp_user_text{ margin:.5em 0 0 0%; font-weight: 500; color: #7D287E;}
+    .join_top_box li{ padding: 0 10px;}
+
+    .join_btn_box input, .join_btn_box button{width: 30%;}
+    .agreement-box div{ padding: 20px 10px; }
+    .agreement-text{ box-sizing: border-box;}
+    }
+
+
+/* find */
+
+#id_find_area{ display: flex; height: 350px;}
+#loginer, #find_pass_area{ width: 45%;}
+.find_pass_wrap, .loginer_wrap{ width: 80%; margin: 0 auto;}
+.find-line{ width: 10%;text-align: center; position: relative; color: #7d287e;}
+.find-line::before, .find-line::after{content: ""; width: 1px;height: 30%; display: block; border-left: 1px solid #7d287e; margin: 0 auto;}
+
+
+.find-box-title-span{ font-size: .8em;}
+.find_id input, .find_pass input{border: 1px solid #ddd; width:calc(100% - 110px);}
+#id_find_area label{ width: 105px; display: inline-block; font-weight: 500;}
+#id_find_area ul li{ margin: 10px 0;}
+#id_find_area .button{ margin-top: 20px;}
+@media (min-width:788px) and (max-width:1200px){
+    .find_pass_wrap, .loginer_wrap{ width: 90%;}
+    .find_id input, .find_pass input{border: 1px solid #7d287e; width:calc(100% - 100px);}
+#id_find_area label{ width: 90px; display: inline-block; font-weight: 500;}
+  }
+  
+  
+  
+  @media (max-width:787px){
+    .top{ margin: 20% 0;}
+    #id_find_area{ flex-wrap: wrap; height: auto;}
+    #loginer, #find_pass_area{ width: 100%;}
+    #find_pass_area{ margin-bottom: 30px;}
+    .find_pass_wrap, .loginer_wrap{ width: 100%;}
+    #loginer{position: relative;}
+    .find-line{ width: 100%; margin: 30px 0;}
+    .left-line:before, .right-line:before{content: "";position: absolute;border-top: 2px solid #7d287e;width: 40%;height: 3px;top: 50%;}
+    .left-line:before  {left: 0;}
+    .right-line:before  {right: 0;}
+    .find-line::before, .find-line::after{display: none;}
+    .find_id input, .find_pass input{ width:100%;}
+    #id_find_area label{ width: 100%; margin-bottom: .5em;}
+    #id_find_area ul li{ margin: 10px 0;}
+    #id_find_area .button{ margin-top: 20px;}
+  }

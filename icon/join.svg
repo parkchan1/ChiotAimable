@@ -1,0 +1,16 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:#FCFCFC;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g id="bg">
+	<rect x="-0.5" y="-0.5" class="st0" width="49" height="49"/>
+</g>
+<path class="st1" d="M30.364,34.909v8.659c0,1.506-0.9,2.727-2.009,2.727H3.373c-1.11,0-2.009-1.221-2.009-2.727V4.432
+	c0-1.506,0.9-2.727,2.009-2.727h24.982c1.11,0,2.009,1.221,2.009,2.727v8.659"/>
+<line class="st2" x1="25.455" y1="18.727" x2="36.818" y2="18.727"/>
+<line class="st2" x1="25.455" y1="28.727" x2="36.818" y2="28.727"/>
+<polyline class="st1" points="36.818,9.5 45.909,24 36.818,36.227 "/>
+</svg>
