@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/modal.css">
 
-    <link rel="stylesheet" href="../../css/mypage.css">
+    <link rel="stylesheet" href="../../css/log.css">
 </head>
 <body>
      
@@ -130,90 +130,62 @@
 </header>
 <!-- contents -->
 
-<div class="top"></div>
 
-<main>
-    <section class="inner">
-        <div class="my_left_nav  my_left my_change_area">
-            <div class="my_id inc_left_top" >
+<section id="log-wrap" class="inner">
+	<h2 class="log-title">Log In</h2>
+	<div class="login-box">
+		<ul class="log-left-box">
+			<li >
+				<form method='post' action='login_ok. html' onsubmit="return login_check(this);">
 
-                <div class="my_img">
-                    <a href="mypage.html">
-                        <img src="../../icon/m_my.png" alt="user">
-                    </a>
-                </div>
-                <div class="my_name_wrap">
-                    <p class="my_name">안녕하세요. 고객이름님</p>
-                    <p>총 적립금 </p> 
-                    <p><span> 2,700</span> 점</p>
-                </div>
-            </div>
-            
-            <ul class="my_nav">
-            
-                <li><a href="order_list.html">주문내역 조회</a></li>
-                <li><a href="accumulated_info.html">적립금내역 조회</a></li>
-                <li><a href="wishlist.html">나의 관심상품</a></li>
-                <li><a href="my_board.html">나의 게시글</a></li>
-                <li><a href="inquire.html">취소/환불/교환 문의</a></li>
-                <li><a href="my_infochange.html">회원정보수정</a></li>
-                <li><a href="logout.html">로그아웃</a></li>
-                
-            </ul>
-        </div>
-    
-        <section id="pass_change_area" class="mainCon">
- 
-            <form action= "pass_change_ok.php" method = "post" id = "pass_change">
-                <div >
-                <!-- <input type = "hidden" id = "user_email" name = "user_email"> -->
-                    <div class="input_form brt _item _passwd">
-                    <h2 class="my_change_title"><span  onclick = "history.back(-1)" class="title_back"></span> 비밀번호 변경</h2>
-                        <ul class="pass_change_box">
-                            <li>
-                                <p>변경 비밀번호</p>
-                                <div>
-                                    <input title="비밀번호" type="password" name="pass1" id="pass1" autocomplete="off" placeholder="비밀번호는 영문,숫자,특수문자를 포함하여 8자리 이상 입력해주세요" class = "ii_inp text_center">
-                                    <span id="pass_input" style = "display:none;">비번맨트1</span>
-                                    <div class="alert-block first-letter-uppercase _msg"></div>
-                                </div>
-                            </li>
-                        </ul>
-            
-                        <br>
-            
-                    </div>
-                </div>
-            
-                <div>
-                    <div class="input_form brt _item _passwd_confirm">
-                        <ul class="pass_change_box">
-                            <li>
-                                <p>비밀번호 확인</p>
-                                <div>
-                                    <input title="비밀번호 확인" type="password" name="pass2" id="pass2" autocomplete="off" placeholder="비밀번호 확인" class = "ii_inp text_center">
-                                    <span id="pass_chk" style="display:none;" >비번맨트2</span>
-                                    <div class="alert-block _msg"></div>
-                                </div>
-                            </li>
-                            <a href=""></a>
-                        </ul>
-            
-                    <div class="ii_inp modal_btn_box">
-                        <button class="button" type="reset">다시입력</button>
-                        <button class="button" onclick="go_back">변경</button>
-                    </div>
-            
-                    </div>
-                </div>
-            </form>
-            </section>
-                
-    </section>
+						<input type="id" id="user_email" name="user_email"  placeholder="아이디" tabindex='1'>
 
-</main>
+						<input type="password" id="pass1" name="pass1"  placeholder="비밀번호" tabindex='2'>
+					
+						<input type='submit' id='login' tabindex='3' value='로그인'  class="log-btn" style="cursor:pointer;">
+                        
+                        <input type="hidden" id="p_num" name="p_num" value="<?=$p_num?>" >
+                        <input type='submit' id='nomem_login' tabindex='4' value='비회원구매'  class="log-btn" style="cursor:pointer;">
+				</form>
+<!-- 
+				<button onclick="location.href='../sub/find_id. html'">아이디 찾기</button>
+				<button onclick="location.href='../sub/find_pass. html'">비밀번호 찾기</button> -->
+			</li>
+			<li class="sns-log">
+				<h3>간편로그인</h3>
+				<object class="naver-btn">
+					<embed src="../../icon/naver-btn.svg" type="">
+				</object>
+				<object class="kakao-btn">
+					<embed src="../../icon/kakao-btn.svg" type="">
+				</object>
+			</li>
 
 
+		</ul>
+
+
+		
+
+		<ul class="log-right-box">
+			<li class="join-us-box">
+				<h3>아직회원이아니신가요?</h3>
+				<a href="join.html">회원가입 하러가기</a>
+			</li>
+			<li class="user-find">
+				<h3>아이디 혹은 비밀번호를 잊어버리셨나요?</h3>
+				<a href="find_id_pass.html"> 아이디 / 비밀번호 찾기</a>
+			</li>
+			<li class="none-user">
+				<h3>비회원으로 주문을 하셨나요?</h3>
+				<a href="none_user_order.html">비회원 주문조회 하러가기</a>
+			</li>			
+		</ul>
+
+	</div>
+
+
+</section>
 
 
 <!-- footer -->

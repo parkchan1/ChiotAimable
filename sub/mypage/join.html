@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW</title>
+    <link rel="stylesheet" href="../../css/mypage.css">
+    <link rel="stylesheet" href="../../css/order_list.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel='stylesheet' href="../../css/swipers.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+
+    <link rel="stylesheet" href="../../css/join.css">
+</head>
+<body>
+     
+<header>
+    <div class="header-bg"></div>
+    <h1 class="logo">
+        <a href="../../index.html">
+            <img src="../../icon/logo.svg" alt="logo" class="pc-logo">
+        </a>
+    </h1>
+
+    <div class="header_inner">
+        <nav class="pc-nav-wrap">
+            <ul class="pc_nav">
+                <li><a href="#">DRESS</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="#">Top</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a>
+                </li>
+                <li><a href="#">COMMUNITY</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="../community/notice.html">Notice</a></li>
+                        <li><a href="../community/faq.html">FAQ</a></li>
+                        <li><a href="../community/review.html">Review</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <div class="log-box">
+        <a href="login.html">
+            <img src="../../icon/my.svg" alt="로그인" href="/mypage/login.html">
+        </a>      
+        <a href="join.html">
+            <img src="../../icon/join.svg" alt="회원가입" href="/mypage/join.html">
+        </a>  
+        <a href="mypage.html">
+                <img src="../../icon/my.svg" alt="마이페이지" href="../mypage/mypage.html">
+
+        </a>
+        <a href="wishlist.html">
+                <img src="../../icon/wish_before.svg" alt="찜목록">
+        </a>
+        <a href="cart.html">
+                <img src="../../icon/cart.svg" alt="장바구니">
+        </a>
+    </div>
+<div class="m-nav-wrap">
+    <div class="m-menu_btn">
+        <img src="../../icon/m_menu.png" alt="메뉴">
+    </div>
+    
+    <div class="m-menu_bg"></div>
+    
+    <div class="sidebar_menu">
+        <h2 class="m-title">
+            <a href="../../index.html">
+                <img src="../../images/m-logo.png" alt="모바일로고">
+            </a>    
+        </h2>
+        <div class="close_btn">
+            <img src="../../icon/m_close.png" alt="닫기">
+        </div>
+        <p class='user-hello'> <b>회원이름</b> 님 안녕하세요. </p>
+        <div class="m-log-box">
+        <a href="login.html" class="login-btn"> 로그인</a>    
+        <a href="join.html" class="join-btn"> 회원가입</a>
+        <a href="my_infochange.html">정보수정</a>
+        </div>
+        <ul class="menu_wrap">
+            <li class="m-sub-btn"><a href="#">DRESS <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="#">TOP</a></li>
+                </ul>
+            </li>
+            <li class="m-sub-btn">
+                <a href="#">ABOUT 
+                    <span class="mobile-btn-1"></span>
+                </a>
+            </li>
+            <li class="m-sub-btn"><a href="#">COMMUNITY <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="../community/notice.html">Notice</a></li>
+                    <li><a href="../community/faq.html">FAQ</a></li>
+                    <li><a href="../community/review.html">Review</a></li>
+                </ul> 
+            </li>
+        </ul>
+
+        <ul class="m-info-wrap">
+            <li><a href="cart.html">
+                <img src="../../icon/m_cart.png" alt="장바구니">
+                <p>장바구니</p>
+            </a></li>
+            <li><a href="order_list.html">
+                <img src="../../icon/order.png" alt="주문조회">
+                <p>주문조회</p>
+            </a></li>
+            <li><a href="wishlist.html">
+                <img src="../../icon/m_wish.png" alt="위시리스트">
+                <p>위시리시트</p>
+            </a></li>
+            <li><a href="mypage.html">
+                <img src="../../icon/m_my.png" alt="마이페이지">
+                <p>마이페이지</p>
+            </a></li>
+        </ul>
+
+    </div>
+
+    </div>
+</header>
+<!-- contents -->
+
+<div class="top"></div>
+<main id="join_area" class="inner">
+<form action="join_proc.php" method="post" onsubmit="return join_check(this);">
+<input type = "hidden" id = "id_chk_yn" name = "id_chk_yn" value="n">
+    <h2>회원가입 <span> │ </span></h2>
+    <ul class="join_top_box">
+        <li>
+            <label for="user_email">이메일</label>
+            <input type="text"  placeholder="이메일을 입력해주세요" id="user_email" name="user_email" class = "ii_inp text_center">
+        <p id="exp_user_id" >이메일을 입력해주세요.</p>
+        <p id="exp_user_text">※입력하신 이메일로 안내사항등이 발송 될 예정이니 신중히 입력해주세요</p>
+        <div class="alert-block _msg"></div>
+        </li>
+
+        <li  class="input_form brt _item _passwd">
+            <label for="pass1">비밀번호</label>
+            <input title="비밀번호" type="password" name="pass1" id="pass1" autocomplete="off" placeholder="비밀번호는 영문,숫자,특수문자를 포함하여 8자리 이상 입력해주세요" class = "ii_inp text_center">
+        <span id="pass_input" style = "display:none;">비번맨트1</span>
+        <div class="alert-block first-letter-uppercase _msg"></div>
+        </li>
+
+        <li class="input_form brt _item _passwd_confirm">
+            <label for="pass2">비밀번호 확인</label>
+            <input title="비밀번호 확인" type="password" name="pass2" id="pass2" autocomplete="off" placeholder="비밀번호 확인" class = "ii_inp text_center">
+            <span id="pass_chk" style="display:none;" >비번맨트2</span>
+            <div class="alert-block _msg"></div>
+        </li>
+
+        <li class="input_block form-group">
+            <label for="name" class="ii_inp" for="join_name"> 이름</label>
+            <input title="이름을(를) 입력하세요" type="text" id="name" name="name" placeholder="이름을(를) 입력하세요" value="" required="required" class = "ii_inp text_center">
+            <div class="alert-block _msg"></div>
+        </li>
+
+        <li>
+            <label for="member_hp"class="ii_inp" for="join_hp">휴대폰 번호</label>
+                <input type="text" id="member_hp" name="member_hp" placeholder="휴대폰 번호를 ( - ) 빼고 입력하세요" value="" required="required" class = "ii_inp text_center">
+                <div class="alert-block _msg"></div>
+        </li>
+
+
+    </ul>
+
+<!-- 
+<div class="input_block form-group">
+    <div class="ii_inp text_center" for="join_name">이름<i aria-hidden="true" class="icon-required"></i></div>
+    <div class="input_form _item _name">
+        <input title="이름을(를) 입력하세요" type="text" id="name" name="name" placeholder="이름을(를) 입력하세요" value="" required="required" class = "ii_inp text_center">
+        <div class="alert-block _msg"></div>
+    </div>
+</div>
+
+<div>
+    <div class="ii_inp text_center" for="join_hp">연락처<i aria-hidden="true"></i></div>
+        <div class="input_form _item _hp">
+        <input type="text" id="member_hp" name="member_hp" placeholder="연락처를 입력하세요" value="" required="required" class = "ii_inp text_center">
+        <div class="alert-block _msg"></div>
+    </div>
+</div> -->
+
+
+<div class="agreement-box">
+        <h2>약관동의 <span> │ </span><span>아래 약관들에 동의여부를 선택하세요.</span> </h2>
+
+
+        <p class="control">
+            <div class="b-checkbox is-info is-circular">
+                <input name="chk_all" value="1" id="chk_all" class="styled" type="checkbox">
+                <label for="chk_all">
+                회원가입약관 및 개인정보처리방침안내의 내용에 모두 동의합니다.
+                </label>
+            </div>
+        </p>
+        
+        <div class="agreement1 agreement-inpor ">
+            <span>&#91;필수&#93;</span> <a >이용약관 동의</a>
+            <label for="agreement1-check" id="agreement1-check-box" name="agreement1-check">
+                <input type="checkbox" id="agreement1-check" name="agreement1-check">동의
+            </label>
+            <article class="agreement-text">
+                할인쿠폰 및 혜택, 이벤트, 신상품 소식 등 쇼핑몰에서 제공하는 유익한 쇼핑정보를 이메일로 받아보실 수 있습니다.<br><br>
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+            </article>
+        </div>
+
+        <div class="agreement2 agreement-inpor">
+            <span>&#91;필수&#93;</span> <a >개인정보 수집 및 이용동의</a>
+            <label for="agreement2-check" id="agreement2-check-box" name="agreement2-check">
+                <input type="checkbox" id="agreement2-check" name="agreement2-check">동의
+            </label>
+            <article class="agreement-text">
+                할인쿠폰 및 혜택, 이벤트, 신상품 소식 등 쇼핑몰에서 제공하는 유익한 쇼핑정보를 이메일로 받아보실 수 있습니다.<br><br>
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+                마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+            </article>
+        </div>
+
+        <div class="agreement3 agreement-inpor">
+            <span>&#91;선택&#93;</span> <a >마케팅활용동의 및 광고수신동의</a>
+            <label for="agreement3-check" id="agreement3-check-box" name="agreement3-check">
+                <input type="checkbox" id="agreement3-check" name="agreement3-check">동의
+            </label>
+            <article class="agreement-text">
+            할인쿠폰 및 혜택, 이벤트, 신상품 소식 등 쇼핑몰에서 제공하는 유익한 쇼핑정보를 이메일로 받아보실 수 있습니다.<br><br>
+            마케팅 정보 수신 여부 및 마케팅을 위한 개인정보 수집이용을 거부하실 수 있으며, 거부 시에도 서비스를 이용하실 수 있으나, 동의를 거부한 경우 각종 소식 및 이벤트 참여에 제한이 있을 수 있습니다.
+            </article>
+        </div>
+    </div>
+        <div class="ii_inp join_btn_box">
+            <button onClick="history.back(-1)"  class="button">취소</button>
+            <input type="submit" value="가입" id="join_check_btn" class="button"></input>
+        </div>
+
+
+
+<!-- footer -->
+<footer>
+    <div class="footer-inner">
+      <dl class="f-company">
+        <dt>Chiot Aimable</dt>
+        <dd>대표명 : 오유림</dd>
+        <dd>사업자 등록번호 : 778-88-08040</dd>
+      </dl>
+  
+      <dl class="f-notice">
+        <dt>Notice</dt>
+        <dd><a href="../community/notice.html">공지사항</a></dd>
+        <dd><a href="../community/faq.html">FAQ</a></dd>
+        <dd><a href="#">교환 / 반품 안내</a></dd>
+        <dd><a href="#">이용약관</a></dd>
+        <dd><a href="#">개인정보처리방침</a></dd>
+      </dl>
+  
+      <dl class="f-csinfo">
+        <dt>CS Info</dt>
+        <dd><a href="tel:1668-4516">1668-4516</a></dd>
+        <dd>업무시간 : 9:00AM - 6:00PM</dd>
+        <dd>점심시간 : 12:00PM - 1:00PM</dd>
+        <dd>기업은행 : 886-1250-5411-51</dd>
+        <dd>예금주 : (주)쑈 떼마블</dd>
+      </dl>
+      <ul class="f-sns">
+        <li>intagram</li>
+        <li>kakao</li>
+      </ul>
+    </div>
+    <div class="f-bottom">
+      <p>(주)티카타카 부산광역시 해운대구 센텀북대로60 914호(재송동, 센텀아이에스타워) E-mail : tcartacar@gamil.com</p>
+      <p>(C) 2022 ChiotAimable. ALL RIGHTS RESERVED. DESIGN BY CHaChan</p>
+    </div>
+  
+  
+  
+  </footer>
+
+</body>
+</html>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/style.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+
+<script>
+    var autoHypenPhone = function(str){
+      str = str.replace(/[^0-9]/g, '');
+      var tmp = '';
+      if( str.length < 4){
+          return str;
+      }else if(str.length < 7){
+          tmp += str.substr(0, 3);
+          tmp += '-';
+          tmp += str.substr(3);
+          return tmp;
+      }else if(str.length < 11){
+          tmp += str.substr(0, 3);
+          tmp += '-';
+          tmp += str.substr(3, 3);
+          tmp += '-';
+          tmp += str.substr(6);
+          return tmp;
+      }else{              
+          tmp += str.substr(0, 3);
+          tmp += '-';
+          tmp += str.substr(3, 4);
+          tmp += '-';
+          tmp += str.substr(7);
+          return tmp;
+      }
+  
+      return str;
+}
+
+
+var member_hp = document.getElementById('member_hp');
+
+member_hp.onkeyup = function(){
+  console.log(this.value);
+  this.value = autoHypenPhone( this.value ) ;  
+}
+
+jQuery(function($) {
+        // 모두선택
+        $("input[name=chk_all]").click(function() {
+            if ($(this).prop('checked')) {
+                $("input[name^=agree]").prop('checked', true);
+            } else {
+                $("input[name^=agree]").prop("checked", false);
+            }
+        });
+    });
+    
+    $("#user_email").keyup(function(){
+        //console.log("dqwdw");
+
+    
+    let email = $(this).val();
+    let pattern_email = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]+$/;
+    pattern_email = new RegExp(pattern_email);
+
+    if (pattern_email.test(email) == false) {
+        //console.log('qwewewqr');
+        var id_txt = $("#user_email").val();
+        
+        $("#exp_user_id").html("정확한 이메일 주소를 입력하세요.");
+        $("#exp_user_id").css("color", "#e60000");
+        $("#exp_user_id").show();
+        $(this).focus();
+    }
+    else
+    {
+        var form_data = { 
+            member_id: $("#user_email").val()
+        };
+        console.log(form_data);
+        //중복검사하기
+        $.ajax({
+            type: "POST",
+            url: "/ajax/ajax_id_check.php" ,
+            data: form_data,
+            dataType: 'json' , 
+            success: function(response)
+            {
+            	console.log( response );
+            //사용가능/불가능
+                if( response.result == "success" )
+                {
+                     //중복이 되지 않은 아이디 사용가능
+                    $("#exp_user_id").html("사용가능한 이메일입니다.");
+                    $("#exp_user_id").css("color", "#51258A");
+                    $("#exp_user_id").show();
+                    $('#id_chk_yn').val("y");
+                }
+                else
+                {
+                    //중복 아이디 사용 불가능
+                    $("#exp_user_id").html("사용불가능한 이메일입니다.");
+                    $("#exp_user_id").css("color", "red");
+                    $("#exp_user_id").show();
+                    $('#id_chk_yn').val("n");
+                } 
+            }
+        });
+        
+
+        // $("#exp_user_id").html("");
+        // $("#exp_user_id").css("color", "blue");
+        // $("#exp_user_id").show();
+        // $(this).focus();
+    }
+    return false;
+
+});
+
+$("#join_check_btn").on("click", function()
+    {
+        //console.log("dwqeqwe");
+        let email = $("#user_email").val();
+        let pattern_email = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]+$/;
+
+        let pass1 = $("#pass1").val();
+        let number = pass1.search(/[0-9]/g);
+        let english = pass1.search(/[a-z]/ig);
+        let spece = pass1.search(/[`~!@@#$%^&*]/gi);
+        let reg = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+
+        let phone = $("#member_hp").val();
+        let pattern_phone = /^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$/;
+        
+        pattern_phone = new RegExp(pattern_phone);
+        pattern_email = new RegExp(pattern_email);
+        if (pattern_email.test(email) == false)
+        {
+            alert("이메일을 정확히 입력해주세요");
+            $("#user_email").focus();
+            return false;
+        }
+        else if(pattern_phone.test(phone) == false)
+        {
+            alert("전화번호를 확인해주세요");
+            $("#member_hp").focus();
+            return false;
+        }
+        else if ($("#id_chk_yn").val() == "n")
+        {
+            alert("이메일을 다시 확인해주세요");
+            $("#user_email").focus();
+            return false;
+        }
+        else if ($("#pass1").val() == '')
+        {
+            alert("비밀번호를 입력해주세요");
+            $("#pass1").focus();
+            return false;
+        }
+        else if ($("#pass2").val() == '')
+        {
+            alert("비밀번호를 재확인해주세요");
+            $("#pass2").focus();
+            return false;
+        }
+        else if($("#pass1").val() != $("#pass2").val())
+        {
+            alert("비밀번호를 확인해주세요");
+            $("#pass2").focus();
+            return false;
+        }
+        else if($("#name").val() == '')
+        {
+            alert("이름을 입력해주세요");
+            $("#name").focus();
+            return false;
+        }
+        else if($("#member_hp").val() =='')
+        {
+            alert("휴대폰 번호를 입력해주세요");
+            $("#member_hp").focus();
+            return false;
+        }
+        else if($("#pass1").val().length < 8)
+        {
+            alert("비밀번호는 8자리 이상 입력해주세요");
+            $("#pass1").focus();
+            return false;
+        }
+        else if (number < 0 || english < 0 || spece < 0) 
+        {
+            alert("영문,숫자,특수문자를 혼합하여 입력해주세요.");
+            return false;
+        }
+        else if($("#member_hp").val().length < 10)
+        {
+            alert("휴대폰 번호를 올바르게 입력해주세요.");
+            return false;
+        }
+        else if( $('input:checkbox[id="agreement1-check"]').is(":checked") == false )
+        {
+            alert( "이용약관에 동의 하셔야 합니다." );
+            $('#agreement1-check').focus();
+            return false;
+        }
+        else if( $('input:checkbox[id="agreement2-check"]').is(":checked") == false )
+        {
+            alert( "개인정보 수집 및 이용동의에 동의 하셔야 합니다." );
+            $('#agreement2-check').focus();
+            return false;
+        }
+        else
+        {
+            $("#join_check").submit();
+        }
+        
+    });
+
+$("#pass1").on("change keyup paste click", function() {
+    //console.log("qwedjiqwepd");
+        if( $("#pass1").val().length == 0 )
+         { 
+            $("#pass_input").html("비밀번호를 입력해주세요");
+            $("#pass_input").show();
+            $("#pass_chk").hide();
+         }
+        else if($("#pass1").val() == $("#pass2").val())
+        {
+            $("#pass_input").hide();
+            $("#pass_chk").show();
+            $("#pass_chk").html("비밀번호가 일치합니다.");
+            $('#pass_chk').css("color","blue");
+        }
+        else
+         { 
+            $("#pass_input").hide();
+            $("#pass_chk").show();
+            $("#pass_chk").html("비밀번호가 일치하지 않습니다.");  
+            $('#pass_chk').css("color","red");       
+         }
+    });
+
+$("#pass2").on("change keyup paste", function() {
+        if( $("#pass1").val() == $("#pass2").val() )
+        {
+             $('#pass_chk').html('비밀번호가 일치합니다.');
+             $('#pass_chk').css("color","blue");
+        }
+        else 
+        {
+             $("#pass_chk").html('비밀번호가 일치하지 않습니다.');
+             $('#pass_chk').css("color","red");
+        }
+    });
+
+
+    $(function(){
+    $(".agreement-inpor a").click(function(){
+        $(this).siblings(".agreement-text").fadeToggle();
+    });
+});
+</script>

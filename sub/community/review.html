@@ -19,7 +19,7 @@
     <div class="header-bg"></div>
     <h1 class="logo">
         <a href="../../index.html">
-            <img src="../../icon/n_logo2.svg" alt="logo" class="pc-logo">
+            <img src="../../icon/logo.svg" alt="logo" class="pc-logo">
         </a>
     </h1>
 
@@ -43,24 +43,20 @@
             </ul>
         </nav>
     <div class="log-box">
-        <a href="../../mypage/login.html">
+        <a href="../mypage/login.html">
             <img src="../../icon/my.svg" alt="로그인" href="/mypage/login.html">
         </a>      
-        <a href="../../mypage/join.html">
+        <a href="../mypage/join.html">
             <img src="../../icon/join.svg" alt="회원가입" href="/mypage/join.html">
         </a>  
-    </div>
-    <div class="log-box">
-        <!-- <p class='user-hello'> <b><?=$user_name?></b>  님 안녕하세요. </p> -->
-        <!-- <a  class="logout-btn" href="/bbs/logout.html"> 로</a> -->
-        <a href="../../mypage/mypage.html">
+        <a href="../mypage/mypage.html">
                 <img src="../../icon/my.svg" alt="마이페이지" href="/mypage/mypage.html">
 
         </a>
         <a href="../mypage/wishlist.html">
                 <img src="../../icon/wish_before.svg" alt="찜목록">
         </a>
-        <a href="../../mypage/cart.html">
+        <a href="../mypage/cart.html">
                 <img src="../../icon/cart.svg" alt="장바구니">
         </a>
     </div>
@@ -82,9 +78,9 @@
         </div>
         <p class='user-hello'> <b>회원이름</b> 님 안녕하세요. </p>
         <div class="m-log-box">
-        <a href="../../mypage/login.html" class="login-btn"> 로그인</a>    
-        <a href="../../mypage/join.html" class="join-btn"> 회원가입</a>
-        <a href="../../mypage/my_infochange.html">정보수정</a>
+        <a href="../mypage/login.html" class="login-btn"> 로그인</a>    
+        <a href="../mypage/join.html" class="join-btn"> 회원가입</a>
+        <a href="../mypage/my_infochange.html">정보수정</a>
         </div>
         <ul class="menu_wrap">
             <li class="m-sub-btn"><a href="#">DRESS <span class="mobile-btn-1"></span></a>
@@ -107,11 +103,11 @@
         </ul>
 
         <ul class="m-info-wrap">
-            <li><a href="../../mypage/cart.html">
+            <li><a href="../mypage/cart.html">
                 <img src="../../icon/m_cart.png" alt="장바구니">
                 <p>장바구니</p>
             </a></li>
-            <li><a href="../../mypage/order_list.html">
+            <li><a href="../mypage/order_list.html">
                 <img src="../../icon/order.png" alt="주문조회">
                 <p>주문조회</p>
             </a></li>
@@ -119,7 +115,7 @@
                 <img src="../../icon/m_wish.png" alt="위시리스트">
                 <p>위시리시트</p>
             </a></li>
-            <li><a href="../../mypage/mypage.html">
+            <li><a href="../mypage/mypage.html">
                 <img src="../../icon/m_my.png" alt="마이페이지">
                 <p>마이페이지</p>
             </a></li>
@@ -174,7 +170,7 @@
           <tbody>
         
             <tr class="t_body revie_list_inner" >
-                <td class="mem_info_list_type th_padding text_center" >
+                <td class="mem_info_list_type th_padding text_center">
                    1
                 </td>
                 
@@ -186,7 +182,7 @@
                 </td>
 
         
-                <td class="mem_info_list_type th_padding com_3_flex"  >
+                <td class="mem_info_list_type th_padding com_3_flex" style="<?=$th_back?>" >
                     <div class="item-img-inner">
                         <img src="../../images/dog2.jpg" >
 
@@ -197,12 +193,12 @@
                 </td>
                 
         
-                <td class="mem_info_list_type th_padding text_center user_review_name" >
+                <td class="mem_info_list_type th_padding text_center user_review_name">
                    주문자
                 </td>
 
                 
-                <td class="mem_info_list_reg_date th_padding text_center" >
+                <td class="mem_info_list_reg_date th_padding text_center" style="<?=$th_back?>" >
                     2023. 03. 03
                 </td>
 
@@ -224,7 +220,7 @@
 <section id="review_modal_area">
     <div class="order_detail_bg" style="display:none;"></div>
         <article class="order_detail_wrap " style="display:none;">
-            <a href="javascript:void(0);" class="modal_closed_btn" onclick="close_btn()"><img src="/icon/m_close.png" alt="닫기"></a>
+            <a href="javascript:void(0);" class="modal_closed_btn" onclick="close_btn()"><img src="../../icon/m_close.png" alt="닫기"></a>
         <div class="review_modal_box">
             <section class="review_modal_img">
                 <div class="item-img-inner">
@@ -248,7 +244,7 @@
                             리뷰내용입니다리뷰내용입니다리뷰내용입니다리뷰내용입니다리뷰내용입니다
                             리뷰내용입니다리뷰내용입니다리뷰내용입니다
                         </p>
-                        <p id="writer_show">작성자명</p>
+                        <p id="writer_show">홍길동</p>
                         <p id="writeday_show">2023. 03. 03</p>
                     </li>
                     <li class="reply_show_box">

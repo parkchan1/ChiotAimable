@@ -101,12 +101,6 @@ $(document).ready(function () {
      });
  });
 
- // reviewtoggle
- $(function(){
-     $(".review_return_check").click(function(){
-         $(this).parent().siblings('.recently_review_return').children(".recently_review_return_wrap").toggle()
-     });
- });
 
 // option
 $(function(){
@@ -192,12 +186,12 @@ $(function(){
     });
 });
 
-// review
-$(function(){
-    $(".review_title").off('click').click(function(){
-        $(this).siblings(".review_content").slideToggle()
-    });
-});
+// // review
+// $(function(){
+//     $(".review_title").off('click').click(function(){
+//         $(this).siblings(".review_content").slideToggle()
+//     });
+// });
 
 
  
@@ -228,6 +222,7 @@ $("#img-delete").click(function(event) {
 	$( "#recall_img_box" ).attr("src", "/images/no_img.jpg" );
 	$('#recall_img').val('');
 });
+
 
 
 

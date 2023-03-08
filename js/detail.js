@@ -31,15 +31,39 @@ DtabMenu.forEach(function(item,index){
     });
 });
 
-$( document ).ready(function() {
-    before_process();
-    call_qna();
-    call_review();
+// $( document ).ready(function() {
+//     before_process();
+//     call_qna();
+//     call_review();
+// });
+
+
+
+//QnA 모달 오픈
+$('#write_qna').on('click', function(){
+    {
+    $('.qna_modal_bg').show();
+    $('.qna_modal_wrap').show();
+    $('html, body').removeClass('hidden')  
+    alert("로그인 후 사용가능합니다.");
+    }
 });
 
+//QnA 닫기
+$('#qna_modal_close_btn').on('click', function(){
+    //작성내용 리셋
+    qna_reset();
+    $('.qna_modal_bg').hide();
+    $('.qna_modal_wrap').hide();
+    $('html, body').removeClass('hidden')  
+});
 
-
-//qna
+function qna_reset()
+{
+    $('#qna_title').val('');
+    $('#secret_chk').prop("checked", false);
+    $('#qna_content').val('');
+}
 
 function show_answer( val )
 {
@@ -48,122 +72,82 @@ function show_answer( val )
 }
 
 
-function call_qna()
+
+
+// Review
+//review_img_change
+function up_img_1(input)
 {
-    p_num = '<?=$p_num?>';
-    qna_page = $('#qna_page').val();
-
-    var form_data = { 
-        p_num , p_num , 
-        qna_page , qna_page
-    };
-
-    //console.log( form_data );
-
-    $.ajax({
-        type: "POST",
-        url: "/ajax/load_detail_qna.php" ,
-        data: form_data , 
-        dataType: 'json' , 
-        success: function( res )
-        {
-            //console.log( res );
-            in_html = '';
-            for( i=0; i<= res.list.length-1; i++ )
-            {
-                in_html += '<li>';
-                in_html += '    <div id="qna_'+i+'" class="recently_order_inner" style="margin-bottom:10px;">';
-                in_html += '            <span class="rlr_2 qna_title" style="cursor:pointer; " onclick="show_answer(\''+i+'\')" >';
-                in_html += res.list[i]['title'];
-                in_html += '            </span>';
-                in_html += "        <span class='rlr_1'>"+res.list[i]['member_name']+"</span>";
-                in_html += "        <span class='rlr_3'>"+res.list[i]['show_date_time']+"</span>";
-                in_html += "        <span class='rlr_4'>"+res.list[i]['progress']+"</span>";
-                in_html += '    </div>';
-                in_html += '    <div id="answer_'+i+'" class="answer">';
-                in_html += '                <p class="answer_inner">';
-                in_html += res.list[i]['content'];
-                in_html += '                </p>';
-                if( res.list[i]['reply'] != '' )
-                {
-                in_html += '<br><ul class="qna_reply">';
-                in_html += '<li> 관리자 :</li>';
-                in_html += '<li>';
-                in_html += res.list[i]['reply'];
-                in_html += '</li>';
-                in_html += '</ul>';
-                }
-                in_html += '    </div>';
-                in_html += '</li>';
-            }
-
-            $('#qna_lists').html(in_html);
-            $('#qna_paging').html(res.paging);
-
+	console.log("변경");
+    if(input.files && input.files[0])
+	{
+        var reader = new FileReader();
+        reader.onload = function (e)
+		{
+            $( "#det_img_1" ).attr("src", e.target.result );
+            $( "#det_img_1" ).addClass( "details_sub_img" );
         }
-    });
+        reader.readAsDataURL(input.files[0]);
+    }
 }
 
-function qna_paging( val )
-{
-    //console.log( val );
-    $('#qna_page').val( val );
-    call_qna();
-}
+$("#up_img_1").on('change', function(){
+    up_img_1(this);
+});
 
+// change-end
 
-// review
+$('#write_review').on('click', function(){
+    $('.review_modal_bg').show();
+    $('.review_modal_wrap').show();
+    $('html, body').removeClass('hidden')  
+});
 
-function call_review()
-{
-    p_num = '<?=$p_num?>';
-    review_page = $('#review_page').val();
-
-    var form_data = { 
-        p_num , p_num , 
-        review_page , review_page
-    };
-
-    $.ajax({
-        type: "POST",
-        url: "/ajax/load_detail_review.php" ,
-        data: form_data , 
-        dataType: 'json' , 
-        success: function( res )
+ $('#review_write_btn').on('click', function(){
+        if( $('#review_title').val() == '' )
         {
-            //console.log( res );
-            in_html = '';
-            for( i=0; i<= res.list.length-1; i++ )
+            alert("제목을 작성하여 주십시오.");
+            return false;
+        }
+        if( $('#review_content').val() == '' )
+        {
+            alert("질문 내용을 작성하여 주십시오.");
+            return false;
+        }
+
+        if($("#up_img_1").val() != "")
+        {	
+            var maxSize = 6.5 * 1024 * 1024; // 4MB
+
+            var fileSize = $("#up_img_1")[0].files[0].size;
+            if(fileSize > maxSize)
             {
-                in_html += '<li style="width:calc(48% - 5px); display:inline-block; padding:10px;">';
-                in_html += '    <div style="width:100%; border:1px solid #EAEAEA;">';
-                in_html += '        <div style="width:40%; display:inline-block; " style="text-align:center; ">';
-                if( res.list[i]['upload'] == '' || res.list[i]['upload'] == null ) { }
-                else{
-                in_html += '            <img src="/data/review/'+res.list[i]['p_num']+'/'+res.list[i]['upload']+'" style = "width:100%; ">';
-                }
-                in_html += '        </div>';
-                in_html += '        <div style = "width:calc(60% - 5px); display:inline-block;" >';
-                in_html += '        <div style = "width:100%; ">';
-                in_html += '            <span class="rlr_2 review_title" style="cursor:pointer;">'+res.list[i]['title']+'</span>';
-                in_html += '            <dl class = "review_content" style="display:none;">';
-                in_html += '                <dd>';
-                in_html += res.list[i]['content'];
-                in_html += '                </dd>';
-                in_html += '            </dl>';
-                in_html += '        </div>';
-                in_html += '        <div style = "width:100%"><span >작성자</span><span >'+res.list[i]['member_name']+'</span></div>';
-                in_html += '        <div style = "width:100%"><span >작성일</span><span >'+res.list[i]['show_date_time']+'</span></div>';
-                in_html += '        </div>';
-
-
-                in_html += '    </div>';
-                in_html += '</li>';
+                alert("첨부파일 사이즈는 6MB 이내로 등록 가능합니다.");
+                $("#up_img_1").val("");
+                return false;
             }
-            $('#review_lists').html(in_html);
-            $('#review_paging').html(res.paging);
-
         }
     });
 
-}
+    //QnA 닫기
+    $('#review_modal_close_btn').on('click', function(){
+        //작성내용 리셋
+        review_reset();
+        $('.review_modal_bg').hide();
+        $('.review_modal_wrap').hide();
+        $('html, body').removeClass('hidden')  
+    });
+
+    function review_reset()
+    {
+        $('#review_title').val('');
+        $('#review_content').val('');
+        $('#up_img_1').val('');
+    }
+
+    $("#img_delete").click(function(event) {
+	$( "#det_img_1" ).attr("src", "../../images/noimg.jpg" );
+	$('#up_img_1').val('');
+    });
+
+
