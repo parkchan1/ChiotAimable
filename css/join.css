@@ -2,7 +2,7 @@
     word-break: break-all;
     padding: 5px;
     box-sizing: border-box;
-    display: inline-block;
+    display: inline-block; width: 30%;
 }
 
 .join_top_box label{ width: 15%; display: inline-block; font-weight: 500;}

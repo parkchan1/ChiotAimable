@@ -99,33 +99,6 @@
     .faq_click h2{ font-size: 1.3em; }
 }
 
-/* review_modal */
-
-#review_modal_area .order_detail_wrap{ background-color: #fff; padding: 0;}
-.review_modal_box {display: flex; justify-content: space-between; height: -webkit-fill-available;}
-
-
-.review_modal_img{width: 41%; background-color: #000000d6; padding: 0 8%; }
-.review_modal_img .item-img-inner{ margin: 40% 0;}
-.review_modal_top{ margin: 30px 0 20px;}
-.review_modal_text{ width: 40%; margin-right: 2%;}
-.review_modal_text_box{ height: 300px; overflow-y: scroll; font-size: .9em; box-shadow: 0 0 5px rgba(0, 0, 0, .3); border-radius: 6px;}
-#p_name_show, #size_show{ display: inline-block; font-weight: 500; font-size: .9em;}
-#writer_show, #writeday_show{ display: inline-block;}
-#writer_show{ margin:0 10px 0 60% ; font-weight: 500;}
-.review_modal_top span{ font-weight: 500; margin-right: 5px;}
-#content_show{ width: 75%; margin:3% 3% 0 22%; background-color: #c866c92c; padding:10px; border-radius: 6px; box-sizing: border-box;  word-wrap: break-word;}
-.reply_show_box{ width: 75%; margin:45px 25% 0 0;}
-#reply_show{ word-wrap: break-word; background-color: #e6dfe38a; padding: 10px ;  border-radius: 6px; box-sizing: border-box; margin-left: 3%;}
-#modal_closed_btn{ margin-top: 50px;}
-#p_num_show{ color: ccc; font-size: .9em; font-weight: 500; display: block;text-align: center; transition: all .3s;}
-#p_num_show:hover{color: #51545c;}
-
-@media (max-width:788px){
-    
-    .review_modal_img{width: 100%; background-color: #000000d6; padding: 0 8%; }
-    .review_modal_img .item-img-inner{ margin: 40% 0;}
-}
 
 /* notice */
 

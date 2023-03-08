@@ -6,7 +6,7 @@
 .login-box ul{ width: 50%; text-align: center;}
 
 .log-left-box{ margin-top: .5em;}
-.log-left-box input{ display:block; width: 60%; margin: 0 auto 2%; padding: 15px 10px; border: 1px solid #252525; font-size:1em;}
+.log-left-box input{ display:block; width: 60%; margin: 0 auto 2%; padding: 15px 10px; border: 1px solid #252525; font-size:1em; box-sizing: border-box;}
 .log-left-box input::placeholder{font-size: .8em;}
 
 .log-btn{ background-color: #6b5b95; font-weight: 600; color: #f6eff7;}
