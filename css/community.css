@@ -86,10 +86,10 @@
 .faq_click{ padding: 0 5px;}
 
 #faq_list_area{ padding: 0 5%;}
-.faq_list:first-child{ border-top: 2px solid #DC0239;}
+.faq_list:first-child{ border-top: 2px solid #7D287E;}
 .faq_list{ padding: 5px 0; border-bottom: 1px solid #ddd;}
 .faq_click{font-size: 1.2em; padding: 10px; font-weight: 500;}
-.faq_list:hover .faq_click h2{ color: #DC0239;}
+.faq_list:hover .faq_click h2{ color: #7D287E;}
 .faq_click h2{ display: inline-block; margin-right: 5px; transition: all .3s; padding-top: .2em;}
 .faq_click .mobile-btn-1{ padding-top: .55em;}
 .faq_text{ padding-left: 35px;}
@@ -134,7 +134,7 @@
     width: 100%;
     text-align:center;
     padding:10px 0;
-    border-top:2px solid #DC0239;
+    border-top:2px solid #7D287E;
     border-bottom:1px solid #ddd;
     background-color: #f5f0f1;
     font-weight: 500;

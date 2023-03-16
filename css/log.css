@@ -10,7 +10,7 @@
 .log-left-box input::placeholder{font-size: .8em;}
 
 .log-btn{ background-color: #6b5b95; font-weight: 600; color: #f6eff7;}
-.log-btn:hover{ background-color: #DC0239;}
+.log-btn:hover{ background-color: #7D287E;}
 
 .sns-log h3{ padding: 3% 0;}
 .sns-log embed{width: 10%; margin: 0 2%;}
@@ -32,7 +32,7 @@
     .log-left-box input::placeholder{font-size: .8em;}
 
     .log-btn{ background-color: #6b5b95; font-weight: 600; color: #f6eff7;}
-    .log-btn:hover{ background-color: #DC0239;}
+    .log-btn:hover{ background-color: #7D287E;}
 
     .sns-log embed{width: 18%;}
 
