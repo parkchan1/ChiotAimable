@@ -199,9 +199,9 @@
 .modal_closed_btn{position: absolute; top: 20px; right: 20px; width: 20px; display: block; opacity: .7;} 
 .modal_closed_btn img{width: 100%;} 
 .order_detail_ordernum{margin-bottom: 15px;justify-content: center;}
-#order_detail_ordernumber::before{content: "│";color: #7D287E; display: inline-block;}
+#order_detail_ordernumber::before{content: "│";color: #92278F; display: inline-block;}
 .order_detail_wrap h4{ display: block; font-size: 1rem; margin-bottom: 12px; border-bottom: 1px solid #51545c; padding-bottom: 5px;}
-#order_detail_ordernumber span{ color: #7D287E; font-weight: 500;}
+#order_detail_ordernumber span{ color: #92278F; font-weight: 500;}
 .od_top, .od_bottom{ display: flex; flex-wrap: wrap; }
 .od_top section, .od_bottom section{ width: 48%; margin-bottom:20px;}
 
@@ -233,12 +233,12 @@
 .order_detail_itemprice .od_list_menu{ border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-bottom: 5px;}
 .order_detail_itemprice .od_list_menu .od_list1{text-align: center;}
   
-.order_detail_totalprice{ justify-content: end; margin-top: 10px; border-top: 1px solid #7D287E; font-size: 1.1em; padding-top: 10px;}
+.order_detail_totalprice{ justify-content: end; margin-top: 10px; border-top: 1px solid #92278F; font-size: 1.1em; padding-top: 10px;}
 
 .order_detail_totalprice p{ padding-right: 3px;}
 .od_item_delivery span{ font-size: .7em;}
 .od_item_totalprice span, .od_sum_totalprice span{ font-size: 1.2em; font-weight: 500;}
-.od_sum_totalprice span {color: #7D287E;}
+.od_sum_totalprice span {color: #92278F;}
 
 .pay_way p span::before{content: "│"; display: inline-block; }
 .pay_way_day{ line-height: .5em; font-size: .85em;}

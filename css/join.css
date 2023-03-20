@@ -8,12 +8,12 @@
 .join_top_box label{ width: 15%; display: inline-block; font-weight: 500;}
 .find_id input{ width: 450px;}
 #exp_user_id{ display: inline-block;}
-#exp_user_text{ margin:.5em 0 0 15%; font-weight: 500; color: #7D287E; font-size: .8em;}
+#exp_user_text{ margin:.5em 0 0 15%; font-weight: 500; color: #92278F; font-size: .8em;}
 .join_top_box li{ margin: 15px 0; padding: 0 50px; box-sizing: border-box;}
 
 
 #join_area h2{ font-weight: 400;  margin-bottom: 40px;}
-#join_area  h2 span:nth-child(1){ color: #7D287E;}
+#join_area  h2 span:nth-child(1){ color: #92278F;}
 /* agreement */
 
 .agreement-box{ margin-top: 5%;}
@@ -48,7 +48,7 @@
 
     .join_top_box input{width: 100%;}
     #exp_user_id{ display: inline-block;}
-    #exp_user_text{ margin:.5em 0 0 0%; font-weight: 500; color: #7D287E;}
+    #exp_user_text{ margin:.5em 0 0 0%; font-weight: 500; color: #92278F;}
     .join_top_box li{ padding: 0 10px;}
 
     .join_btn_box input, .join_btn_box button{width: 30%;}
@@ -62,8 +62,8 @@
 #id_find_area{ display: flex; height: 350px;}
 #loginer, #find_pass_area{ width: 45%;}
 .find_pass_wrap, .loginer_wrap{ width: 80%; margin: 0 auto;}
-.find-line{ width: 10%;text-align: center; position: relative; color: #7d287e;}
-.find-line::before, .find-line::after{content: ""; width: 1px;height: 30%; display: block; border-left: 1px solid #7d287e; margin: 0 auto;}
+.find-line{ width: 10%;text-align: center; position: relative; color: #92278F;}
+.find-line::before, .find-line::after{content: ""; width: 1px;height: 30%; display: block; border-left: 1px solid #92278F; margin: 0 auto;}
 
 
 .find-box-title-span{ font-size: .8em;}
@@ -73,7 +73,7 @@
 #id_find_area .button{ margin-top: 20px;}
 @media (min-width:788px) and (max-width:1200px){
     .find_pass_wrap, .loginer_wrap{ width: 90%;}
-    .find_id input, .find_pass input{border: 1px solid #7d287e; width:calc(100% - 100px);}
+    .find_id input, .find_pass input{border: 1px solid #92278F; width:calc(100% - 100px);}
 #id_find_area label{ width: 90px; display: inline-block; font-weight: 500;}
   }
   
@@ -87,7 +87,7 @@
     .find_pass_wrap, .loginer_wrap{ width: 100%;}
     #loginer{position: relative;}
     .find-line{ width: 100%; margin: 30px 0;}
-    .left-line:before, .right-line:before{content: "";position: absolute;border-top: 2px solid #7d287e;width: 40%;height: 3px;top: 50%;}
+    .left-line:before, .right-line:before{content: "";position: absolute;border-top: 2px solid #92278F;width: 40%;height: 3px;top: 50%;}
     .left-line:before  {left: 0;}
     .right-line:before  {right: 0;}
     .find-line::before, .find-line::after{display: none;}

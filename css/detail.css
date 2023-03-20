@@ -11,7 +11,7 @@ main{ padding: 10% 0;}
 /* detail-right-box */
 .d-top-right{ width: 40%;}
 .item-name{ font-size: 1.2em;}
-.d-item-price{ color: #7D287E; margin:2%  0;}
+.d-item-price{ color: #92278F; margin:2%  0;}
 .d-tab-menu{padding-left: 0; position: relative; z-index: 1; display:flex ; }
 .d-tab-menu li a{ color: #999; text-transform: uppercase;padding: 10px 15px; display: block;}
 #d-tab-content {height: auto;}
@@ -23,7 +23,7 @@ main{ padding: 10% 0;}
 .detail_nav{ display: flex; width: 40%; margin: 5% auto 0; background-color: #fefefe;}
 .detail_nav a{ width: 33.33%; display: block; text-align: center; padding: 10px 0; font-weight: 500; font-size: 1.2em; transition: all .3s;}
 /* .detail_nav a::after{content: ""; display: block; width: 70%; margin: auto;padding-bottom: 13px;} */
-.detail_nav a:hover{ box-shadow: 0 5px 5px rgba(0, 0, 0, .1); color: #7D287E;}
+.detail_nav a:hover{ box-shadow: 0 5px 5px rgba(0, 0, 0, .1); color: #92278F;}
 #contents{ width: 100%; background-color: #e9ecf2;}
 #contents img{ margin: 10% auto 0;}
 .o_total_price{ margin-bottom: 10px;}
@@ -80,7 +80,7 @@ main{ padding: 10% 0;}
 
 
 /* qna_modal 
-.qna_modal_wrap h2{ color: #7d287e6b; margin-bottom: 20px;}
+.qna_modal_wrap h2{ color: #92278F6b; margin-bottom: 20px;}
 #qna_title{ border: 1px solid #ccc; padding: 5px; width: 250px; margin: 0 10px; font-weight: 500;}
 .qna_modla_title_box, .qna_content_title{ margin-bottom: 20px;}
 

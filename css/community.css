@@ -18,7 +18,7 @@
 .com_3_flex a{float: right; width: 60%; margin: 2em 0;}
 .com_3_flex .item-img-inner{ width: 13%; margin: 0 7% 0 20%; display: inline-block; }
 
-#review_area thead{ border-bottom: 1px solid #7D287E;}
+#review_area thead{ border-bottom: 1px solid #92278F;}
 #review_area thead th{padding-bottom: 20px;}
 #review_area tbody tr{border-bottom: 1px solid #ddd;}
 #review_area tbody tr:last-child{border-bottom: none}
@@ -86,10 +86,10 @@
 .faq_click{ padding: 0 5px;}
 
 #faq_list_area{ padding: 0 5%;}
-.faq_list:first-child{ border-top: 2px solid #7D287E;}
+.faq_list:first-child{ border-top: 2px solid #92278F;}
 .faq_list{ padding: 5px 0; border-bottom: 1px solid #ddd;}
 .faq_click{font-size: 1.2em; padding: 10px; font-weight: 500;}
-.faq_list:hover .faq_click h2{ color: #7D287E;}
+.faq_list:hover .faq_click h2{ color: #92278F;}
 .faq_click h2{ display: inline-block; margin-right: 5px; transition: all .3s; padding-top: .2em;}
 .faq_click .mobile-btn-1{ padding-top: .55em;}
 .faq_text{ padding-left: 35px;}
@@ -134,7 +134,7 @@
     width: 100%;
     text-align:center;
     padding:10px 0;
-    border-top:2px solid #7D287E;
+    border-top:2px solid #92278F;
     border-bottom:1px solid #ddd;
     background-color: #f5f0f1;
     font-weight: 500;

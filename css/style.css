@@ -92,9 +92,9 @@ textarea{ border: 1px solid #ccc !important; }
 
 /* 스크롤바 설정*/
 .scroll_box::-webkit-scrollbar{width: 10px;}
-.scroll_box::-webkit-scrollbar-thumb{background-color: #7D287E4b; border-radius: 10px;}
+.scroll_box::-webkit-scrollbar-thumb{background-color: #92278F4b; border-radius: 10px;}
 .scroll_box::-webkit-scrollbar-track{ background-color: rgba(155, 135, 135, 0);}
 
-.button{display: block; background-color: #FFF;  border: 1px solid #7D287E6b; padding: 5px 10px; font-weight: 600; color: #7D287E6b;transition: all .3s;}
-.button:hover{ color: #7D287E; border: 1px solid #7D287E;}
+.button{display: block; background-color: #FFF;  border: 1px solid #92278F6b; padding: 5px 10px; font-weight: 600; color: #92278F6b;transition: all .3s;}
+.button:hover{ color: #92278F; border: 1px solid #92278F;}
 

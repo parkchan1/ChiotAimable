@@ -46,7 +46,7 @@
 .my_nav li{ width: 70%; margin: 0 auto;}
 .my_nav li a{ font-size: 1.1em; display: block; padding: 3% 0;}
 
-.recently_order_text, .recently_review_text{ border-bottom: 2px solid#7D287E; padding-bottom: 10px; margin-bottom: 20px;}
+.recently_order_text, .recently_review_text{ border-bottom: 2px solid#92278F; padding-bottom: 10px; margin-bottom: 20px;}
 .rlo_1{ width: 15%;}
 .rlo_2{ width: 55%;}
 .rlo_4{ width: 10%;}
@@ -61,7 +61,7 @@
 .recently_order_inner li, .recently_order_text p{ display: flex; justify-content: center; flex-direction: column;}
 .rlo_3_inner{ display: flex; align-items: center;}
 .rlo_2_inner, .rlr_1_inner{ display: flex;  flex-direction: row; align-items: center;}
-.rlr_1_inner { justify-content: center; color: #7D287E;}
+.rlr_1_inner { justify-content: center; color: #92278F;}
 
 .recently_review_list, .recently_review_inner, .recently_review_text, .recently_review_return_box{ display: flex; text-align: center; width: 100%; flex-wrap: wrap;}
 .rlr_1{width: 15%;}
@@ -116,7 +116,7 @@ text-align: left;}
 /* mypage_change_userinfo */
 .my_change_area{ display: flex; flex-wrap: wrap;}
 .mainCon{ width: 60%;}
-.my_change_title{ margin-bottom: 30px; border-bottom: 2px solid #7D287E; padding-bottom: 15px;}
+.my_change_title{ margin-bottom: 30px; border-bottom: 2px solid #92278F; padding-bottom: 15px;}
 #my_user_info li{ display: flex; margin-bottom: 20px;}
 .user_left{ width: 25%;}
 .user_right{width: 60%;}
@@ -125,7 +125,7 @@ text-align: left;}
 .address_search_btn, .password_change_btn{ border: 1px solid #ddd; background-color: #fff; padding: 3px 5px;}
 #sample2_address, #sample2_detailAddress{ margin-bottom: 10px;}
 .mainCon input, #user_name, #id{ border: 1px solid #ddd; word-break:break-all;width: 280px; padding: 5px;display: block; box-sizing: border-box;}
-.mainCon input:focus, #user_name:focus, #id:focus{ outline: none !important; border-color: #7D287E; box-shadow: 0 0 3px #7D287E6b;}
+.mainCon input:focus, #user_name:focus, #id:focus{ outline: none !important; border-color: #92278F; box-shadow: 0 0 3px #92278F6b;}
 .user_change_btn{display: flex; justify-content: center;}
 .user_change_btn button{margin: 0 10px; border-radius: 30px; display: block;}
 

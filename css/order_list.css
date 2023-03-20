@@ -41,7 +41,7 @@ input[data-placeholder]::before{ color: rgb(179, 176, 176); font-size: 14px; pad
 .olo_2_inner p{ text-align: left; margin-left: 5%;}
 .order_inner li, .order_list_text p{ display: flex; justify-content: center; flex-direction: column;}
 .olo_2_inner{ display: flex; align-items: center}
-.order_list_text {border-top: 1px solid #ddd; border-bottom: 2px solid #7D287E; padding: 15px 0; margin-bottom: 15px;}
+.order_list_text {border-top: 1px solid #ddd; border-bottom: 2px solid #92278F; padding: 15px 0; margin-bottom: 15px;}
 .ol_5 button{ margin: 3px; padding: 3px;}
 .ol_6 button{ font-size: .8em; font-weight: 500; border: 1px solid #ddd;background-color: #fff;padding: 5px 10px;}
 
