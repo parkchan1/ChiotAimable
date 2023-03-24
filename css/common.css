@@ -41,7 +41,7 @@
 .item-text{padding-top: 20px;box-sizing: border-box; font-size: .8em;}
 .item-name{ padding-top: 15px; position: relative; }
 .item-name p{ white-space: normal; word-break: normal;}
-.item-color{display: inline-block; width: 40%; position: absolute; top: 22px; right: 0; width: 100%; opacity: 1; transition: all .5s;} 
+.item-color{display: inline-block; width: 40%; position: absolute; top: 22px; right: 0; width: 100%; opacity: 0; transition: all .5s;} 
 .item-color li{ float: right; margin-right: 1%;width:3%; }
 .item-color li::after{  display: block; content: ""; padding-bottom: 100%;}
 .item-simple{ overflow: hidden;text-overflow: ellipsis;
