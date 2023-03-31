@@ -43,6 +43,7 @@ main{ padding: 10% 0;}
 .answer_inner{ word-break: normal;}
 
 /* review */
+.detali_review_list{ border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-bottom: 10px;}
 .review_lists_inner{ text-align: center; display: flex; align-items: center;}
 .review_lists_inner img{ width: 40%; margin: auto;}
 

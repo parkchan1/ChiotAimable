@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REVIEW</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../icon/favicon.png">
+    <title>상세보기</title>
     <link rel="stylesheet" href="../../css/mypage.css">
     <link rel="stylesheet" href="../../css/order_list.css">
     <link rel="stylesheet" href="../../css/common.css">
@@ -32,7 +33,7 @@
             <ul class="pc_nav">
                 <li><a href="#">DRESS</a>
                     <ul class="pc_nav_sub">
-                        <li><a href="#">Top</a></li>
+                        <li><a href="top.html">Top</a></li>
                     </ul>
                 </li>
                 <li><a href="#">ABOUT</a>
@@ -89,7 +90,7 @@
         <ul class="menu_wrap">
             <li class="m-sub-btn"><a href="#">DRESS <span class="mobile-btn-1"></span></a>
                 <ul class="m-sub-nav">
-                    <li><a href="#">TOP</a></li>
+                    <li><a href="../product/detail.html">TOP</a></li>
                 </ul>
             </li>
             <li class="m-sub-btn">
@@ -370,20 +371,24 @@
                     <li> 
                         <div id="qna_'+i+'" class="recently_order_inner" style="margin-bottom:10px;"> 
                                 <span class="rlr_2 qna_title" style="cursor:pointer; " onclick="show_answer()" > 
-                  QnA질문 제목
+                                    사이즈 문의가 있습니다!!
                                 </span> 
                             <span class='rlr_1'>홍길동</span> 
                             <span class='rlr_3'>2023. 03. 31</span> 
-                            <span class='rlr_4'>답변상태</span> 
+                            <span class='rlr_4'>답변완료</span> 
                         </div> 
                         <div id="answer" class="answer"> 
                                     <p class="answer_inner"> 
-                                       QnA질문 내용입니다. 여러가지등등
+                                       80cm 아기가 있는데 몸무게는 15kg정도 입니다. <br>
+                                       사이즈를 어떻게 고르면 될까요??
                                     </p> 
                     <br><ul class="qna_reply"> 
                     <li> 관리자 :</li> 
                     <li> 
-                   관리자 답변입니다.
+                   안녕하세요. 홍길동님 <br>
+                   본 제품의 경울 살짝 크게나왔으며, 재질또한 늘어나는 성질이 있어 <br>
+                   정사이즈를 구매하시면 털이 자라나도 별 무리없이 착용이 가능하실겁니다. <br>
+                   저희 쇼떼마블을 이용해주셔서 감사합니다.
                     </li> 
                     </ul> 
                         </div> 
@@ -424,14 +429,15 @@
                 </div>
 
                 <ul id="review_lists">
-                     <li onclick="review_modal('<?=$board_idx?>');"> 
+                     <li onclick="review_modal('<?=$board_idx?>');" class="detali_review_list "> 
                         <div class="review_lists_inner"> 
                              <div class="rlr_3"> 
                                  <img src="../../images/dog2.jpg"> 
                              </div> 
             
                             <div class="rlr_2"> 
-                                <h4 class="review_title" style="cursor:pointer;">리뷰제목입니다.
+                                <h4 class="review_title" style="cursor:pointer;">
+                                    정사이즈로 구매헀습니다~~
                                 </h4>
                             </div> 
                             
@@ -440,6 +446,24 @@
 
                         </div> 
                     </li> 
+
+                    <li onclick="review_modal('<?=$board_idx?>');" class="detali_review_list "> 
+                        <div class="review_lists_inner"> 
+                             <div class="rlr_3"> 
+                                 <img src="../../images/dog2.jpg"> 
+                             </div> 
+            
+                            <div class="rlr_2"> 
+                                <h4 class="review_title" style="cursor:pointer;">
+                                    정사이즈로 구매헀습니다~~
+                                </h4>
+                            </div> 
+                            
+                            <p class="rlr_3">홍길동</p> 
+                            <p class="rlr_4">2023. 03. 31</p>
+
+                        </div> 
+                    </li>
                 </ul>
                 
                 <ul id="review_paging" style="text-align:center;"></ul>
@@ -471,9 +495,9 @@
   
       <dl class="f-notice">
         <dt>Notice</dt>
-        <dd><a href="/sub/notice.html">공지사항</a></dd>
-        <dd><a href="/sub/community/faq.html">FAQ</a></dd>
-        <dd><a href="#">교환 / 반품 안내</a></dd>
+        <dd><a href="../community/notice.html">공지사항</a></dd>
+        <dd><a href="../community/faq.html">FAQ</a></dd>
+        <dd><a href="../community/faq.html">교환 / 반품 안내</a></dd>
         <dd><a href="#">이용약관</a></dd>
         <dd><a href="#">개인정보처리방침</a></dd>
       </dl>
@@ -608,18 +632,19 @@
                         <ul class="review_modal_text_box scroll_box">
                             <li>
                                 <p id = "content_show">
-                                    리뷰내용입니다리뷰내용입니다리뷰내용입니다리뷰내용입니다
-                                    리뷰내용입니다
-                                    리뷰내용입니다리뷰내용입니다리뷰내용입니다리뷰내용입니다
-                                    리뷰내용입니다리뷰내용입니다리뷰내용입니다리뷰내용입니다리뷰내용입니다
-                                    리뷰내용입니다리뷰내용입니다리뷰내용입니다
+                                    문의 답변대로 주문을 하였더니 너무 편하게 잘 입고있습니다. <br>
+                                    다른 제품들도 주문하고싶어서 또 들어왔어요!! <br>
+                                    감사합니다.
                                 </p>
                                 <!-- <p id="writer_show">홍길동</p> -->
                                 <p id="writeday_show">2023. 03. 03</p>
                             </li>
                             <li class="reply_show_box">
                                 <p id ="reply_show">
-                                    답변입니다
+                                    안녕하세요! 홍길동님 <br>
+                                    저희 제품을 착용해주셔서 감사합니다. <br>
+                                    더욱 좋은 퀄리티의 제품을 만들어내겠습니다, <br>
+                                    감사합니다.
                                 </p>
                                 <span>관리자</span>
                             </li>

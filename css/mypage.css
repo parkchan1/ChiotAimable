@@ -7,7 +7,8 @@
 .my_id{display: flex;}
 .my_img{ margin: auto 0; }
 .my_name_wrap{ margin: auto 0;}
-.my_name{font-size: 1.2em;}
+.my_name{font-size: 1.2em; word-break: keep-all;}
+.my_name span{font-size: .85em;}
 .my_name_wrap a p{ line-height: 1.2em;}
 .inc_left_top{ height: 165.59px;}
 

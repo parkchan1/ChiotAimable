@@ -2,7 +2,7 @@
 input{ display: inline-block;}
 .title{ text-align: center;}
 .wish{ margin: 10vh auto;}
-#wish_area{ width: 80% ; margin:  0 auto; font-size: .85em;}
+#wish_area{ width: 80% ; margin:  18px auto; font-size: .85em;}
 .wish_cart_list h1{ padding: 50px 0;}
 #all_ck{ margin-bottom: 15px;}
 
