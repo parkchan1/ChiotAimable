@@ -17,7 +17,7 @@ function go_back()
     history.back(-1);
 }
 
-
+ 
 
 
 // 주소찾기

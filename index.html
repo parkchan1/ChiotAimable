@@ -230,7 +230,7 @@
         </li>
         <li class="strength_inner">
             <div class="strength_img">
-                <img src="icon/map.svg" alt="이미지1">
+                <img src="icon/estimate.svg" alt="이미지1">
             </div>
             <p class="strength_text">
                 강점을 설명하여 작성합니다.
@@ -253,13 +253,13 @@
       New Item
     </h1>
     <ul class="grid-btn">
-      <li id="grid-1-btn">
+      <li class="grid-1-btn">
         <img src="icon/grid1.png" alt="1줄보기">
       </li>
-      <li id="grid-2-btn">
+      <li class="grid-2-btn">
         <img src="icon/grid2.png" alt="2줄보기">
       </li>
-      <li id="grid-3-btn">
+      <li class="grid-3-btn">
         <img src="icon/grid3.png" alt="3줄보기">
       </li>
     </ul>
@@ -389,143 +389,145 @@
 
 
 
-  <section id="bestitem" class="inner">
-    <h1 class="main-title">
-      Best Item
-    </h1>
-    <ul class="grid-btn">
-      <li id="grid-1-btn">
-        <img src="icon/grid1.png" alt="1줄보기">
-      </li>
-      <li id="grid-2-btn">
-        <img src="icon/grid2.png" alt="2줄보기">
-      </li>
-      <li id="grid-3-btn">
-        <img src="icon/grid3.png" alt="3줄보기">
-      </li>
-    </ul>
-
-    <ul class="item-list-wrap">
-        <li class="item-list">
-        <div class="item-wrap">
-            <div class="item-inner-wrap">
-            <ul class="item-box">
-                <a href="sub/product/detail.html">
-                <li class="item-img-box">
-                    <div class="item-img-inner">
-                    <a href="sub/product/detail.html">
-                        <img src="images/dog5-1.jpg" alt="메인이미지" class="detail-img">
-                        <img src="images/dog5-2.jpg" alt="메인이미지" class="main-img">
-                    </a>
-                    </div>   
-                </li>
-                </a>
-                <li class="item-text-box">
-                <div class="item-text">
-                    <a href="#">
-                    <div class="item-name">
-                        <p><strong>상품이름</strong></p>
-                        <ul class="item-color">
-                        <li></li>
-                        <li></li>
-                        </ul>
-                    </div>
-                    <p class="item-simple">상품간단설명</p>
-                    </a>
-                    <div class="item-price">   
-                        <strong>36,000원</strong>
-                        <div class="item-text-info">
-                            <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
-                        <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
-                        </div>
-                    </div>
-                </div>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </li>
-        <li class="item-list">
-            <div class="item-wrap">
-                <div class="item-inner-wrap">
-                <ul class="item-box">
-                    <a href="sub/product/detail.html">
-                    <li class="item-img-box">
-                        <div class="item-img-inner">
-                        <a href="sub/product/detail.html">
-                            <img src="images/dog3-1.jpg" alt="메인이미지" class="detail-img">
-                            <img src="images/dog3-2.jpg" alt="메인이미지" class="main-img">
-                        </a>
-                        </div>   
-                    </li>
-                    </a>
-                    <li class="item-text-box">
-                    <div class="item-text">
-                        <a href="sub/product/detail.html">
-                        <div class="item-name">
-                            <p><strong>상품이름</strong></p>
-                            <ul class="item-color">
-                            <li></li>
-                            <li></li>
-                            </ul>
-                        </div>
-                        <p class="item-simple">상품간단설명</p>
-                        </a>
-                        <div class="item-price">   
-                            <strong>36,000원</strong>
-                            <div class="item-text-info">
-                                <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
-                            <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
-                            </div>
-                        </div>
-                    </div>
-                    </li>
-                </ul>
-                </div>
-            </div>
+  <section id="bestitem" >
+    <div id="bestitem_inner" class="inner">
+        <h1 class="main-title">
+            Best Item
+        </h1>
+          <ul class="grid-btn">
+            <li class="grid-1-btn">
+              <img src="icon/grid1.png" alt="1줄보기">
             </li>
-
-
-            <li class="item-list">
-                <div class="item-wrap">
-                    <div class="item-inner-wrap">
-                    <ul class="item-box">
-                        <a href="">
-                        <li class="item-img-box">
-                            <div class="item-img-inner">
-                            <a href="/product/detail.html">
-                                <img src="images/dog1.jpg" alt="메인이미지" class="detail-img">
-                                <img src="images/dog2.jpg" alt="메인이미지" class="main-img">
-                            </a>
-                            </div>   
-                        </li>
-                        </a>
-                        <li class="item-text-box">
-                        <div class="item-text">
-                            <a href="#">
-                            <div class="item-name">
-                                <p><strong>상품이름</strong></p>
-                                <ul class="item-color">
-                                <li></li>
-                                <li></li>
-                                </ul>
-                            </div>
-                            <p class="item-simple">상품간단설명</p>
-                            </a>
-                            <div class="item-price">   
-                                <strong>36,000원</strong>
-                                <div class="item-text-info">
-                                    <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
-                                <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
-                                </div>
-                            </div>
-                        </div>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-            </li>            
-    </ul>
+            <li class="grid-2-btn">
+              <img src="icon/grid2.png" alt="2줄보기">
+            </li>
+            <li class="grid-3-btn">
+              <img src="icon/grid3.png" alt="3줄보기">
+            </li>
+          </ul>
+      
+          <ul class="item-list-wrap">
+              <li class="item-list">
+              <div class="item-wrap">
+                  <div class="item-inner-wrap">
+                  <ul class="item-box">
+                      <a href="sub/product/detail.html">
+                      <li class="item-img-box">
+                          <div class="item-img-inner">
+                          <a href="sub/product/detail.html">
+                              <img src="images/dog5-1.jpg" alt="메인이미지" class="detail-img">
+                              <img src="images/dog5-2.jpg" alt="메인이미지" class="main-img">
+                          </a>
+                          </div>   
+                      </li>
+                      </a>
+                      <li class="item-text-box">
+                      <div class="item-text">
+                          <a href="#">
+                          <div class="item-name">
+                              <p><strong>상품이름</strong></p>
+                              <ul class="item-color">
+                              <li></li>
+                              <li></li>
+                              </ul>
+                          </div>
+                          <p class="item-simple">상품간단설명</p>
+                          </a>
+                          <div class="item-price">   
+                              <strong>36,000원</strong>
+                              <div class="item-text-info">
+                                  <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                              <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                              </div>
+                          </div>
+                      </div>
+                      </li>
+                  </ul>
+                  </div>
+              </div>
+              </li>
+              <li class="item-list">
+                  <div class="item-wrap">
+                      <div class="item-inner-wrap">
+                      <ul class="item-box">
+                          <a href="sub/product/detail.html">
+                          <li class="item-img-box">
+                              <div class="item-img-inner">
+                              <a href="sub/product/detail.html">
+                                  <img src="images/dog3-1.jpg" alt="메인이미지" class="detail-img">
+                                  <img src="images/dog3-2.jpg" alt="메인이미지" class="main-img">
+                              </a>
+                              </div>   
+                          </li>
+                          </a>
+                          <li class="item-text-box">
+                          <div class="item-text">
+                              <a href="sub/product/detail.html">
+                              <div class="item-name">
+                                  <p><strong>상품이름</strong></p>
+                                  <ul class="item-color">
+                                  <li></li>
+                                  <li></li>
+                                  </ul>
+                              </div>
+                              <p class="item-simple">상품간단설명</p>
+                              </a>
+                              <div class="item-price">   
+                                  <strong>36,000원</strong>
+                                  <div class="item-text-info">
+                                      <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                                  <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                                  </div>
+                              </div>
+                          </div>
+                          </li>
+                      </ul>
+                      </div>
+                  </div>
+                  </li>
+      
+      
+                  <li class="item-list">
+                      <div class="item-wrap">
+                          <div class="item-inner-wrap">
+                          <ul class="item-box">
+                              <a href="">
+                              <li class="item-img-box">
+                                  <div class="item-img-inner">
+                                  <a href="/product/detail.html">
+                                      <img src="images/dog1.jpg" alt="메인이미지" class="detail-img">
+                                      <img src="images/dog2.jpg" alt="메인이미지" class="main-img">
+                                  </a>
+                                  </div>   
+                              </li>
+                              </a>
+                              <li class="item-text-box">
+                              <div class="item-text">
+                                  <a href="#">
+                                  <div class="item-name">
+                                      <p><strong>상품이름</strong></p>
+                                      <ul class="item-color">
+                                      <li></li>
+                                      <li></li>
+                                      </ul>
+                                  </div>
+                                  <p class="item-simple">상품간단설명</p>
+                                  </a>
+                                  <div class="item-price">   
+                                      <strong>36,000원</strong>
+                                      <div class="item-text-info">
+                                          <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                                      <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                                      </div>
+                                  </div>
+                              </div>
+                              </li>
+                          </ul>
+                          </div>
+                      </div>
+                  </li>            
+          </ul>  
+    </div>
   </section>
 
   <section id="weekenitem" class="inner">
@@ -533,16 +535,16 @@
       Weeken Item
     </h1>
     <ul class="grid-btn">
-      <li id="grid-1-btn">
-        <img src="icon/grid1.png" alt="1줄보기">
-      </li>
-      <li id="grid-2-btn">
-        <img src="icon/grid2.png" alt="2줄보기">
-      </li>
-      <li id="grid-3-btn">
-        <img src="icon/grid3.png" alt="3줄보기">
-      </li>
-    </ul>
+        <li class="grid-1-btn">
+          <img src="icon/grid1.png" alt="1줄보기">
+        </li>
+        <li class="grid-2-btn">
+          <img src="icon/grid2.png" alt="2줄보기">
+        </li>
+        <li class="grid-3-btn">
+          <img src="icon/grid3.png" alt="3줄보기">
+        </li>
+      </ul>
 
     <ul class="item-list-wrap">
         <li class="item-list">
@@ -667,7 +669,234 @@
     </ul>
   </section>
 
+  <section id="md_pick">
+    <div id="bestitem_inner" class="inner">
+    <h1 class="main-title">
+      MD's Pick
+    </h1>
+    <ul class="grid-btn">
+      <li class="grid-1-btn">
+        <img src="icon/grid1.png" alt="1줄보기">
+      </li>
+      <li class="grid-2-btn">
+        <img src="icon/grid2.png" alt="2줄보기">
+      </li>
+      <li class="grid-3-btn">
+        <img src="icon/grid3.png" alt="3줄보기">
+      </li>
+    </ul>
 
+    <ul class="item-list-wrap">
+        <li class="item-list">
+        <div class="item-wrap">
+            <div class="item-inner-wrap">
+            <ul class="item-box">
+                <a href="sub/product/detail.html">
+                <li class="item-img-box">
+                    <div class="item-img-inner">
+                    <a href="sub/product/detail.html">
+                        <img src="images/dog1.jpg" alt="메인이미지" class="detail-img">
+                        <img src="images/dog2.jpg" alt="메인이미지" class="main-img">
+                    </a>
+                    </div>   
+                </li>
+                </a>
+                <li class="item-text-box">
+                <div class="item-text">
+                    <a href="#">
+                    <div class="item-name">
+                        <p><strong>상품이름</strong></p>
+                        <ul class="item-color">
+                        <li></li>
+                        <li></li>
+                        </ul>
+                    </div>
+                    <p class="item-simple">상품간단설명</p>
+                    </a>
+                    <div class="item-price">   
+                        <strong>36,000원</strong>
+                        <div class="item-text-info">
+                            <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                        <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                        </div>
+                    </div>
+                </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </li>
+        <li class="item-list">
+            <div class="item-wrap">
+                <div class="item-inner-wrap">
+                <ul class="item-box">
+                    <a href="sub/product/detail.html">
+                    <li class="item-img-box">
+                        <div class="item-img-inner">
+                        <a href="sub/product/detail.html">
+                            <img src="images/dog3-1.jpg" alt="메인이미지" class="detail-img">
+                            <img src="images/dog3-2.jpg" alt="메인이미지" class="main-img">
+                        </a>
+                        </div>   
+                    </li>
+                    </a>
+                    <li class="item-text-box">
+                    <div class="item-text">
+                        <a href="sub/product/detail.html">
+                        <div class="item-name">
+                            <p><strong>상품이름</strong></p>
+                            <ul class="item-color">
+                            <li></li>
+                            <li></li>
+                            </ul>
+                        </div>
+                        <p class="item-simple">상품간단설명</p>
+                        </a>
+                        <div class="item-price">   
+                            <strong>36,000원</strong>
+                            <div class="item-text-info">
+                                <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                            <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </li>
+
+
+            <li class="item-list">
+                <div class="item-wrap">
+                    <div class="item-inner-wrap">
+                    <ul class="item-box">
+                        <a href="">
+                        <li class="item-img-box">
+                            <div class="item-img-inner">
+                            <a href="/product/detail.html">
+                                <img src="images/dog4-1.jpg" alt="메인이미지" class="detail-img">
+                                <img src="images/dog4-2.jpg" alt="메인이미지" class="main-img">
+                            </a>
+                            </div>   
+                        </li>
+                        </a>
+                        <li class="item-text-box">
+                        <div class="item-text">
+                            <a href="#">
+                            <div class="item-name">
+                                <p><strong>상품이름</strong></p>
+                                <ul class="item-color">
+                                <li></li>
+                                <li></li>
+                                </ul>
+                            </div>
+                            <p class="item-simple">상품간단설명</p>
+                            </a>
+                            <div class="item-price">   
+                                <strong>36,000원</strong>
+                                <div class="item-text-info">
+                                    <span class="item-wish-btn" id="wish_n_"><img src="icon/wish_before.svg" alt="좋아요" onclick= "change_wish('Y','<?=$p_num?>')"></span>
+                                <span class="item_cart_btn" onclick="add_cart('<?=$p_num?>');" ><img src="icon/cart.svg" alt="장바구니"></span>
+                                </div>
+                            </div>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </li>            
+    </ul>
+    </div>
+  </section>
+
+<section id="content-new" class="inner">
+<article class="schedule-wrap">
+    <h1 class="schedule-title">Coming Soon</h1>
+    <div class="schedule-inner">
+        <div class="schedule-box">
+            <h4 class="schedule-box-title">준비중</h4>
+            <div class="schedule-box-content">
+               <div class="schedule-box-img">
+                <img src="" alt="">
+               </div>
+               <p class="schedule-preparing">준비중입니다.</p>
+            </div>
+            <div class="schedule-box-bottom">
+                <p class="schedule-view">
+                    
+                </p>
+        
+                <p class="schedule-comming">
+                    
+                </p>
+            </div>
+            <div class="schedule-btn-box"></div>
+        </div>
+        <div class="schedule-box">
+            <h4 class="schedule-box-title">준비중</h4>
+            <div class="schedule-box-content">
+               <div class="schedule-box-img">
+                <img src="" alt="">
+               </div>
+               <p class="schedule-preparing">준비중입니다.</p>
+            </div>
+            <div class="schedule-box-bottom">
+                <p class="schedule-view">
+                    
+                </p>
+        
+                <p class="schedule-comming">
+                    
+                </p>
+            </div>
+            <div class="schedule-btn-box"></div>
+        </div>
+    </div>
+
+</article>
+
+<!-- 준비중 끝 -->
+
+<article id="news-notice">
+<div class="news-box">
+    <h1 class="news-title">News <span><a href="/sub/news.php?type=news" >더보기</a></span></h1>
+
+    <div class="news-box-wrap">
+       <a href="#">
+        <dl>
+            <dt>
+                뉴스제목
+            </dt>
+            <dd>
+                뉴스내용
+            </dd>
+        </dl>
+        </a>
+    </div>
+
+</div>
+
+<div class="notice-box">
+    <h1 class="notice-title">Notice<span><a href="sub/community/notice.html">더보기</a></span></h1>
+
+    <div class="notice-box-wrap">
+       <a href="sub/community/notice_read.html">
+        <dl>
+            <dt>
+                공지제목 입니다.
+            </dt>
+            <dd>
+                공지의 내용입니다.
+            </dd>
+        </dl>
+        </a>
+    </div>
+
+</div>
+</article>
+
+</section>
 
 <!-- footer -->
 <footer>

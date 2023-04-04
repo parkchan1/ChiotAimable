@@ -127,27 +127,50 @@ $(".item-wish-btn").on("click", function(e){
 
 // gride-btn
   $(function() {
-    $("#grid-1-btn").on("click", function() {
-        $(".item-list").addClass("grid-1");
-        $(".item-list").removeClass("grid-2 , grid-3");
+    $(".grid-1-btn").on("click", function() {
+        $(this).parent().siblings(".item-list-wrap").children(".item-list").addClass("grid-1");
+        console.log("aaaa")
+        $(this).parent().siblings(".item-list-wrap").children(".item-list").removeClass("grid-2 , grid-3");
         $(this).addClass("grid-on")
         $(this).siblings().removeClass("grid-on")
-
     });
 
-    $("#grid-2-btn").on("click", function() {
-        $(".item-list").removeClass("grid-1 , grid-3");
+    $(".grid-2-btn").on("click", function() {
+        $(this).parent().siblings(".item-list-wrap").children(".item-list").removeClass("grid-1 , grid-3");
     });
 
-    $("#grid-3-btn").on("click", function() {
-        $(".item-list").addClass("grid-3");
-        $(".item-list").removeClass("grid-1");
+    $(".grid-3-btn").on("click", function() {
+        $(this).parent().siblings(".item-list-wrap").children(".item-list").addClass("grid-3");
+        $(this).parent().siblings(".item-list-wrap").children(".item-list").removeClass("grid-1");
     });
     $(".grid-btn li").click(function(){
         $(this).addClass("grid-on");
         $(this).siblings().removeClass("grid-on")
     });
 });
+
+
+// $(function() {
+//     $("#grid-1-btn").on("click", function() {
+//         $(".item-list").addClass("grid-1");
+//         $(".item-list").removeClass("grid-2 , grid-3");
+//         $(this).addClass("grid-on")
+//         $(this).siblings().removeClass("grid-on")
+//     });
+
+//     $("#grid-2-btn").on("click", function() {
+//         $(".item-list").removeClass("grid-1 , grid-3");
+//     });
+
+//     $("#grid-3-btn").on("click", function() {
+//         $(".item-list").addClass("grid-3");
+//         $(".item-list").removeClass("grid-1");
+//     });
+//     $(".grid-btn li").click(function(){
+//         $(this).addClass("grid-on");
+//         $(this).siblings().removeClass("grid-on")
+//     });
+// });
 
 // img change
 var MainImg = document.querySelector('#main-img');

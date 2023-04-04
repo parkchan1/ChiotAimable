@@ -468,3 +468,109 @@ a:hover {
     font-size: 13px;
   }
 }
+
+
+#bestitem, #md_pick{ background-color: #edeef2; padding-top: 20px;}
+
+
+
+/* schedule-box */
+.schedule-inner{ display: flex; flex-wrap: wrap;}
+.schedule-box{ width: 300px; height: 400px; padding: 0 30px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 15px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); overflow: hidden; position: relative; margin: 0 15px;}
+.schedule-box-title{ padding: 40px 0 10px;}
+.schedule-box-content{ padding: 10px 0;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc; }
+.schedule-class{ font-size: 0.8em; padding: 10px 0; font-weight: 500;}
+.schedule-box-bottom{ display: flex; justify-content: space-between; }
+.schedule-box-bottom p{ font-size: 0.8em; font-weight: 500;}
+.schedule-preparing{ text-align: center; font-size:2em; padding: 100px 0 113px;}
+.schedule-box-img{ padding: 5px 0;}
+.schedule-box-img img{ width: 90%; margin: 0 auto;}
+.schedule-box-bottom{ padding-top: 5px;}
+.schedule-btn-box{ background-color: rgba(0, 0, 0, 0.4); width: 100%; height: 100%; position: absolute; top: 0; left: 0; text-align: center; opacity: 0; transition: all .7s;}
+.schedule-btn-box:hover{ opacity: 1;}
+
+.schedule-btn-box a{ display: inline-block; margin-top: 170px; color: #fff;  transition: all .7s; }
+.schedule-btn-box a:hover{ box-shadow: 0 0 8px rgba(0, 0, 0, 0.4) ; opacity: .8;}
+/* schedule-box-end */
+
+/* schedule */
+#content-new{ display: flex; margin: 5% auto; flex-wrap: wrap; justify-content: space-between;}
+
+#schedule{ width: 55%;}
+.schedule-title, .news-title, .notice-title, .schedule-title{ font-size: 1.5em; margin-bottom: 30px; color: #92278F;}
+.schedule-title span a{ font-size: 0.45em; padding-left: 10px; transition: all .5s;}
+.schedule-title span a:hover{ opacity: .5;}
+.schedule-box-wrap{ display: flex; justify-content: space-evenly; flex-wrap: wrap;}
+
+
+
+
+#news-notice{ width: 43%;}
+.news-title span a, .notice-title span a{ font-size: 0.45em; padding-left: 10px; transition: all .5s;}
+.news-title span a:hover, .notice-title span a:hover{ opacity: .5;}
+.news-box-wrap, .notice-box-wrap{ padding: 0 5%; box-sizing: border-box;}
+.news-box-wrap dl, .notice-box-wrap dl{ padding-left: 10px; border-left: 2px solid #ccc; font-weight: 400;}
+.news-box-wrap dl dt, .notice-box-wrap dl dt{ font-size: 1.3em; padding-bottom: 25px;}
+
+.news-box{ margin-bottom: 15%;}
+.notice-box-wrap dl{ margin-bottom: 20px;}
+
+
+@media (max-width:787px){
+
+  #content-new{  justify-content: space-around;}
+  #schedule{ width: 90%;}
+  .schedule-inner { justify-content: center;}
+  .schedule-box{ margin:0 0 8%;}
+
+  #news-notice{ width: 90%; margin: 5% 0 0 0; }
+  .news-title span a, .notice-title span a{ font-size: 0.45em; padding-left: 10px; transition: all .5s;}
+  .news-title span a:hover, .notice-title span a:hover{ opacity: .5;}
+  .news-box-wrap, .notice-box-wrap{ padding: 0 5%; box-sizing: border-box;}
+  .news-box-wrap dl, .notice-box-wrap dl{ padding-left: 10px; border-left: 2px solid #ccc; font-weight: 400;}
+  .news-box-wrap dl dt, .notice-box-wrap dl dt{ font-size: 1.3em; padding-bottom: 25px;}
+
+  .news-box{ margin-bottom: 15%;}
+  .notice-box-wrap dl{ margin-bottom: 20px;}
+  
+}
+
+/* schedule-end */
+
+/* cs-call */
+
+#guide{ display: flex; flex-wrap: wrap;}
+
+.guide-nav{ width: 55%;}
+
+.guide-nav ul li{ border-top:1px solid #ccc ;}
+.guide-nav ul li:last-child{  border-bottom:1px solid #ccc ;}
+.guide-nav ul li a{ display: block; font-size: 1.5em; padding: 40px 0 40px 20px;}
+.guide-nav ul li a:hover{ background-color: rgba(0, 0, 255, 0.3); text-decoration: underline;}
+
+
+#cs-call{ width: 40%; background: url(../images/cs-call-bg.jpg) no-repeat center; text-align: center;  color: #fff;}
+#cs-call h2{ font-weight: 400; padding-top: 125px;}
+#cs-call h1{ font-weight: 400; font-size: 1.8em; padding-top: 15px;}
+#cs-call p{ font-size: 1.2em; padding-top: 30px; line-height: .9em;}
+#cs-call p span{ font-size: 0.7em;}
+
+@media (max-width:787px){
+  
+  #guide{ justify-content: space-around;}
+  .guide-nav{ width: 95%;}
+
+  .guide-nav ul li{ border-top:1px solid #ccc ;}
+  .guide-nav ul li:last-child{  border-bottom:1px solid #ccc ;}
+  .guide-nav ul li a{ display: block; font-size: 1.5em; padding: 40px 0 40px 20px;}
+  .guide-nav ul li a:hover{ background-color: rgba(0, 0, 255, 0.3); text-decoration: underline;}
+
+
+  #cs-call{ width: 95%; background: url(../images/cs-call-bg.jpg) no-repeat center; text-align: center;  color: #fff;}
+  #cs-call h2{ font-weight: 400; padding-top: 50px;}
+  #cs-call h1{ font-weight: 400; font-size: 1.8em; padding-top: 15px;}
+  #cs-call p{ font-size: 1.2em; padding: 40px 0; line-height: .9em;}
+  #cs-call p span{ font-size: 0.7em;}
+}
+
+/* cs-call-end */

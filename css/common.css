@@ -22,7 +22,7 @@
 
 
 .main-title{ text-align: center; color: #92278F; margin: 5% 0;}
-.item-list{ position: relative; width: 27.33%; padding-bottom: 42%; margin: 2% 3%; cursor: pointer;}
+.item-list{ position: relative; width: 27.33%; padding-bottom: 40%; margin: 2% 3%; cursor: pointer;}
 
 .item-wrap{ position: absolute; top: 0; left: 0; right: 0;}
 .item-inner-wrap{ width: 100%; position: relative;}
@@ -56,6 +56,7 @@
 .item-text-info{ width: 100%; transition: all 1.3s; opacity: 0; display: flex; justify-content: end;  transform: translateY(10px);}
 .item-text-info span{ float: left; margin-right: 10px; display: block; width: 21px;}
 .item-text-info span img{margin-right: 0;}
+.hover{ box-shadow: 0 0 15px rgba(0, 0, 0, .3); transition: all .5s;}
 .hover .detail-img{opacity: 0; }
 .hover .item-text-info{ transform: translateY(-2px); opacity: 1;} 
 .hover .item-color{  right: 5px; opacity: 1;} 
@@ -79,6 +80,7 @@
   
     .item-text-info{  padding-top: 0px; opacity: 1; justify-content: start;}
     .item-text-info span{ float: left; margin-right: 10px;}
+    .hover{ box-shadow: 0 0 0;}
     .hover .detail-img{ transform: translateY(0);}
     .hover .item-text-info{ transform: translateY(10px); opacity: 1;} 
     .hover .item-color{  right: 0px; opacity: 1;} 
