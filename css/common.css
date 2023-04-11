@@ -140,6 +140,11 @@
 .o_btn_box{ display: flex; justify-content: center; margin-top: 3%;}
 .o_btn_box a{ display: block; padding: 3px 12px; border: 1px solid #262626; margin: 0 5px;}
 
+@media (max-width:787px){
+  .o_size_box p { width: 30%;}
+  
+}
+
 
 /* wish */
 input{ display: inline-block;}

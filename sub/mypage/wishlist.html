@@ -327,7 +327,7 @@
                     <p>글꼴 - </p>
                     <select id="o_font" name="o_font" class="o_size" >
                         <option value="">필수선택</option>
-                        <option value="<?=$array_font_info['font_name']?>" >
+                        <option value="글꼴" ></option>
                     </select>
 
                     <input type="hidden" id="cnt_font" style="border: 1px solid blue; " >
@@ -386,7 +386,7 @@
         </div>
 
         <div class="o_btn_box">
-            <a id="add_cart" style="cursor:pointer;" >ADD CART</a>
+            <a id="add_cart" style="cursor:pointer;" href="cart.html" >ADD CART</a>
             <a id="buy_now" style="cursor:pointer;" href="payment.html">BUY NOW</a>
         </div>
 
@@ -406,10 +406,6 @@
 
 <script>
 
-
-
-
-    // wish-modal
 $(document).ready(function(){
     $('.w_modal_btn').on('click', function(){
         $('.w_modal_bg').show();

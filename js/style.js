@@ -280,3 +280,6 @@ $(function(){
         $(this).find(".mobile-btn-1").toggleClass("up")
     });
 });
+
+
+ AOS.init();
