@@ -161,7 +161,7 @@
     </article>
 
     <article class="d-top-right">
-        <p class="item-name">상품이름</p>
+        <p class="item-name">요조숙녀 탑드레스</p>
         <p class="d-item-price">26,000 원</p>
         <input type="hidden" id='hid_prod_price' value="<?=$array_prod_info['price']?>" >
         <div class="d-tab-wrapper">
@@ -213,15 +213,15 @@
                 <input type="text" id="dog_name" value="까루" class="o_size"  placeholder="반려견의 이름을 입력해주세요.">
             </li>
 
-            <li class="o_size_box">
+            <!-- <li class="o_size_box">
                 <p> 목둘레 - </p>
                 <input type="text" id="dog_nack_length" value="22" placeholder="착용할 반려견 목둘레(여유분'미포함')을 입력해주세요." class="o_size" >
-            </li>
+            </li> -->
 
-            <li class="o_size_box">
+            <!-- <li class="o_size_box">
                 <p> 제작사이즈 - </p>
                 <input type="text" id="nack_size_text" value="24" placeholder="원하시는 사이즈(여유분'포함')을 입력해주세요." class="o_size" >
-            </li>
+            </li> -->
             
             <li class="o_size_box">
                 <p>반려견 정보 -</p>
@@ -242,7 +242,7 @@
                 <input type="hidden" id="tmp_price" style="border: 1px solid red; " >
 
             </li>
-                    <li class="o_size_box2">
+                    <!-- <li class="o_size_box2">
                         <div class="o_size_box">
                             <p>각인 - </p>
                             <select id="o_carve" name="o_carve" class="o_size" >
@@ -257,7 +257,7 @@
                             <input type="hidden" id="tmp_carve_price" value="0" style="border: 1px solid red; " >
 
                         </div>
-                    </li>
+                    </li> -->
 
                         <input type="hidden" id="cnt_carve" style="border: 1px solid blue; width:40px; " value="0">
            
@@ -336,11 +336,11 @@
     </article>
 </section>
 <div class="detail_nav">
-    <a href="#contents">Detail</a>
-    <a href="#QNA">QnA</a>
-    <a href="#review">Review</a>
+    <a href="#contents" class="scroll_move">Detail</a>
+    <a href="#QNA" class="scroll_move">QnA</a>
+    <a href="#review" class="scroll_move">Review</a>
 </div>
-<div id="contents" style="margin-top:50px; text-align:center; ">
+<div id="contents" style="margin-top:50px; text-align:center; height: 1000px; ">
     상세페이지
 </div>
 
@@ -348,7 +348,7 @@
     <div style="margin-top: 100px;">
     <input type="hidden" id="qna_page" name="qna_page" value="1">
         <h3>QnA</h3>
-        <p>구매하시려는 상품에 대해 궁금한 점이 있으신 경우 문의해주세요. </p>
+        <p>상품에 대해 궁금한 점이 있으신경우 문의해주세요. </p>
         <p>질문을 클릭하시면 답변이 나옵니다.</p>
         <br>
         <div>
@@ -657,8 +657,7 @@
         
             </article>
         </section>
-
-
+        <a href="#" class="up_btn"><img src="../images/up_btn.png" alt="위로올라가기"></a>
 
 </body>
 </html>

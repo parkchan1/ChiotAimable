@@ -20,6 +20,20 @@
     padding:5px 9px;  margin:0px 3px; text-align:center; cursor:pointer; 
 }
 
+/* page_up */
+
+
+.up_btn{
+  position: fixed;
+  z-index: 99;
+  bottom: 5%;
+  right: 5%;
+  display: none;
+  width: 44px;
+  height: 44px;
+}
+
+
 
 .main-title{ text-align: center; color: #92278F; margin: 5% 0;}
 .item-list{ position: relative; width: 27.33%; padding-bottom: 40%; margin: 2% 3%; cursor: pointer;}

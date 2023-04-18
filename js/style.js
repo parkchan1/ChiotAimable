@@ -281,5 +281,35 @@ $(function(){
     });
 });
 
+// detail_menu
+$(document).ready(function($) {
 
- AOS.init();
+    $(".scroll_move").click(function(event){         
+
+            event.preventDefault();
+
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+
+    });
+
+});
+
+// page_up
+
+$(function(){
+    $(".up_btn").click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+	});
+	$(window).scroll(function() {
+		var height = $(window).scrollTop();
+		if (height > 100) {
+			$('.up_btn').fadeIn();
+		} else {
+			$('.up_btn').fadeOut();
+		}
+	});
+});
+
