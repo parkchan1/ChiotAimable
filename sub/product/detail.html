@@ -327,8 +327,8 @@
 
             <div class="o_btn_box">
                 <a id="add_cart" style="cursor:pointer;" >ADD CART</a>
-                <a id="buy_now" style="cursor:pointer;" >BUY NOW</a>
-                <a id="wish_list" style="cursor:pointer;" >Wish List</a>
+                <a id="buy_now"  href="../mypage/payment.html" style="cursor:pointer;" >BUY NOW</a>
+                <a id="wish_list" onclick="wishlist()" style="cursor:pointer;" >Wish List</a>
             </div>
 
 
@@ -657,7 +657,7 @@
         
             </article>
         </section>
-<!--         <a href="#" class="up_btn"><img src="../images/up_btn.png" alt="위로올라가기"></a> -->
+        <a href="#" class="up_btn"><img src="../images/up_btn.png" alt="위로올라가기"></a>
 
 </body>
 </html>
@@ -693,5 +693,10 @@
         $('.order_detail_bg').hide();
         $('.order_detail_wrap').hide();
         $('html, body').removeClass('hidden')  
+    }
+    function wishlist(){
+        alert("추가 되었습니다. ");
+		location.href = "../mypage/wishlist.html";
+
     }
 </script>
