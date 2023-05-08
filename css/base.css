@@ -25,7 +25,7 @@ header{position: absolute; top: 0; left: 0; right: 0; z-index: 2;}
 .header-bg{background-color: rgba(255, 255, 255, .75); width: 100%; height: 75px; position: absolute;top: 0;left: 0; right: 0; z-index: -1; display: none;}
 .pc-nav-wrap{ width: 50%;position: absolute; top: 30px; left: 250px; z-index: 2;}
 .pc_nav{ display: flex;}
-.pc_nav li>a{ display: block; width: 120px; text-align: center; font-size: .9em; } 
+.pc_nav li>a{ display: block; width: 120px; text-align: center;  } 
 
 
 /* sub-nav */
@@ -33,7 +33,7 @@ header{position: absolute; top: 0; left: 0; right: 0; z-index: 2;}
 .pc-sub-nav{ text-align: center; display: none;}
 .pc-sub-nav li{ margin-bottom: 8px;}
 .pc_nav_sub{ display:none; margin-top: 10px;}
-.pc_nav_sub a{ font-size: .7em; background-color: rgba(255, 255, 255, .7); transition: all .3s; display: block; border: 1px solid rgba(0, 0, 0, 0); padding: 3px 0; box-sizing: border-box;} 
+.pc_nav_sub a{ font-size: .95em; background-color: rgba(255, 255, 255, .7); transition: all .3s; display: block; border: 1px solid rgba(0, 0, 0, 0); padding: 3px 0; box-sizing: border-box;} 
 .pc_nav_sub a:hover{ border: 1px solid #151515; color: #151515;}
 
 

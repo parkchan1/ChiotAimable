@@ -1,7 +1,12 @@
 /* Style */
-/* html { font-size: 10px;}
-body { overflow-x:hidden; font-size: 1rem; } 
+
+@-ms-viewport{width: device-width;}
+@-o-viewport{width: device-width;}
+@viewport{width: device-width;}
+/* 
 body.hidden { position: fixed; overflow-y:hidden;  touch-action: none;} */
+html { font-size: 18px;}
+body { font-size: 1rem; } 
 main { display: block;}
 a, button { color:#51545c;}
 /* p, li{word-break: keep-all;} */
