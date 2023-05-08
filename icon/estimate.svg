@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 141.73 141.73" style="enable-background:new 0 0 141.73 141.73;" xml:space="preserve">
+	 viewBox="0 0 141.7 141.7" style="enable-background:new 0 0 141.7 141.7;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:1.8157;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#000000;stroke-width:1.8157;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st2{fill:none;stroke:#000000;stroke-width:1.8157;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#000000;stroke-width:1.9536;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g>
-	<polyline class="st0" points="96.09,29.82 114.64,29.88 114.24,119.24 45.96,118.99 46.1,87.52 	"/>
-	<polyline class="st0" points="46.12,71.89 46.31,29.64 64.74,29.7 	"/>
-	<polyline class="st0" points="96.55,33.06 111.35,33.11 110.97,115.99 49.26,115.76 49.36,93.76 	"/>
-	<polyline class="st0" points="49.37,78.41 49.58,32.89 64.34,32.94 	"/>
+	<polyline class="st0" points="96.1,29.8 114.6,29.9 114.2,125.2 46,125 46.1,87.5 	"/>
+	<polyline class="st0" points="46.1,71.9 46.3,29.6 64.7,29.7 	"/>
+	<polyline class="st0" points="96.6,33.1 111.3,33.1 111,122 49.3,121.8 49.4,93.8 	"/>
+	<polyline class="st0" points="49.4,78.4 49.6,32.9 64.3,32.9 	"/>
 	<g>
-		<polygon class="st0" points="57.95,95.33 51.5,98 29.8,55.44 36.25,52.77 		"/>
-		<polygon class="st0" points="36.25,52.77 29.8,55.44 27.75,51.43 34.2,48.76 		"/>
-		<path class="st0" d="M34.2,48.76l-6.45,2.67l-0.59-1.16c-0.8-1.57-0.04-3.43,1.71-4.15L29,46.06c1.74-0.72,3.81-0.03,4.61,1.54
-			L34.2,48.76z"/>
-		<polygon class="st1" points="58.37,103.82 58.16,99.58 57.95,95.33 54.73,96.67 51.5,98 54.94,100.91 		"/>
+		<polygon class="st0" points="58,95.3 51.5,98 29.8,55.4 36.2,52.8 		"/>
+		<polygon class="st0" points="36.2,52.8 29.8,55.4 27.8,51.4 34.2,48.8 		"/>
+		<path class="st0" d="M34.2,48.8l-6.5,2.7l-0.6-1.2c-0.8-1.6,0-3.4,1.7-4.2l0.1-0.1c1.7-0.7,3.8,0,4.6,1.5L34.2,48.8z"/>
+		<polygon class="st1" points="58.4,103.8 58.2,99.6 58,95.3 54.7,96.7 51.5,98 54.9,100.9 		"/>
 	</g>
-	<line class="st1" x1="70.75" y1="51.45" x2="101.66" y2="51.57"/>
-	<path class="st1" d="M60.3,50.75c0,0,1.78,2.58,2.1,3.5c0,0,3-5.01,3.3-5.65"/>
-	<line class="st1" x1="70.71" y1="61.8" x2="101.62" y2="61.91"/>
-	<path class="st1" d="M60.26,61.1c0,0,1.78,2.58,2.1,3.5c0,0,3-5.01,3.3-5.65"/>
-	<line class="st1" x1="70.71" y1="71.91" x2="101.62" y2="72.02"/>
-	<path class="st1" d="M60.26,71.2c0,0,1.78,2.58,2.1,3.5c0,0,3-5.01,3.3-5.65"/>
-	<ellipse class="st0" cx="80.3" cy="93.49" rx="12.95" ry="12.43"/>
-	<path class="st2" d="M91.6,27.11l-7.92-0.03l0-0.41c0.01-1.6-1.43-2.9-3.2-2.9c-1.77-0.01-3.22,1.28-3.23,2.88l0,0.41l-7.92-0.03
-		c-2.63-0.01-4.78,1.91-4.79,4.28l-0.02,4.3l31.81,0.12l0.02-4.3C96.36,29.05,94.23,27.12,91.6,27.11z"/>
-	<ellipse class="st2" cx="80.46" cy="26.78" rx="0.22" ry="0.2"/>
-	<g>
-		<polyline class="st3" points="74.08,88.99 77.12,98.92 80.41,91.24 83.55,98.92 86.53,88.99 		"/>
-		<line class="st3" x1="72.27" y1="93.24" x2="88.34" y2="93.24"/>
-	</g>
+	<line class="st1" x1="70.8" y1="51.4" x2="101.7" y2="51.6"/>
+	<path class="st1" d="M60.3,50.7c0,0,1.8,2.6,2.1,3.5c0,0,3-5,3.3-5.7"/>
+	<line class="st1" x1="70.7" y1="61.8" x2="101.6" y2="61.9"/>
+	<path class="st1" d="M60.3,61.1c0,0,1.8,2.6,2.1,3.5c0,0,3-5,3.3-5.7"/>
+	<line class="st1" x1="70.7" y1="71.9" x2="101.6" y2="72"/>
+	<path class="st1" d="M60.3,71.2c0,0,1.8,2.6,2.1,3.5c0,0,3-5,3.3-5.7"/>
+	<line class="st1" x1="70.7" y1="81.3" x2="101.6" y2="81.4"/>
+	<path class="st1" d="M60.3,80.6c0,0,1.8,2.6,2.1,3.5c0,0,3-5,3.3-5.7"/>
+	<path class="st2" d="M91.6,27.1h-7.9v-0.4c0-1.6-1.4-2.9-3.2-2.9c-1.8,0-3.2,1.3-3.2,2.9v0.4h-7.9c-2.6,0-4.8,1.9-4.8,4.3v4.3
+		l31.8,0.1v-4.3C96.4,29,94.2,27.1,91.6,27.1z"/>
+	<ellipse class="st2" cx="80.5" cy="26.8" rx="0.2" ry="0.2"/>
 </g>
 </svg>
