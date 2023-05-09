@@ -38,6 +38,9 @@
     text-align: center;
 }
 
+.p_center, .h_center{ transition: .3s;}
+.ceo_inner:hover .h_center{ transform: translateY(-5px);}
+.ceo_inner:hover .p_center{ transform: scale(1.2, 1.2);}
 .ceo_inner h3{
     font-size: 1.5em;
     padding-bottom: 20px;
@@ -180,7 +183,15 @@ font-weight: 400;
 .rule_text ul li{
     text-align: center;
     width: 30%;
+    transition: .3s;
 }
+.rule_text ul li:hover{
+    transform: translateY(-10px);
+}
+.rule_text ul li:hover h5{
+    transform: translateY(-10px);
+}
+.rule_text ul li h5{ transition: .5s;}
 
 .rule_text ul li:nth-child(2){
     margin: 0 3.33%;

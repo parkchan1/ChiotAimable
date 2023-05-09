@@ -98,6 +98,7 @@
     #inquire_modal h3{ padding-bottom: 20px;}
     .c_modal_item{ margin-bottom: 20px;}
     .c_modal_option{ margin-bottom: 25px;}
+    .c_modal_name{ padding-left: 10px;}
 
 
     .inquire_modal_bg{ width: 100%; height: 100vh; background: rgba(100,100,100,.5); position: fixed; top:0; left: 0; right: 0; display: none; z-index: 999; display: none; }
@@ -120,7 +121,8 @@
     #inquire_modal h3{ padding-bottom: 20px;}
     .c_modal_item{display: flex; margin-bottom: 20px;}
     .c_modal_option{ margin-bottom: 25px;}
-    
+    .c_modal_name{ width: 100%;}
+
     
     
     .inquire_modal_bg{ width: 100%; height: 100vh; background: rgba(100,100,100,.5); position: fixed; top:0; left: 0; right: 0; z-index: 999; }

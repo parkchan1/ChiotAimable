@@ -1,8 +1,5 @@
 /* Style */
 
-@-ms-viewport{width: device-width;}
-@-o-viewport{width: device-width;}
-@viewport{width: device-width;}
 /* 
 body.hidden { position: fixed; overflow-y:hidden;  touch-action: none;} */
 html { font-size: 18px;}

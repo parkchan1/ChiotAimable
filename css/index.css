@@ -31,7 +31,7 @@ p, li{word-break: keep-all;}
   vertical-align: top;
   width:33.33%;
 }
-.strength_img{ width: 70%; margin: auto;}
+.strength_img{ width: 50%; margin: auto;}
 .strength_text{ text-align: center; font-weight: 600; font-size: 1.2em;}
 
 @media (max-width:787px){
@@ -84,7 +84,7 @@ p, li{word-break: keep-all;}
 
 
 .c_modal_bg{ width: 100%; height: 100vh; background: rgba(100,100,100,.5); position: fixed; top:0; left: 0; right: 0; display: none; z-index: 999; display: none; }
-.cart_modal_wrap{ width: 40%; height: 760px; background: #fff; position: fixed; top:48%; left: 50%; z-index: 999; padding: 30px 20px; transform: translate(-50%, -50%); display: none; box-sizing: border-box;}
+.cart_modal_wrap{ width: 40%; height: 650px; background: #fff; position: fixed; top:48%; left: 50%; z-index: 999; padding: 30px 20px; transform: translate(-50%, -50%); display: none; box-sizing: border-box;}
 .c_modal_close_btn{ position: absolute; top: 10px; right: 15px; width: 25px; cursor: pointer;}
 .c_modal_close_btn img{ width: 100%;}
 
@@ -185,7 +185,7 @@ p, li{word-break: keep-all;}
 
 .main-slide .swiper-container {
   width: 100%;
-  height: 100%;
+  height: 80%;
   position: absolute;
   left: 0;
   top: 0;
@@ -476,7 +476,7 @@ a:hover {
 
 .line_banner{
   width: 100%;
-  margin:5% auto 7%;
+  margin:5% auto 0;
 }
 
 .line_banner img{

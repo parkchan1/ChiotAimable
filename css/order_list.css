@@ -10,7 +10,7 @@ main> section{ display: flex;}
 .order_search{ background-color: #fff; border: 1px solid #ddd; padding: 5px 10px; font-size: .8em;}
 #order_period_area{ margin-bottom:30px;}
 
-input[type='date'] { position: relative; padding-right: 20px; background: url(/icon/calendar.svg) no-repeat right 10px center / 12% auto;  padding:0 42px 0 16px; width: 160px; height: 40px;}
+/* input[type='date'] { position: relative; padding-right: 20px; background: url(/icon/calendar.svg) no-repeat right 10px center / 12% auto;  padding:0 42px 0 16px; width: 150px; height: 40px;}
 input[type='date']::-webkit-clear-button,
 input[type='date']::-webkit-inner-spin-button{ display: none;}
 input[type='date']::-webkit-calendar-picker-indicator{
@@ -26,7 +26,40 @@ input[type='date']::-webkit-calendar-picker-indicator{
 
 input[type="date"]::before{ content: attr(data-placeholder); width: 100%;}
 input[type="date"]:valid::before{ display: none;}
-input[data-placeholder]::before{ color: rgb(179, 176, 176); font-size: 14px; padding-left: 16px;}
+input[data-placeholder]::before{ color: rgb(179, 176, 176); font-size: 14px; padding-left: 16px;} */
+
+input[type="date"] {
+    width: 120px;
+    height: 30px;
+    position: relative; 
+    padding-right: 42px;
+    background: url(images/calendar.png) no-repeat right 21px center / 10px auto;
+    border: 1px solid #e1e1e1;
+}
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button{ display: none;}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="date"]::before{
+    content:attr(data-placeholder) ;
+    width: 100%;
+    font-size: 1.2em;
+}
+input[type="date"]:valid::before{
+    display: none;
+}
+input[type="date-placeholder"]::before{
+    color: red;
+}
 
 .ol_1{ width: 12%;}
 .ol_2{ width: 58%;}

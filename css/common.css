@@ -36,7 +36,7 @@
 
 
 
-.item-list{ position: relative; width: 27.33%; padding-bottom: 40%; margin: 2% 3%; cursor: pointer; background-color: #fff;}
+.item-list{ position: relative; width: 27.33%; padding-bottom: 43%; margin: 2% 3%; cursor: pointer; background-color: #fff;}
 
 .item-wrap{ position: absolute; top: 0; left: 0; right: 0;}
 .item-inner-wrap{ width: 100%; position: relative;}
@@ -52,7 +52,7 @@
 .item-text-box{height: 150px; position: absolute; padding:0 10px; box-sizing: border-box;}
 .item-text-box::before{ display: block; content: ""; padding-top: 100%;}
 
-.item-text{padding-top: 20px;box-sizing: border-box; font-size: .8em;}
+.item-text{padding-top: 20px;box-sizing: border-box; font-size: .9em;}
 .item-name{ padding-top: 15px; position: relative; }
 .item-name p{ white-space: normal; word-break: normal; font-size: 1.2em; padding-bottom: 5px;}
 .item-color{display: inline-block; width: 40%; position: absolute; top: 22px; right: 0; width: 100%; opacity: 0; transition: all .5s;} 
@@ -112,6 +112,8 @@
   .grid-btn{ display: block;}
   .grid-1{ width: 98%; height: 500px;}
   .grid-1 .item-name p{ padding-top: 20px;}
+  .grid-1 .item-color{ top:40px;}
+  .grid-1 .item-color li{float: right; width: 6%;} 
   .grid-3{ width: 31.33%; height: 55px; margin: 2% 1%; padding-bottom: 70%;}
   .grid-btn{ display: flex; justify-content: center; margin-bottom: 25px;}
   .grid-btn li{ width: 5%; opacity: .5; margin: 0 2%;}
@@ -151,7 +153,7 @@
 .o_total_price{font-size: .85em; margin-top: 15px;}
 .o_total_price span:nth-child(1){ font-size: 1.3em;}
 
-.o_btn_box{ display: flex; justify-content: center; margin-top: 3%;}
+.o_btn_box{ display: flex; justify-content: center; margin-top: 8%;}
 .o_btn_box a{ display: block; padding: 3px 12px; border: 1px solid #262626; margin: 0 5px;}
 
 @media (max-width:787px){
