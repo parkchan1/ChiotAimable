@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../icon/favicon.png">
+    <title>상세보기</title>
+    <link rel="stylesheet" href="../../css/mypage.css">
+    <link rel="stylesheet" href="../../css/order_list.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel='stylesheet' href="../../css/swipers.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/detail.css">
+</head>
+<body>
+     
+<header>
+    <div class="header-bg"></div>
+    <h1 class="logo">
+        <a href="../../index.html">
+            <img src="../../icon/logo.svg" alt="logo" class="pc-logo">
+        </a>
+    </h1>
+
+    <div class="header_inner">
+        <nav class="pc-nav-wrap">
+            <ul class="pc_nav">
+                <li><a href="#">DRESS</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="top.html">Top</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about.html">ABOUT</a>
+                </li>
+                <li><a href="#">COMMUNITY</a>
+                    <ul class="pc_nav_sub">
+                        <li><a href="../community/notice.html">Notice</a></li>
+                        <li><a href="../community/faq.html">FAQ</a></li>
+                        <li><a href="../community/review.html">Review</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <div class="log-box">
+        <a href="../mypage/login.html">
+            <img src="../../icon/my.svg" alt="로그인" href="/mypage/login.html">
+        </a>      
+        <a href="../mypage/join.html">
+            <img src="../../icon/join.svg" alt="회원가입" href="/mypage/join.html">
+        </a>  
+        <a href="../mypage/mypage.html">
+                <img src="../../icon/my.svg" alt="마이페이지" href="../mypage/mypage.html">
+
+        </a>
+        <a href="../mypage/wishlist.html">
+                <img src="../../icon/wish_before.svg" alt="찜목록">
+        </a>
+        <a href="../mypage/cart.html">
+                <img src="../../icon/cart.svg" alt="장바구니">
+        </a>
+    </div>
+<div class="m-nav-wrap">
+    <div class="m-menu_btn">
+        <img src="../../icon/m_menu.png" alt="메뉴">
+    </div>
+    
+    <div class="m-menu_bg"></div>
+    
+    <div class="sidebar_menu">
+        <h2 class="m-title">
+            <a href="../../index.html">
+                <img src="../../images/m-logo.png" alt="모바일로고">
+            </a>    
+        </h2>
+        <div class="close_btn">
+            <img src="../../icon/m_close.png" alt="닫기">
+        </div>
+        <p class='user-hello'> <b>회원이름</b> 님 안녕하세요. </p>
+        <div class="m-log-box">
+        <a href="../mypage/login.html" class="login-btn"> 로그인</a>    
+        <a href="../mypage/join.html" class="join-btn"> 회원가입</a>
+        <a href="../mypage/my_infochange.html">정보수정</a>
+        </div>
+        <ul class="menu_wrap">
+            <li class="m-sub-btn"><a href="#">DRESS <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="../product/detail.html">TOP</a></li>
+                </ul>
+            </li>
+            <li class="m-sub-btn">
+                <a href="../about.html">ABOUT 
+                    <span class="mobile-btn-1"></span>
+                </a>
+            </li>
+            <li class="m-sub-btn"><a href="#">COMMUNITY <span class="mobile-btn-1"></span></a>
+                <ul class="m-sub-nav">
+                    <li><a href="../community/notice.html">Notice</a></li>
+                    <li><a href="../community/faq.html">FAQ</a></li>
+                    <li><a href="../community/review.html">Review</a></li>
+                </ul> 
+            </li>
+        </ul>
+
+        <ul class="m-info-wrap">
+            <li><a href="../mypage/cart.html">
+                <img src="../../icon/m_cart.png" alt="장바구니">
+                <p>장바구니</p>
+            </a></li>
+            <li><a href="../mypage/order_list.html">
+                <img src="../../icon/order.png" alt="주문조회">
+                <p>주문조회</p>
+            </a></li>
+            <li><a href="../mypage/wishlist.html">
+                <img src="../../icon/m_wish.png" alt="위시리스트">
+                <p>위시리시트</p>
+            </a></li>
+            <li><a href="../mypage/mypage.html">
+                <img src="../../icon/m_my.png" alt="마이페이지">
+                <p>마이페이지</p>
+            </a></li>
+        </ul>
+
+    </div>
+
+    </div>
+</header>
+<!-- contents -->
+
+
+<main class="detail-area inner">
+
+<section class="detail-top">
+    <article class="d-top-left">
+        <div class="top-left-inner">
+            <div class="detail-main-img-wrap">
+                <div class="detail-main-img">
+                        <img src="../../images/dog3-2.jpg" alt="main-img" id="main-img">
+                </div>
+            </div>
+
+
+            <ul class="detail-img-list">
+                    <li  class="detail-img-list-box"><img src="../../images/dog1.jpg" alt="" class="detail-imgs"></li>
+
+                    <li  class="detail-img-list-box"><img src="../../images/dog5-1.jpg"alt="detail-img2" class="detail-imgs"></li>
+
+                    <li  class="detail-img-list-box"><img src="../../images/dog5-2.jpg" alt="detail-img3" class="detail-imgs"></li>
+
+                    <li  class="detail-img-list-box"><img src="../../images/dog2.jpg"alt="detail-img4" class="detail-imgs"></li>
+                    <li  class="detail-img-list-box"><img src="../../images/dog4-2.jpg" alt="detail-img5" class="detail-imgs"></li>
+            </ul>
+
+        </div>
+
+    </article>
+
+    <article class="d-top-right">
+        <p class="item-name">요조숙녀 탑드레스</p>
+        <p class="d-item-price">26,000 원</p>
+        <input type="hidden" id='hid_prod_price' value="<?=$array_prod_info['price']?>" >
+        <div class="d-tab-wrapper">
+            <div class="d-tap-nav">
+                <ul class="d-tab-menu">
+                    <li><a href="#d-tabs-1">INSTRUCTION</a></li>
+                    <li><a href="#d-tabs-2">SIZE GUIDE</a></li>
+                    <li><a href="#d-tabs-3">SHIPPING</a></li>
+                </ul>
+            </div>
+
+            <div id="d-tab-content">
+                <div id="d-tabs-1">
+                    <p>
+                        이것은 정보들입니다.간단 설명이 긴설명이 됩니다. 원단 디자인 만든곳등내용들도 첨부가됩니다.                  이것은 정보들입니다.간단 설명이 긴설명이 됩니다. 원단 디자인 만든곳등내용들도 첨부가됩니다.                  이것은 정보들입니다.간단 설명이 긴설명이 됩니다. 원단 디자인 만든곳등내용들도 첨부가됩니다.
+                    </p>
+                </div>
+                <div id="d-tabs-2">
+                    <p>
+                        S - 26cm, 15cm, 10cm <br>
+                        M - 26cm, 15cm, 10cm <br>
+                        L - 26cm, 15cm, 10cm
+                    </p>
+                </div>
+                <div id="d-tabs-3">
+                    <p>
+                        국내배송 도서 산간지역 배송비는 다를수있습니다. <br>
+                        배송일은 입금일로부터 2~3영업일 정도 입니다 <br>
+                        그리고 이것저것 내용을 찾아서 적습니다 <br>
+                        와라라라랄
+                    </p>
+                </div>
+            </div>
+    </div><!-- tab-wrap-->
+
+    <ul class="c_option">
+
+        <form id="medal_info" method="post">
+
+        <input type="hidden" id="pass_p_num" name="pass_p_num" value="" style="border: 1px solid red; " >
+        <input type="hidden" id="pass_p_name" name="pass_p_name" value="" style="border: 1px solid red; " >
+            <input type="hidden" id="pass_p_price" name="pass_p_price" value="" style="border: 1px solid red; " >
+            <input type="hidden" name="pass_medal_opts[]" style="border: 1px solid red; " >
+
+        </form>
+        
+        <li class="o_size_box">
+                <p> 반려견이름 - </p>
+                <input type="text" id="dog_name" value="까루" class="o_size"  placeholder="반려견의 이름을 입력해주세요.">
+            </li>
+
+          <li class="o_size_box">
+                <p> 목둘레 - </p>
+                <input type="text" id="dog_nack_length" value="22" placeholder="착용할 반려견 목둘레(여유분'미포함')을 입력해주세요." class="o_size" >
+            </li> 
+
+            <li class="o_size_box">
+                <p> 제작사이즈 - </p>
+                <input type="text" id="nack_size_text" value="24" placeholder="원하시는 사이즈(여유분'포함')을 입력해주세요." class="o_size" >
+            </li> 
+            
+            <li class="o_size_box">
+                <p>반려견 정보 -</p>
+                <input type="text" id="dog_info" value="요키,5키로,9살" placeholder="견종,체중,나이를 입력해주세요." class="o_size" >
+            </li>
+
+            <li class="o_size_box1 o_size_box">
+                <p>SIZE - </p>
+                <!--<select name="o_size" id="o_size" onchange="add_opt_size();" >-->
+                <select id="o_size" name="o_size" class="o_size" >
+                    <option value="">필수선택</option>
+                    <option value="" >S - 2000원 추가</option>
+                </select>
+
+            </li>
+                    <!-- <li class="o_size_box2">
+                        <div class="o_size_box">
+                            <p>각인 - </p>
+                            <select id="o_carve" name="o_carve" class="o_size" >
+                                <option value="">필수선택</option>
+                                <option value="">레이저 각인</option>
+                                
+                            </select>
+
+                            <input type="hidden" id="cnt_carve" style="border: 1px solid blue; width:40px; " value="<?=$array_use_carve_info['cnt']?>">
+
+                            <input type="hidden" id="tmp_carve_name" style="border: 1px solid red; " >
+                            <input type="hidden" id="tmp_carve_price" value="0" style="border: 1px solid red; " >
+
+                        </div>
+                    </li> -->
+                      
+
+            <li id="o_size_box5 " class="o_size_box4 ">
+                <div class="o_size_box">
+                    <p>갯수 - </p>
+                    <select id="o_ea" name="o_ea" class="o_size" >
+                        <option value="">필수선택</option>
+                        <option value="<?=$i?>" >1</option>
+                    </select>
+                </div>
+            </li>
+
+
+            <ul id="option_area"  >
+                <!-- 옵션 정보 스크립트로 생성 -->
+            </ul>
+
+            <div id="o_total_price_box" class="o_total_price_box" style="display:none;">
+                <div class="o_total_price">
+                    TOTAL : 
+                    <input type="text" id='total_price'>원
+                    <p>(<span id="total_qty"></span> items)</p>                 
+                </div>
+            </div>
+
+            <div class="o_btn_box">
+                <a id="add_cart" style="cursor:pointer;" >ADD CART</a>
+                <a id="buy_now"  href="../mypage/payment.html" style="cursor:pointer;" >BUY NOW</a>
+                <a id="wish_list" onclick="wishlist()" style="cursor:pointer;" >Wish List</a>
+            </div>
+
+
+    </ul>
+    </article>
+</section>
+
+
+	
+
+	
+<div class="detail_nav">
+    <a href="#contents" class="scroll_move">Detail</a>
+    <a href="#QNA" class="scroll_move">QnA</a>
+    <a href="#review" class="scroll_move">Review</a>
+</div>
+
+
+<ul id="contents" style="margin-top:50px; text-align:center;">
+<li>
+	  <img src="../../images/detail/intro.jpg" alt="상세페이지">
+</li>
+<li>
+	  <img src="../../images/detail/point1.gif" alt="상세페이지">
+</li>
+<li>
+	  <img src="../../images/detail/point2_top.gif" alt="상세페이지">
+</li>
+<li>
+	  <img src="../../images/detail/point_bottom.png" alt="상세페이지">
+</li>
+<li>
+	  <img src="../../images/detail/point3.png" alt="상세페이지">
+</li>
+<li>
+	  <img src="../../images/detail/point4.png" alt="상세페이지">
+</li>
+<li>
+	  <img src="../../images/detail/point5_top.jpg" alt="상세페이지">
+</li>
+<li>
+	  <img src="../../images/detail/point5_contents.gif" alt="상세페이지">
+</li>	
+<li>
+	  <img src="../../images/detail/point6.png" alt="상세페이지">
+</li>	
+<li>
+	  <img src="../../images/detail/end.gif" alt="상세페이지">
+</li>
+<li>
+	  <img src="../../images/detail/banner1.png" alt="상세페이지">
+</li>
+<li>
+	  <img src="../../images/detail/banner.png" alt="상세페이지">
+</li>	
+</ul>
+
+	
+<!-- <div id="contents" style="margin-top:50px; text-align:center;">
+    <img src="../../images/text.gif" alt="상세페이지">
+</div>
+<div id="contents" style="margin-top:50px; text-align:center;">
+    <img src="../../images/uiux_m.png" alt="상세페이지">
+</div> -->
+
+
+	
+
+	
+<div id="QNA">
+    <div style="margin-top: 100px;">
+    <input type="hidden" id="qna_page" name="qna_page" value="1">
+        <h3>QnA</h3>
+        <p>상품에 대해 궁금한 점이 있으신경우 문의해주세요. </p>
+        <p>질문을 클릭하시면 답변이 나옵니다.</p>
+        <br>
+        <div>
+            <div>
+                <!--<a href="qna/write_qna.php?p_num=<?=$p_num?>" role="button">-->
+                <button id="write_qna" class="button">Q&A작성하기</button>
+                <!--</a>-->
+            </div>
+
+            <div>
+                <div>
+                    <div class="recently_review_text">
+                        <span class="rlr_2">제목</span>
+                        <span class="rlr_1">작성자</span>
+                        <span class="rlr_3">작성일</span>
+                        <span class="rlr_4">답변상태</span>
+                    </div>
+
+                <ul id="qna_lists">
+                    <li> 
+                        <div id="qna_'+i+'" class="recently_order_inner" style="margin-bottom:10px;"> 
+                                <span class="rlr_2 qna_title" style="cursor:pointer; " onclick="show_answer()" > 
+                                    사이즈 문의가 있습니다!!
+                                </span> 
+                            <span class='rlr_1'>홍길동</span> 
+                            <span class='rlr_3'>2023. 03. 31</span> 
+                            <span class='rlr_4'>답변완료</span> 
+                        </div> 
+                        <div id="answer" class="answer"> 
+                                    <p class="answer_inner"> 
+                                       80cm 아기가 있는데 몸무게는 15kg정도 입니다. <br>
+                                       사이즈를 어떻게 고르면 될까요??
+                                    </p> 
+                    <br><ul class="qna_reply"> 
+                    <li> 관리자 :</li> 
+                    <li> 
+                   안녕하세요. 홍길동님 <br>
+                   본 제품의 경울 살짝 크게나왔으며, 재질또한 늘어나는 성질이 있어 <br>
+                   정사이즈를 구매하시면 털이 자라나도 별 무리없이 착용이 가능하실겁니다. <br>
+                   저희 쇼떼마블을 이용해주셔서 감사합니다.
+                    </li> 
+                    </ul> 
+                        </div> 
+                    </li> 
+                </ul>
+                
+                <ul id="qna_paging" style="text-align:center;"></ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="review">
+    <div style="margin-top: 100px;">
+        <input type="hidden" id="review_page" name="review_page" value="1">
+        <h3>Review</h3>
+        <p>구매하신 상품에 대하여 후기를 남겨주세요. </p>
+        <p>리뷰를 클릭하시면 자세한 리뷰 내용이 나옵니다.</p>
+        <br>
+        <div>
+            <div>
+<!--                
+                <a href="review/write_review.php?p_num=<?=$p_num?>" role="button">리뷰 작성하기</a>
+-->                
+                <button id="write_review" class="button">리뷰 작성하기</button>
+
+            </div>
+
+            <div>
+
+                <div class="recently_review_text">
+                    <span class="rlr_3">이미지</span>
+                    <span class="rlr_2">리뷰</span>
+                    <span class="rlr_3">작성자</span>
+                    <span class="rlr_4">작성일</span>
+                </div>
+
+                <ul id="review_lists">
+                     <li onclick="review_modal('<?=$board_idx?>');" class="detali_review_list "> 
+                        <div class="review_lists_inner"> 
+                             <div class="rlr_3"> 
+                                 <img src="../../images/dog2.jpg"> 
+                             </div> 
+            
+                            <div class="rlr_2"> 
+                                <h4 class="review_title" style="cursor:pointer;">
+                                    정사이즈로 구매헀습니다~~
+                                </h4>
+                            </div> 
+                            
+                            <p class="rlr_3">홍길동</p> 
+                            <p class="rlr_4">2023. 03. 31</p>
+
+                        </div> 
+                    </li> 
+
+                    <li onclick="review_modal('<?=$board_idx?>');" class="detali_review_list "> 
+                        <div class="review_lists_inner"> 
+                             <div class="rlr_3"> 
+                                 <img src="../../images/dog2.jpg"> 
+                             </div> 
+            
+                            <div class="rlr_2"> 
+                                <h4 class="review_title" style="cursor:pointer;">
+                                    정사이즈로 구매헀습니다~~
+                                </h4>
+                            </div> 
+                            
+                            <p class="rlr_3">홍길동</p> 
+                            <p class="rlr_4">2023. 03. 31</p>
+
+                        </div> 
+                    </li>
+                </ul>
+                
+                <ul id="review_paging" style="text-align:center;"></ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<form id="go_payment" name="go_payment" method="post" action="/mypage/payment.php">
+    <input type="hidden" id="order_num" name="order_num" >
+</form>
+
+
+</main>
+
+
+
+<!-- footer -->
+<footer>
+    <div class="footer-inner">
+      <dl class="f-company">
+        <dt>Chiot Aimable</dt>
+        <dd>대표명 : 홍길동</dd>
+        <dd>사업자 등록번호 : 778-88-09549580</dd>
+      </dl>
+  
+      <dl class="f-notice">
+        <dt>Notice</dt>
+        <dd><a href="../community/notice.html">공지사항</a></dd>
+        <dd><a href="../community/faq.html">FAQ</a></dd>
+        <dd><a href="../community/faq.html">교환 / 반품 안내</a></dd>
+        <dd><a href="#">이용약관</a></dd>
+        <dd><a href="#">개인정보처리방침</a></dd>
+      </dl>
+  
+      <dl class="f-csinfo">
+        <dt>CS Info</dt>
+        <dd><a href="tel:1668-4516">1588-4516</a></dd>
+        <dd>업무시간 : 9:00AM - 6:00PM</dd>
+        <dd>점심시간 : 12:00PM - 1:00PM</dd>
+        <dd>기업은행 : 886-1250-5411-51</dd>
+        <dd>예금주 : (주)쑈 떼마블</dd>
+      </dl>
+      <ul class="f-sns">
+        <li>intagram</li>
+        <li>kakao</li>
+      </ul>
+    </div>
+    <div class="f-bottom">
+      <p>(주)티카타카 부산광역시 해운대구 센텀북대로60 1024호(재송동, 센텀아이에스타워) E-mail : honghogng@gamil.com</p>
+      <p>(C) 2023 ChiotAimable. ALL RIGHTS RESERVED. DESIGN BY CHaChan</p>
+    </div>
+  </footer>
+
+
+
+
+  <div id="modal">
+    <div class="review_modal_bg"></div>
+    <div class="review_modal_wrap">
+        <h3>Review 작성하기</h3>
+        <div >
+            <form id="form" name="form" class="form-horizontal" role="form" method="post" enctype="multipart/form-data" >
+
+                <div>
+                    <input type="hidden" id="review_order_id" name="review_order_id" >
+                    <input type="hidden" id="review_p_num" name="review_p_num" value="<?=$p_num?>">
+                    <input type="hidden" id="review_p_name" name="review_p_name" value="<?=$array_prod_info['p_name']?>">
+                    <input type="hidden" id="review_size" name="review_size" value="">
+
+                    제목<input type="text" id="review_title" name="review_title" >
+                </div>
+
+                <div>
+                    내용<textarea id="review_content" name="review_content" ></textarea>
+                </div>
+
+                    <article class="write_imgwrap">
+                        <ul class="write_imgnav">
+                            <li class="write_imgbox">
+                                <div class="write_img1 item-img-inner" >
+                                    <img id="det_img_1" src="../../images/noimg.jpg" alt="서브1" class="details_sub_img" >
+
+                                    <a id="img_delete" class="img_delete"><img src="../../icon/close-btn2.png" alt="닫기"></a>
+                                </div>
+
+                                <div class="file_text">
+                                    <label for="up_img_1">
+                                        <input type="file" id="up_img_1" name="up_img_1" class="inp-img_img iimg" accept=".gif, .jpg, .png">
+                                        <p class="img_upload_btn">
+                                            사진업로드
+                                        </p>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+
+            </form>        
+        </div>
+
+        <div style="text-align:center; margin-top:8px;" >
+            <button id="review_modal_close_btn" class="button" style="display: inline-block;" >닫기</button>
+            <button id="review_write_btn" class="button" style="display: inline-block; margin-left:7px;" >작성하기</button>
+        </div>
+
+    </div>
+</div>
+
+
+<section id="modal">
+    <div id="qna_modal">
+        <div class="qna_modal_bg" style="display:none;" ></div>
+        <div class="qna_modal_wrap" style="display:none;" >
+            <h3>Q&A 작성하기</h3>
+            <div >
+
+                <p class="co_modal_title">
+                    <input type="hidden" id="qna_p_num" name="qna_p_num" value="<?=$p_num?>">
+                    <input type="hidden" id="qna_p_name" name="qna_p_name" value="<?=$array_prod_info['p_name']?>">
+                    <span>제목</span>
+                    <input type="text" id="qna_title" name="qna_title" placeholder="제목을 입력해주세요">
+                    비밀글 <input type="checkbox" id="secret_chk" name="secret_chk" >
+                </p>
+
+                <div class="co_modal_text">
+                    <p class="co_modal_text_title">
+                    내용
+                    </p>
+                    <textarea id="qna_content" name="qna_content" placeholder="내용을 입력해주세요"></textarea>
+                </div>
+            
+            </div>
+
+            <div class="modal_btn_box">
+                <button id="qna_modal_close_btn"class="button">취소하기</button>
+                <button id="qna_write_btn" class="button">작성하기</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!--review detail modal -->
+        <section id="review_modal_area">
+            <div class="order_detail_bg" style="display:none;"></div>
+                <article class="order_detail_wrap " style="display:none;">
+                    <a href="javascript:void(0);" class="modal_closed_btn" onclick="close_btn()"><img src="../../icon/m_close.png" alt="닫기"></a>
+                <div class="review_modal_box">
+                    <section class="review_modal_img">
+                        <div class="item-img-inner">
+                            <img id='review_img' src="../../images/dog1.jpg" >
+                        </div>
+                    </section>
+        
+                    <section class="review_modal_text">
+                        <div class="review_modal_top">
+                            <h2 id = "title_show">리뷰제목</h2>
+                            <p id = "p_name_show">상품명</p>
+                            <span>-</span><p id = "size_show">옵션값</p>
+                        </div>
+        
+                        <ul class="review_modal_text_box scroll_box">
+                            <li>
+                                <p id = "content_show">
+                                    문의 답변대로 주문을 하였더니 너무 편하게 잘 입고있습니다. <br>
+                                    다른 제품들도 주문하고싶어서 또 들어왔어요!! <br>
+                                    감사합니다.
+                                </p>
+                                <!-- <p id="writer_show">홍길동</p> -->
+                                <p id="writeday_show">2023. 03. 03</p>
+                            </li>
+                            <li class="reply_show_box">
+                                <p id ="reply_show">
+                                    안녕하세요! 홍길동님 <br>
+                                    저희 제품을 착용해주셔서 감사합니다. <br>
+                                    더욱 좋은 퀄리티의 제품을 만들어내겠습니다, <br>
+                                    감사합니다.
+                                </p>
+                                <span>관리자</span>
+                            </li>
+                        </ul>
+                        <button type="button" id="modal_closed_btn" class="button" onclick="close_btn()">확인</button>
+                        <a href="" target = "_blank"; id ="p_num_show">상품보러가기</a>
+                        <!-- <a href="/product/detail.php?p_num=<?=$array_board_info['p_num']?>" target = "_blank"; class="button">상품보기</a> -->
+                    </section>
+                </div>
+        
+            </article>
+        </section>
+        <a href="#" class="up_btn"><img src="../images/up_btn.png" alt="위로올라가기"></a>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/style.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+
+<script src="../../js/detail.js"></script>
+
+<script>
+        function show_answer()
+    {
+        if ( $('#answer').css('display') === 'none' ){ $('#answer').show(); }
+        else { $('#answer').hide(); }
+    }
+
+    function review_modal(board_idx)
+    {
+        
+        $('.order_detail_bg').show();
+        $('.order_detail_wrap').show();
+        $('html, body').removeClass('hidden');
+
+    }
+
+    function close_btn()
+    {
+        $('.order_detail_bg').hide();
+        $('.order_detail_wrap').hide();
+        $('html, body').removeClass('hidden')  
+    }
+    function wishlist(){
+        alert("추가 되었습니다. ");
+		location.href = "../mypage/wishlist.html";
+
+    }
+</script>
